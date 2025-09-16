@@ -1,0 +1,6 @@
+--- MATLAB Simulation Data ---
+
+The code in this directory as of latest update is to generate an animation of the beamsteering capibilities of the the phased array.
+
+To run it, download arraySim.m and patternDisplay.m, make sure they are in the same directory, and run patternDisplay. This will redo the simulation which will take quite a long time, so if you don't want to change the simulation parameters, make sure antenna_patterns.mat is in the same directory. If this file is present, patternDisplay will skip the simulation and use the available data.
+
