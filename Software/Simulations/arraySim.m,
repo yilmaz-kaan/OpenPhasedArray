@@ -1,0 +1,53 @@
+results_filename = 'antenna_patterns.mat';
+
+SubObject = design(patchMicrostrip, 2.4e9);
+arrayObject = design(rectangularArray('Element', SubObject), 2.4e9, SubObject);
+arrayObject.Element.Load.Impedance = 50;
+arrayObject.Size = [2, 4];
+plotFrequency = 2.4e9;
+
+% Define the range of steering angles.
+steeringAngles = 10:1:170;
+numAngles = numel(steeringAngles);
+
+% Start a parallel pool of workers (if not already started).
+if isempty(gcp('nocreate'))
+    parpool;
+end
+
+% Pre-calculate the grid to ensure consistent dimensions.
+% We get the azimuth (az_grid) and elevation (el_grid) vectors.
+[~, az_grid, el_grid] = pattern(arrayObject, plotFrequency);
+
+% Pre-allocate a 3D matrix to store all pattern data.
+% Dimensions: (elevation points x azimuth points x number of angles)
+pattern_data_storage = zeros(numel(el_grid), numel(az_grid), numAngles);
+
+% --- Parallel Calculation Loop  ---
+disp('Calculating all radiation patterns in parallel...');
+parfor i = 1:numAngles
+    currentAngle = steeringAngles(i);
+    
+    % Create a local copy of the arrayObject for each worker.
+    % This is crucial for parfor loop independence.
+    localArray = arrayObject;
+    
+    % Calculate the phase shift.
+    ps = phaseShift(localArray, plotFrequency, [0, currentAngle])';
+    localArray.PhaseShift = ps;
+    
+    % Calculate the pattern DATA without plotting.
+    % We specify the grid to ensure all results are the same size.
+    [directivity_data, ~, ~] = pattern(localArray, plotFrequency, 'Azimuth', az_grid, 'Elevation', el_grid);
+    
+    % Store the result in the pre-allocated matrix.
+    pattern_data_storage(:, :, i) = directivity_data;
+    
+    % Optional: Display progress. Note: Command window output from workers may appear out of order.
+    fprintf('Finished calculation for angle: %d°\n', currentAngle);
+end
+disp('All pattern calculations complete.');
+fprintf('Saving to file: %s', results_filename);
+
+save(results_filename, 'pattern_data_storage', 'steeringAngles', 'az_grid', 'el_grid');
+disp('Data saved.');
