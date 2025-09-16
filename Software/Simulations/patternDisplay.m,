@@ -1,0 +1,64 @@
+results_filename = 'antenna_patterns.mat';
+
+if exist(results_filename, 'file')
+    fprintf('Loading pre-computed data from %s\n', results_filename);
+    load(results_filename);
+    disp('Data loaded successfully.');
+else
+    arraySim;
+end
+
+
+min_directivity = min(pattern_data_storage, [], 'all');
+max_abs_coord = 0;
+[AZ_grid, EL_grid] = meshgrid(az_grid, el_grid);
+
+for i = 1:numel(steeringAngles)
+    radius = pattern_data_storage(:,:,i) - min_directivity;
+    [X, Y, Z] = sph2cart(deg2rad(AZ_grid), deg2rad(EL_grid), radius);
+    
+    % Find the max absolute value in this frame
+    current_max = max(abs([X(:); Y(:); Z(:)]));
+    
+    % Update the overall max
+    if current_max > max_abs_coord
+        max_abs_coord = current_max;
+    end
+end
+axis_limit = max_abs_coord * 1.1; 
+
+% Create the figure and plot the first frame
+fig = figure('Name', 'Interactive Antenna Animation (Fixed Axes)');
+ax = axes('Parent', fig);
+
+radius_initial = pattern_data_storage(:,:,1) - min_directivity;
+[X, Y, Z] = sph2cart(deg2rad(AZ_grid), deg2rad(EL_grid), radius_initial);
+
+h_surf = surf(ax, X, Y, Z, pattern_data_storage(:,:,1));
+shading(ax, 'interp');
+axis(ax, 'equal');
+xlabel('X'); ylabel('Y'); zlabel('Z');
+colorbar(ax);
+
+axis(ax, [-axis_limit, axis_limit, -axis_limit, axis_limit, -axis_limit, axis_limit]);
+
+% Start the continuous animation loop
+frame_index = 1;
+while ishandle(fig)
+    title(ax, ['Radiation Pattern: Steered to ', num2str(steeringAngles(frame_index)), '° Elevation']);
+    
+    current_directivity = pattern_data_storage(:,:,frame_index);
+    radius = current_directivity - min_directivity;
+    
+    [X, Y, Z] = sph2cart(deg2rad(AZ_grid), deg2rad(EL_grid), radius);
+    set(h_surf, 'XData', X, 'YData', Y, 'ZData', Z, 'CData', current_directivity);
+    
+    pause(1/24);
+    
+    frame_index = frame_index + 1;
+    if frame_index > numel(steeringAngles)
+        frame_index = 1;
+    end
+end
+
+disp('Figure closed. Animation stopped.');
