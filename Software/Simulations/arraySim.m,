@@ -29,21 +29,19 @@ parfor i = 1:numAngles
     currentAngle = steeringAngles(i);
     
     % Create a local copy of the arrayObject for each worker.
-    % This is crucial for parfor loop independence.
     localArray = arrayObject;
     
     % Calculate the phase shift.
     ps = phaseShift(localArray, plotFrequency, [0, currentAngle])';
     localArray.PhaseShift = ps;
     
-    % Calculate the pattern DATA without plotting.
+    % Calculate the pattern without plotting.
     % We specify the grid to ensure all results are the same size.
     [directivity_data, ~, ~] = pattern(localArray, plotFrequency, 'Azimuth', az_grid, 'Elevation', el_grid);
     
     % Store the result in the pre-allocated matrix.
     pattern_data_storage(:, :, i) = directivity_data;
     
-    % Optional: Display progress. Note: Command window output from workers may appear out of order.
     fprintf('Finished calculation for angle: %d°\n', currentAngle);
 end
 disp('All pattern calculations complete.');
@@ -51,3 +49,4 @@ fprintf('Saving to file: %s', results_filename);
 
 save(results_filename, 'pattern_data_storage', 'steeringAngles', 'az_grid', 'el_grid');
 disp('Data saved.');
+
