@@ -7,8 +7,8 @@ arrayObject.Size = [2, 4];
 plotFrequency = 2.4e9;
 
 % Define the range of steering angles.
-az_angles = -60:10:60;
-el_angles = 0:10:90;
+az_angles = -80:5:80;
+el_angles = 0:5:160;
 
 % Start a parallel pool of workers (if not already started).
 if isempty(gcp('nocreate'))

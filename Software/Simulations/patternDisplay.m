@@ -87,6 +87,7 @@ function patternDisplay
         state.isDragging = true;
         onMouseMove(); % Trigger an update immediately on click
     end
+    % --- END FIX ---
     
     function onMouseUp(~, ~)
         state.isDragging = false;
