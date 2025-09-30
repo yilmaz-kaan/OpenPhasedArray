@@ -1336,6 +1336,50 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 199.39 16.51)
+		(end 240.03 73.66)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9c9e2b9d-779b-4118-84f5-3c8e22b0eaf6)
+	)
+	(rectangle
+		(start 165.1 125.73)
+		(end 226.06 153.67)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e420f47e-f025-48ea-9d0d-724c63c17a83)
+	)
+	(text "T-line testing"
+		(exclude_from_sim no)
+		(at 173.99 128.778 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1204a76c-68fe-4046-9046-e277248f7097")
+	)
+	(text "Power dist."
+		(exclude_from_sim no)
+		(at 205.994 19.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1989e4d1-5216-4c42-a149-2fc640f9ed66")
+	)
 	(junction
 		(at 170.18 77.47)
 		(diameter 0)
@@ -1677,6 +1721,16 @@
 			(type default)
 		)
 		(uuid "ea603b75-b1a5-4492-8564-b31152662d5c")
+	)
+	(wire
+		(pts
+			(xy 181.61 139.7) (xy 207.01 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8fcdd0-dee1-4331-b84b-397a77a6096e")
 	)
 	(global_label "VCC1"
 		(shape input)
@@ -2144,6 +2198,72 @@
 			(project "QPA9122S-EVAL"
 				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2836771a-abe3-424b-a8ef-ad3bd65ecf5c")
+		(property "Reference" "#PWR023"
+			(at 212.09 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 212.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f9bd886-9a32-4ac6-80d4-d56d809faf2c")
+		)
+		(instances
+			(project "QPA9122S-EVAL"
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -3991,6 +4111,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 176.53 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae109d03-7cca-4209-b9fd-2ff53e758df6")
+		(property "Reference" "#PWR024"
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc7e5f4a-fbab-404c-9328-a0561da17bcb")
+		)
+		(instances
+			(project "QPA9122S-EVAL"
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 218.44 43.18 270)
 		(unit 1)
@@ -4055,6 +4242,75 @@
 			(project ""
 				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 176.53 139.7 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b369b7bc-0d20-4e36-b7f8-090481427c6f")
+		(property "Reference" "J7"
+			(at 172.72 138.1367 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 182.118 143.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89add065-a0cb-4943-9e04-6234f1fbd02e")
+		)
+		(pin "2"
+			(uuid "914aa8ea-458e-4bcb-8035-eec89c7493bd")
+		)
+		(instances
+			(project "QPA9122S-EVAL"
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -4592,6 +4848,75 @@
 			(project "Untitled"
 				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 212.09 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7d7f971-d63e-480a-9087-cb9a80e3fa2f")
+		(property "Reference" "J6"
+			(at 215.9 138.7231 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 207.772 135.382 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+			(at 212.09 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 212.09 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ed65ce3-856e-4faa-bb8b-75a76465810d")
+		)
+		(pin "2"
+			(uuid "8c9e1faa-247a-4d3f-b15e-7e717600a79a")
+		)
+		(instances
+			(project "QPA9122S-EVAL"
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "J6")
 					(unit 1)
 				)
 			)
