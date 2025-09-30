@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "QPA9122TR7")(type "KiCad")(uri "/Users/kaan/Downloads/drive-download-20250930T021149Z-1-001/LIB_QPA9122TR7/QPA9122TR7/KiCad")(options "")(descr ""))
+  (lib (name "MAPS-010164-TR0500")(type "KiCad")(uri "/Users/kaan/Downloads/drive-download-20250930T021149Z-1-001/LIB_MAPS-010164-TR0500/MAPS-010164-TR0500/KiCad")(options "")(descr ""))
+)
