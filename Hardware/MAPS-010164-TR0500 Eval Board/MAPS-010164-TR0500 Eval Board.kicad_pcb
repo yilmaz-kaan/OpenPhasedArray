@@ -869,6 +869,7 @@
 		(property "Value" "Conn_02x04_Top_Bottom"
 			(at 0.5 4.56 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "01681000-4f1b-4385-8f79-60ca1d2e7e53")
 			(effects
 				(font
@@ -1218,7 +1219,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 0)
+			(at -1.0492 -1.38 0)
 			(layer "F.Fab")
 			(uuid "d07c81a8-8ec5-4c14-8485-a1d33be1eaca")
 			(effects
@@ -1421,6 +1422,7 @@
 		(property "Value" "Conn_02x02_Top_Bottom"
 			(at 0.5 2.56 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b830a1ca-7a9c-473e-b3d4-3f6ac9836829")
 			(effects
 				(font
@@ -2886,6 +2888,7 @@
 		(property "Value" "Conn_02x02_Top_Bottom"
 			(at 0.5 2.56 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "1a1648f5-d707-4421-87a3-9aaebe91b065")
 			(effects
 				(font
@@ -3193,6 +3196,7 @@
 		(property "Value" "Conn_02x02_Top_Bottom"
 			(at 0.5 2.56 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "46ae6f39-6ca6-4838-abf7-32a8784212a4")
 			(effects
 				(font
@@ -3487,7 +3491,7 @@
 		(descr "PQFN_25_MAPS")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC1"
-			(at 0 0 90)
+			(at 0.043 3.92 90)
 			(layer "F.SilkS")
 			(uuid "60718de6-299a-4735-a03b-8e7eafbae658")
 			(effects
@@ -3702,17 +3706,6 @@
 			)
 			(layer "F.Fab")
 			(uuid "0ad206da-c8a0-49e9-82ff-baafb4e2a119")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(uuid "aec9cc0e-9bae-4b28-b21c-310d353e0af8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-				)
-			)
 		)
 		(pad "1" smd rect
 			(at -1.95 -1.25 180)
