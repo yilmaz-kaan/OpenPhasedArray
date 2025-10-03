@@ -1434,6 +1434,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 49.53) (xy 170.18 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e2e20a5-3b2a-48db-b9f1-9592902c096f")
+	)
+	(wire
+		(pts
 			(xy 170.18 91.44) (xy 170.18 107.95)
 		)
 		(stroke
@@ -1554,7 +1564,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 49.53) (xy 170.18 49.53)
+			(xy 140.97 49.53) (xy 143.51 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1564,7 +1574,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 49.53) (xy 170.18 66.04)
+			(xy 170.18 49.53) (xy 170.18 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1661,6 +1671,16 @@
 			(type default)
 		)
 		(uuid "b8d8c813-8256-42bb-8250-26111cd3a898")
+	)
+	(wire
+		(pts
+			(xy 170.18 60.96) (xy 170.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7aa7400-0f67-43ce-af48-de21c90565d3")
 	)
 	(wire
 		(pts
@@ -1925,6 +1945,74 @@
 			(project "QPA9122S-EVAL"
 				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 147.32 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "140234af-6751-4fcd-be7f-3fc2393776a5")
+		(property "Reference" "R1"
+			(at 147.32 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 147.32 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 147.574 48.514 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 147.32 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b28ee3a-fc08-464d-9659-964f9f4a9e5b")
+		)
+		(pin "2"
+			(uuid "5f3ca067-be6b-4e34-a5aa-2c7494b6e52a")
+		)
+		(instances
+			(project ""
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4443,6 +4531,75 @@
 			(project ""
 				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 170.18 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d67cf5d8-c883-46da-895b-3c61fbd32cca")
+		(property "Reference" "R2"
+			(at 165.354 55.626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 166.624 58.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 169.164 56.896 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04136a63-8bbd-4938-a1d1-2e8ee9ad05e6")
+		)
+		(pin "2"
+			(uuid "a11a8268-7223-4514-9d73-449ae528d2a3")
+		)
+		(instances
+			(project "QPA9122S-EVAL"
+				(path "/050d65d9-584f-484e-ae24-5bc61727c828"
+					(reference "R2")
 					(unit 1)
 				)
 			)
