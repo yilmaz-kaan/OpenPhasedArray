@@ -1,0 +1,9 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"R3,R2,R1";"R_0402_1005Metric";3;"10";;;
+2;"C2";"C_0402_1005Metric";1;"470 pF";;;
+3;"J1,J2,J5,J4";"SMA_Amphenol_132289_EdgeMount";4;"Conn_Coaxial";;;
+4;"C3,C4,C5";"C_0402_1005Metric";3;"300pF";;;
+5;"SW1,SW3,SW2";"SW_SPDT_CK_JS102011SAQN";3;"SW_SPDT";;;
+6;"AT1";"QFN50P300X300X90-17N";1;"RFSA3713TR7";;;
+7;"J6";"PinHeader_2x05_P1.00mm_Vertical";1;"Conn_02x05_Odd_Even";;;
+8;"C1";"C_0402_1005Metric";1;"1uF";;;
