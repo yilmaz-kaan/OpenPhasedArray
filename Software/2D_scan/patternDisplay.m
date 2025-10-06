@@ -8,7 +8,7 @@ function patternDisplay
 
     results_filename = 'antenna_patterns.mat';
 
-    %% 1. Load or Generate Simulation Data
+    %% Load or Generate Simulation Data
     if exist(results_filename, 'file')
         fprintf('Loading pre-computed data from %s\n', results_filename);
         s = load(results_filename);
@@ -19,7 +19,7 @@ function patternDisplay
         s = load(results_filename);
     end
 
-    %% 2. Pre-computation & GUI State
+    %% Pre-computation & GUI State
     s.min_directivity = min(s.pattern_data_storage, [], 'all');
     [s.AZ_grid, s.EL_grid] = meshgrid(s.az_grid, s.el_grid);
     
@@ -27,12 +27,12 @@ function patternDisplay
     state.az_index = 1;
     state.el_index = 1;
     
-    %% 3. Create the GUI Layout
+    %% Create the GUI Layout
     fig = figure('Name', 'Interactive XY Beamsteering', 'Position', [100, 100, 1200, 600]);
     ax_3d = axes('Parent', fig, 'Position', [0.08, 0.1, 0.4, 0.8]);
     ax_controller = axes('Parent', fig, 'Position', [0.58, 0.15, 0.38, 0.75]);
     
-    %% 4. Draw the Initial Plots
+    %% Draw the Initial Plots
     axis_limit = calculateAxisLimit(s);
 
     initial_directivity = s.pattern_data_storage(:,:,1,1);
@@ -69,7 +69,7 @@ function patternDisplay
     handles.ax_3d = ax_3d;
     handles.ax_controller = ax_controller;
 
-    %% 5. Set up Mouse Interaction Callbacks
+    %% Set up Mouse Interaction Callbacks
     % This makes it the primary listener for clicks within its bounds.
     set(handles.ax_controller, 'ButtonDownFcn', @onMouseDown);
     
@@ -80,7 +80,7 @@ function patternDisplay
 
     updatePlots(1, 1);
 
-    %% 6. Nested Callback Functions
+    %% Nested Callback Functions
     function onMouseDown(~, ~)
         % This function now ONLY runs when the click is on the controller.
         % Its only job is to start the drag operation.
