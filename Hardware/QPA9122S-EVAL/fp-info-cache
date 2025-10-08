@@ -1,4 +1,4 @@
-26119633979189843
+26128430436387106
 54_00178
 TENSILITY_54-00178
 
@@ -68816,6 +68816,13 @@ Yellow 5381 Series LED
 0
 2
 2
+MAPS-010164-TR0500
+QFN50P400X400X100-25N-D
+PQFN_25_MAPS
+Integrated Circuit
+0
+25
+25
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -91531,6 +91538,20 @@ Potentiometer vertical vishay
 0
 3
 3
+QPA9122-TR7
+QPA9122TR7
+16-VFQFN_2024
+Integrated Circuit
+0
+17
+17
+QPA9122TR7
+QPA9122TR7
+16-VFQFN_2024
+Integrated Circuit
+0
+17
+17
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
@@ -91545,6 +91566,13 @@ Skyworks
 0
 7
 7
+RFSA3713
+QFN50P300X300X90-17N
+QFN-16_2022
+Attenuator or Isolator
+0
+17
+17
 RF_Antenna
 AVX_M620720
 868Mhz, 915Mhz ISM antenna, 6 x 2 x 1.08mm, http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf
@@ -104152,3 +104180,10 @@ Varistor VF
 0
 2
 2
+ViaStitch
+ViaStitch
+
+
+0
+0
+0
