@@ -3,19 +3,19 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "9.0.4"
+      "Version": "9.0.5"
     },
-    "CreationDate": "2025-10-07T22:20:51-05:00"
+    "CreationDate": "2025-10-11T16:20:38-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "RFSA3713-EVAL",
-      "GUID": "52465341-3337-4313-932d-4556414c2e6b",
+      "Name": "MAPS-010164-TR0500 Eval Board",
+      "GUID": "4d415053-2d30-4313-9031-36342d545230",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 54.51,
-      "Y": 45.51
+      "X": 48.587,
+      "Y": 38.88
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -24,57 +24,57 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.127,
-      "PadToTrack": 0.127,
-      "TrackToTrack": 0.127,
+      "PadToPad": 0.1,
+      "PadToTrack": 0.1,
+      "TrackToTrack": 0.1,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.1829,
-      "RegionToRegion": 0.1829
+      "TrackToRegion": 0.1016,
+      "RegionToRegion": 0.1016
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "RFSA3713-EVAL-F_Cu.gtl",
+      "Path": "MAPS-010164-TR0500 Eval Board-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-B_Cu.gbl",
+      "Path": "MAPS-010164-TR0500 Eval Board-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-F_Paste.gtp",
+      "Path": "MAPS-010164-TR0500 Eval Board-F_Paste.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-B_Paste.gbp",
+      "Path": "MAPS-010164-TR0500 Eval Board-B_Paste.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-F_Silkscreen.gto",
+      "Path": "MAPS-010164-TR0500 Eval Board-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-B_Silkscreen.gbo",
+      "Path": "MAPS-010164-TR0500 Eval Board-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "RFSA3713-EVAL-F_Mask.gts",
+      "Path": "MAPS-010164-TR0500 Eval Board-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "RFSA3713-EVAL-B_Mask.gbs",
+      "Path": "MAPS-010164-TR0500 Eval Board-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "RFSA3713-EVAL-Edge_Cuts.gm1",
+      "Path": "MAPS-010164-TR0500 Eval Board-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
