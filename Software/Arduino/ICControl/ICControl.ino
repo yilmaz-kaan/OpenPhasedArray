@@ -11,6 +11,8 @@ uint8_t serialOutput;
 uint8_t phaseShifter;
 uint8_t attenuator;
 
+uint8_t customAddress;
+
 int waitForChar() {
   int bytesRead = Serial.readBytesUntil('\n', serialBuffer, SERIALBUFSIZE - 1);
   
@@ -60,9 +62,13 @@ void loop() {
     if (serialOutput == 'P') {
       SPI.beginTransaction(SPISettings(1e6, MSBFIRST, SPI_MODE0));
       phaseShifter = 1;
+
     } else if (serialOutput == 'A') {
       SPI.beginTransaction(SPISettings(1e6, LSBFIRST, SPI_MODE0)); 
       attenuator = 1;
+      Serial.print("Input attuator address 0-7:");
+      customAddress = waitForUInt();
+      
     } else {continue;} // try again if invalid input
 
     Serial.print("Input SPI Command for DUT as integer 0-255: ");
@@ -72,7 +78,7 @@ void loop() {
       SPITransmit(spiCommand, 1);
       }
     else if (attenuator) {
-      uint8_t spiCommand[] = {serialOutput, ADDR};
+      uint8_t spiCommand[] = {serialOutput, customAddress};
       SPITransmit(spiCommand, 2);
     }
     else {continue;}
