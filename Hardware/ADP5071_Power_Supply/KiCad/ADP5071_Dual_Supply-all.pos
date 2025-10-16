@@ -1,0 +1,41 @@
+### Footprint positions - created on 2025-06-15T18:56:14-0400 ###
+### Printed by KiCad version 9.0.0
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                   Package                                                      PosX       PosY       Rot  Side
+G***      LOGO                  pcb_way_logo                                              54.8242    18.5884   90.0000  bottom
+C1        47nF                  C_0805_2012Metric_Pad1.18x1.45mm_HandSolder               19.4406    20.7774    0.0000  top
+C2        10uF                  C_1210_3225Metric_Pad1.33x2.70mm_HandSolder               42.3376    21.4174   90.0000  top
+C3        10uF                  C_1210_3225Metric_Pad1.33x2.70mm_HandSolder               31.3164    15.9138  -90.0000  top
+C4        1uF                   C_0805_2012Metric_Pad1.18x1.45mm_HandSolder               26.9568    12.0138  -90.0000  top
+C5        68nF                  C_0805_2012Metric_Pad1.18x1.45mm_HandSolder               19.4264    18.6106    0.0000  top
+C6        1uF                   C_0805_2012Metric_Pad1.18x1.45mm_HandSolder               23.7854    12.0154   90.0000  top
+C7        10uF                  C_1210_3225Metric_Pad1.33x2.70mm_HandSolder               42.3122    15.3542  -90.0000  top
+D1        MMSZ5231B-7-F         D_SOD-123                                                 14.9724     5.0984  -90.0000  top
+D2        DFLS240               D_PowerDI-123                                             32.9250    23.8694   90.0000  top
+D3        LED_Small_Filled      LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder             30.6994     5.3200    0.0000  top
+D4        DFLS240               D_PowerDI-123                                             36.6056    12.3500    0.0000  top
+J1        Screw_Terminal_01x03  TerminalBlock_CUI_TB007-508-03_1x03_P5.08mm_Horizontal    50.8630    13.6206   90.0000  top
+J2        Screw_Terminal_01x02  TerminalBlock_CUI_TB007-508-02_1x02_P5.08mm_Horizontal     8.4452    21.6446  -90.0000  top
+L1        4.7uH                 L_Coilcraft_XAL4030-XXX                                   28.7356    26.3400    0.0000  top
+L2        6.8uH                 L_Coilcraft_XAL4030-XXX                                   35.9100    16.1106   90.0000  top
+R1        5K6                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               19.4714    22.7626    0.0000  top
+R2        11K                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               18.2256     4.3162  180.0000  top
+R3        14K3                  R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               18.2056     6.3824    0.0000  top
+R4        0r                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               23.6314     5.4062   90.0000  top
+R5        1.4M                  R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               16.1874    26.4162   90.0000  top
+R6        1K                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               30.6712     7.5928    0.0000  top
+R7        100K                  R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               21.5444    26.4362   90.0000  top
+R8        12K                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               19.3828    16.5780    0.0000  top
+R9        0r                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               25.8578     5.4318   90.0000  top
+R10       71.5K                 R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               20.5632    13.3318   90.0000  top
+R11       DNP                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               19.3460    32.3318   90.0000  top
+R12       0r                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               26.1872    32.3994   90.0000  top
+R13       DNP                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               32.4982    32.4034   90.0000  top
+R14       DNP                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               19.0698    26.4356  -90.0000  top
+R15       1.15M                 R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               18.1588    13.3216  -90.0000  top
+R16       DNP                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               21.6242    32.3760  -90.0000  top
+R17       DNP                   R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               28.3288    32.4294  -90.0000  top
+R18       0r                    R_0805_2012Metric_Pad1.20x1.40mm_HandSolder               34.5322    32.4412   90.0000  top
+U1        ADP5071AREZ           ETSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP3x4.2mm                 25.6456    19.3416  -90.0000  top
+## End
