@@ -1,6 +1,10 @@
 {
   "board": {
+<<<<<<< Updated upstream
     "active_layer": 0,
+=======
+    "active_layer": 25,
+>>>>>>> Stashed changes
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -88,6 +92,7 @@
       9
     ],
     "col_widths": [
+<<<<<<< Updated upstream
       156,
       141,
       103,
@@ -98,6 +103,18 @@
       74,
       103,
       103
+=======
+      186,
+      171,
+      112,
+      79,
+      112,
+      112,
+      112,
+      83,
+      112,
+      112
+>>>>>>> Stashed changes
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
