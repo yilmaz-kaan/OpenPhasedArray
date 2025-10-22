@@ -1402,7 +1402,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0a32ccc9-f66a-4d2f-9c26-598203661080")
-		(at 108.13 44.5)
+		(at 96.48 57)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C8"
@@ -2596,7 +2596,7 @@
 	(footprint "QPA9122TR7:QPA9122TR7"
 		(layer "F.Cu")
 		(uuid "101fa6e2-2647-4afd-a8fa-0cb856407573")
-		(at 175.73 66.75)
+		(at 153.21 72.37)
 		(descr "16-VFQFN_2024")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC1"
@@ -7698,7 +7698,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "2d2ff47b-dd14-45c7-857e-7fc60ff98452")
-		(at 128.22 48.44)
+		(at 133.02 50)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C94"
@@ -7897,7 +7897,7 @@
 	(footprint "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2dc8c785-b123-4168-a6ad-0b85f048f5da")
-		(at 147.2 110.07)
+		(at 162.5 110.5)
 		(descr "Through hole straight pin header, 1x01, 2.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 2.00mm single row")
 		(property "Reference" "J7"
@@ -8139,7 +8139,7 @@
 	(footprint "QPA9122TR7:QPA9122TR7"
 		(layer "F.Cu")
 		(uuid "2f99391e-5a8c-4885-a868-dd71fec28de6")
-		(at 175.77 79.75)
+		(at 153.25 85.37)
 		(descr "16-VFQFN_2024")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC10"
@@ -9038,7 +9038,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3580f5db-e10c-4d5a-a7dd-e6991c534928")
-		(at 108.13 30.71)
+		(at 96.52 67)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
@@ -9678,7 +9678,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "3aa234ff-a3de-4e98-b876-071e76dfda8f")
-		(at 108.13 32.68)
+		(at 96.48 63)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
@@ -9877,7 +9877,7 @@
 	(footprint "QPA9122TR7:QPA9122TR7"
 		(layer "F.Cu")
 		(uuid "3c8e231d-686d-4558-8b01-6aadfc4a6ec1")
-		(at 175.77 85.85)
+		(at 153.75 101.23)
 		(descr "16-VFQFN_2024")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC11"
@@ -10577,7 +10577,7 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "3ffe218c-e505-4a8f-91df-5beae9c56f96")
-		(at 91 86 -90)
+		(at 91.025 90 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L16"
@@ -11039,7 +11039,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "41be00e6-ab63-4959-8edb-6e000cd72f8c")
-		(at 108.13 46.47)
+		(at 96.48 58.97)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C9"
@@ -12396,11 +12396,11 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "4b3d6d5c-f823-4808-b36e-8cc616a9af6b")
-		(at 122.2175 91.4)
+		(at 145 73.025 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L9"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(uuid "648630aa-0eb5-49d0-a4d0-5419147fffb3")
 			(effects
@@ -12411,7 +12411,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4efab3bb-bfb3-4a6a-af2d-42472bf26fd7")
@@ -12423,7 +12423,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ba8c80c4-dc71-4dd0-b9d2-740b23c7d4a0")
@@ -12435,7 +12435,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3fc243f2-4905-4ac4-a2f7-3e7b93ee630a")
@@ -12447,7 +12447,7 @@
 			)
 		)
 		(property "Height" "1.25"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12460,7 +12460,7 @@
 			)
 		)
 		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12473,7 +12473,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12486,7 +12486,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Hirose"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12499,7 +12499,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12526,16 +12526,6 @@
 			(uuid "34774c90-6bbf-4505-b04e-25c3632a5ce0")
 		)
 		(fp_line
-			(start -3 -2.3)
-			(end 3 -2.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "4968de34-80a9-4c37-ab28-646511162176")
-		)
-		(fp_line
 			(start -3 3.05)
 			(end -3 -2.3)
 			(stroke
@@ -12544,16 +12534,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "446e3eba-07ec-4ce2-812d-5a08fafc34c7")
-		)
-		(fp_line
-			(start 3 -2.3)
-			(end 3 3.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "de7f6ef8-8892-4f9d-81e1-4f1a07da8fb4")
 		)
 		(fp_line
 			(start 3 3.05)
@@ -12566,14 +12546,24 @@
 			(uuid "88dd86c7-5127-4cf6-884f-97f63b422464")
 		)
 		(fp_line
-			(start -1.3 -1.3)
-			(end 1.3 -1.3)
+			(start -3 -2.3)
+			(end 3 -2.3)
 			(stroke
-				(width 0.2)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "51d72a6c-68f9-4f81-a038-5e1365afac3a")
+			(layer "F.CrtYd")
+			(uuid "4968de34-80a9-4c37-ab28-646511162176")
+		)
+		(fp_line
+			(start 3 -2.3)
+			(end 3 3.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "de7f6ef8-8892-4f9d-81e1-4f1a07da8fb4")
 		)
 		(fp_line
 			(start -1.3 1.3)
@@ -12586,16 +12576,6 @@
 			(uuid "ffe1b0a9-90e8-4936-bf68-fd22d6c8cdcb")
 		)
 		(fp_line
-			(start 1.3 -1.3)
-			(end 1.3 1.3)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "218cf841-4731-44e6-9cd1-ad99e8112334")
-		)
-		(fp_line
 			(start 1.3 1.3)
 			(end -1.3 1.3)
 			(stroke
@@ -12605,8 +12585,28 @@
 			(layer "F.Fab")
 			(uuid "88d8e79b-75a7-48b3-868a-4ad56aa53b7d")
 		)
+		(fp_line
+			(start -1.3 -1.3)
+			(end 1.3 -1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "51d72a6c-68f9-4f81-a038-5e1365afac3a")
+		)
+		(fp_line
+			(start 1.3 -1.3)
+			(end 1.3 1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "218cf841-4731-44e6-9cd1-ad99e8112334")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.Fab")
 			(uuid "3c7227a9-448c-4aae-b39c-1bfddf00929b")
 			(effects
@@ -12617,7 +12617,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.475 0)
+			(at -1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -12626,7 +12626,7 @@
 			(uuid "71232414-c71d-42b5-ad74-9d83d427db8c")
 		)
 		(pad "2" smd rect
-			(at 1.475 0)
+			(at 1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -12635,7 +12635,7 @@
 			(uuid "bb144ed6-db39-4582-94d7-1617d104e18c")
 		)
 		(pad "3" smd rect
-			(at 0 1.525)
+			(at 0 1.525 270)
 			(size 1 1.05)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "Net-(IC1-RFIN)")
@@ -13759,7 +13759,7 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "5116a6c5-3514-471c-8736-81a3b7eaef5b")
-		(at 116 87.025 -90)
+		(at 116.5 91.025 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L6"
@@ -14221,7 +14221,7 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "542a9f50-693e-4dc5-a50c-bbc10afafaae")
-		(at 116 94.975 -90)
+		(at 116.45 101.975 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L7"
@@ -14882,11 +14882,11 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "5c52eb8b-6a86-4ee0-867c-49aec44efa59")
-		(at 129.3175 78.5)
+		(at 145 101.525 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L11"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(uuid "a6954d05-0e50-44c4-acc9-d40f83e26f06")
 			(effects
@@ -14897,7 +14897,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "84447597-f644-4052-b3c5-18ffe08c8373")
@@ -14909,7 +14909,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6d23893a-8a53-482a-b955-bdbbce882a6d")
@@ -14921,7 +14921,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "77a2c84d-fa51-4f60-b0be-459e76da75a8")
@@ -14933,7 +14933,7 @@
 			)
 		)
 		(property "Height" "1.25"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14946,7 +14946,7 @@
 			)
 		)
 		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14959,7 +14959,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14972,7 +14972,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Hirose"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14985,7 +14985,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -15012,16 +15012,6 @@
 			(uuid "74447fba-8e7c-4dcb-83d2-f807489c10bf")
 		)
 		(fp_line
-			(start -3 -2.3)
-			(end 3 -2.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "90d70c21-75ce-4855-90b2-4dd5d16d1b2e")
-		)
-		(fp_line
 			(start -3 3.05)
 			(end -3 -2.3)
 			(stroke
@@ -15030,16 +15020,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "0ec2d94a-edc2-4170-a9cb-76e26f89183b")
-		)
-		(fp_line
-			(start 3 -2.3)
-			(end 3 3.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a82b13fa-c74e-46c6-865d-bbcf677de206")
 		)
 		(fp_line
 			(start 3 3.05)
@@ -15052,14 +15032,24 @@
 			(uuid "52191beb-6ef1-4e6f-a5f8-23dbf25ae95a")
 		)
 		(fp_line
-			(start -1.3 -1.3)
-			(end 1.3 -1.3)
+			(start -3 -2.3)
+			(end 3 -2.3)
 			(stroke
-				(width 0.2)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "e7b571c6-ad92-4544-a9fd-c0e836a3a2d7")
+			(layer "F.CrtYd")
+			(uuid "90d70c21-75ce-4855-90b2-4dd5d16d1b2e")
+		)
+		(fp_line
+			(start 3 -2.3)
+			(end 3 3.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a82b13fa-c74e-46c6-865d-bbcf677de206")
 		)
 		(fp_line
 			(start -1.3 1.3)
@@ -15072,16 +15062,6 @@
 			(uuid "c17d4c03-4a82-464b-8170-7852c351fb02")
 		)
 		(fp_line
-			(start 1.3 -1.3)
-			(end 1.3 1.3)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "fd7e0915-4cfc-4888-917e-de86e64c12ea")
-		)
-		(fp_line
 			(start 1.3 1.3)
 			(end -1.3 1.3)
 			(stroke
@@ -15091,8 +15071,28 @@
 			(layer "F.Fab")
 			(uuid "53b1441a-e9da-4709-ad87-85f78b3617d7")
 		)
+		(fp_line
+			(start -1.3 -1.3)
+			(end 1.3 -1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e7b571c6-ad92-4544-a9fd-c0e836a3a2d7")
+		)
+		(fp_line
+			(start 1.3 -1.3)
+			(end 1.3 1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fd7e0915-4cfc-4888-917e-de86e64c12ea")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.Fab")
 			(uuid "4e76a541-db86-4ff5-bec4-748a119ce8cd")
 			(effects
@@ -15103,7 +15103,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.475 0)
+			(at -1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -15112,7 +15112,7 @@
 			(uuid "09774ccf-d665-4701-840a-7549bcc1457e")
 		)
 		(pad "2" smd rect
-			(at 1.475 0)
+			(at 1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -15121,7 +15121,7 @@
 			(uuid "b6ab30b6-575d-4e83-9c9e-f6c85c170ad7")
 		)
 		(pad "3" smd rect
-			(at 0 1.525)
+			(at 0 1.525 270)
 			(size 1 1.05)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "Net-(IC11-RFIN)")
@@ -16057,7 +16057,7 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "63cafb95-c356-486a-aed0-d342640d4d2d")
-		(at 91 93 -90)
+		(at 91.45 100 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L15"
@@ -16519,7 +16519,7 @@
 	(footprint "RFSA3713TR7:QFN50P300X300X90-17N"
 		(layer "F.Cu")
 		(uuid "64afb35c-56cb-43a7-bc70-ae9ca432dd63")
-		(at 137.1775 70.56)
+		(at 127.05 70.75)
 		(descr "QFN-16_2022")
 		(tags "Attenuator or Isolator")
 		(property "Reference" "AT4"
@@ -17118,7 +17118,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "65dbba7b-e213-491d-8402-05c8434441a2")
-		(at 108.13 36.62)
+		(at 104.98 63.5)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C4"
@@ -17914,7 +17914,7 @@
 	(footprint "RFSA3713TR7:QFN50P300X300X90-17N"
 		(layer "F.Cu")
 		(uuid "68f42a7d-34a4-4ccb-b8c8-2e8e6579c5e2")
-		(at 137.1775 59.96)
+		(at 130.75 102.05)
 		(descr "QFN-16_2022")
 		(tags "Attenuator or Isolator")
 		(property "Reference" "AT2"
@@ -20111,7 +20111,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6eda4f8b-45c1-45fe-9529-3afdfb5fee2d")
-		(at 108.13 42.53)
+		(at 96.48 55.03)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C7"
@@ -20509,7 +20509,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "70f65d05-0f24-406c-ae75-bbe979463f80")
-		(at 108.13 34.65)
+		(at 100.48 64)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
@@ -20907,7 +20907,7 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "72eed91f-1d5b-4ef8-ad1f-57dd0d3bded6")
-		(at 116 78 -90)
+		(at 116 79.525 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L5"
@@ -21170,7 +21170,7 @@
 	(footprint "RFSA3713TR7:QFN50P300X300X90-17N"
 		(layer "F.Cu")
 		(uuid "733123c5-f7db-4ab2-99ee-a3f32e84e63c")
-		(at 137.1775 54.66)
+		(at 130.25 78.55)
 		(descr "QFN-16_2022")
 		(tags "Attenuator or Isolator")
 		(property "Reference" "AT1"
@@ -21570,7 +21570,7 @@
 	(footprint "RFSA3713TR7:QFN50P300X300X90-17N"
 		(layer "F.Cu")
 		(uuid "73a24fe7-332a-4bd5-ac3b-46fdfde45c7b")
-		(at 137.1775 65.26)
+		(at 130.55 95.75)
 		(descr "QFN-16_2022")
 		(tags "Attenuator or Isolator")
 		(property "Reference" "AT3"
@@ -25313,7 +25313,7 @@
 	(footprint "QPA9122TR7:QPA9122TR7"
 		(layer "F.Cu")
 		(uuid "84940a3d-a70b-44e4-b74d-17e354d54d09")
-		(at 175.77 73.65)
+		(at 153.25 79.27)
 		(descr "16-VFQFN_2024")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC4"
@@ -27198,11 +27198,11 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "8a39637f-5fde-4d14-81af-3253e43874f6")
-		(at 122.2175 84.95)
+		(at 145 79.475 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L8"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(uuid "40f11160-cb01-4d05-8eca-64ed37e5bf29")
 			(effects
@@ -27213,7 +27213,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a42cfbc2-8f14-4d96-b3e2-d6d3c7a52358")
@@ -27225,7 +27225,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d3c38a34-d320-48fb-bb0e-8a7a01e1fffe")
@@ -27237,7 +27237,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7e97716e-440a-42a6-9afe-72688b20f695")
@@ -27249,7 +27249,7 @@
 			)
 		)
 		(property "Height" "1.25"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27262,7 +27262,7 @@
 			)
 		)
 		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27275,7 +27275,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27288,7 +27288,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Hirose"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27301,7 +27301,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -27328,16 +27328,6 @@
 			(uuid "735ea78c-ae24-4429-837b-e79561b313b4")
 		)
 		(fp_line
-			(start -3 -2.3)
-			(end 3 -2.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "fba83877-0976-48d7-a11d-301ed33aebb8")
-		)
-		(fp_line
 			(start -3 3.05)
 			(end -3 -2.3)
 			(stroke
@@ -27346,16 +27336,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "90c55aba-74cf-4949-91f6-d56b510ce853")
-		)
-		(fp_line
-			(start 3 -2.3)
-			(end 3 3.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c0ae0275-de24-4a4a-b822-994cc67ae820")
 		)
 		(fp_line
 			(start 3 3.05)
@@ -27368,14 +27348,24 @@
 			(uuid "edbcc4fa-3b77-4d0c-93b1-779c3a813dd9")
 		)
 		(fp_line
-			(start -1.3 -1.3)
-			(end 1.3 -1.3)
+			(start -3 -2.3)
+			(end 3 -2.3)
 			(stroke
-				(width 0.2)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "988b532b-2da8-49df-bb90-40764c48b464")
+			(layer "F.CrtYd")
+			(uuid "fba83877-0976-48d7-a11d-301ed33aebb8")
+		)
+		(fp_line
+			(start 3 -2.3)
+			(end 3 3.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c0ae0275-de24-4a4a-b822-994cc67ae820")
 		)
 		(fp_line
 			(start -1.3 1.3)
@@ -27388,16 +27378,6 @@
 			(uuid "a89b43ee-753a-42d7-9ef1-cb91494b6291")
 		)
 		(fp_line
-			(start 1.3 -1.3)
-			(end 1.3 1.3)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5aaa5981-79db-409a-a697-eac812dd926d")
-		)
-		(fp_line
 			(start 1.3 1.3)
 			(end -1.3 1.3)
 			(stroke
@@ -27407,8 +27387,28 @@
 			(layer "F.Fab")
 			(uuid "137cb08b-fb52-4983-8d22-10af79dfe3ae")
 		)
+		(fp_line
+			(start -1.3 -1.3)
+			(end 1.3 -1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "988b532b-2da8-49df-bb90-40764c48b464")
+		)
+		(fp_line
+			(start 1.3 -1.3)
+			(end 1.3 1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5aaa5981-79db-409a-a697-eac812dd926d")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.Fab")
 			(uuid "61449c31-8629-4fef-bf63-790d334e814b")
 			(effects
@@ -27419,7 +27419,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.475 0)
+			(at -1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -27428,7 +27428,7 @@
 			(uuid "ec221b4d-e91e-4e4b-9b50-691e28912382")
 		)
 		(pad "2" smd rect
-			(at 1.475 0)
+			(at 1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -27437,7 +27437,7 @@
 			(uuid "783fcee9-233f-4a9a-ac09-8565305212ca")
 		)
 		(pad "3" smd rect
-			(at 0 1.525)
+			(at 0 1.525 270)
 			(size 1 1.05)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 42 "Net-(IC4-RFIN)")
@@ -27461,13 +27461,13 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8ce275f6-cbdf-4880-be8f-32c0d692aa7c")
-		(at 108.13 50.41)
+		(at 106.48 50)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C11"
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
-			(uuid "d68e5ff3-8a5d-4279-8299-e17c146a2788")
+			(uuid "8f90ae4c-76bd-4425-a248-365f0ebc5aee")
 			(effects
 				(font
 					(size 1 1)
@@ -27476,9 +27476,9 @@
 			)
 		)
 		(property "Value" "470p"
-			(at 0 1.16 0)
+			(at -3.13 0.59 0)
 			(layer "F.Fab")
-			(uuid "7a6b9951-e70c-427a-83cb-31b3093cf124")
+			(uuid "4bc4cbb1-54e6-41ff-a0f6-230c39f61621")
 			(effects
 				(font
 					(size 1 1)
@@ -27490,7 +27490,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b3e8b2fc-8fd1-4841-9990-7fea6c97d615")
+			(uuid "7dd8d9dc-02c3-4c18-9486-df7a928b10cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27502,7 +27502,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ae724315-c1f8-4299-b448-91998e28c92c")
+			(uuid "84d36321-0af2-4b6f-b3fe-2f69df2cbfd7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29849,7 +29849,7 @@
 	(footprint "MAPS-010164-TR0500:QFN50P400X400X100-25N-D"
 		(layer "F.Cu")
 		(uuid "9a4e08d0-d3b6-4c03-b92e-e2e6bac0aad4")
-		(at 103.05 94.5)
+		(at 103.5 101.5)
 		(descr "PQFN_25_MAPS")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC8"
@@ -33095,11 +33095,11 @@
 	(footprint "UFL_R_SMT1_1_60:UFLRSMT160"
 		(layer "F.Cu")
 		(uuid "a4f2bb7c-ff48-4490-9eb7-57d0199992c1")
-		(at 129.3175 84.95)
+		(at 145 87.025 -90)
 		(descr "U.FL-R-SMT-1(60)-2")
 		(tags "Inductor")
 		(property "Reference" "L12"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(uuid "3f6697d4-6ce3-4888-a838-fd42afef24f6")
 			(effects
@@ -33110,7 +33110,7 @@
 			)
 		)
 		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fac1afbd-883f-4946-967d-f99ccae9fd03")
@@ -33122,7 +33122,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cc629d5c-8bb3-45a3-9692-56953b9009d2")
@@ -33134,7 +33134,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c138976b-d536-40a5-88f1-94e87e724b29")
@@ -33146,7 +33146,7 @@
 			)
 		)
 		(property "Height" "1.25"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33159,7 +33159,7 @@
 			)
 		)
 		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33172,7 +33172,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33185,7 +33185,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Hirose"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33198,7 +33198,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -33225,16 +33225,6 @@
 			(uuid "1d85128b-05ea-4876-9847-ca7f2afd2b13")
 		)
 		(fp_line
-			(start -3 -2.3)
-			(end 3 -2.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7081973f-8e71-4b73-abc7-5f6271f13a2a")
-		)
-		(fp_line
 			(start -3 3.05)
 			(end -3 -2.3)
 			(stroke
@@ -33243,16 +33233,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "5ec370a8-cc2a-4888-be35-6ac1098e6530")
-		)
-		(fp_line
-			(start 3 -2.3)
-			(end 3 3.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a72cd8e7-3807-49f3-8477-88f7e41046c5")
 		)
 		(fp_line
 			(start 3 3.05)
@@ -33265,14 +33245,24 @@
 			(uuid "ef7fd321-ad60-4ca4-9e4b-293a03ce906a")
 		)
 		(fp_line
-			(start -1.3 -1.3)
-			(end 1.3 -1.3)
+			(start -3 -2.3)
+			(end 3 -2.3)
 			(stroke
-				(width 0.2)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "5b391609-77d8-4536-82c4-b627dc16784b")
+			(layer "F.CrtYd")
+			(uuid "7081973f-8e71-4b73-abc7-5f6271f13a2a")
+		)
+		(fp_line
+			(start 3 -2.3)
+			(end 3 3.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a72cd8e7-3807-49f3-8477-88f7e41046c5")
 		)
 		(fp_line
 			(start -1.3 1.3)
@@ -33285,16 +33275,6 @@
 			(uuid "c78bc5c8-aaca-44e8-b9a3-73933e017ef6")
 		)
 		(fp_line
-			(start 1.3 -1.3)
-			(end 1.3 1.3)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9e3f3cdf-49ae-4698-9974-ca3e226c0d27")
-		)
-		(fp_line
 			(start 1.3 1.3)
 			(end -1.3 1.3)
 			(stroke
@@ -33304,8 +33284,28 @@
 			(layer "F.Fab")
 			(uuid "4c4a28c6-e269-47c6-83a3-370fb1a2c01b")
 		)
+		(fp_line
+			(start -1.3 -1.3)
+			(end 1.3 -1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5b391609-77d8-4536-82c4-b627dc16784b")
+		)
+		(fp_line
+			(start 1.3 -1.3)
+			(end 1.3 1.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9e3f3cdf-49ae-4698-9974-ca3e226c0d27")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0.375 0)
+			(at 0 0.375 90)
 			(layer "F.Fab")
 			(uuid "69d3ec1b-6113-4afd-b963-c2913772f496")
 			(effects
@@ -33316,7 +33316,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.475 0)
+			(at -1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -33325,7 +33325,7 @@
 			(uuid "fe1e120b-92c3-4dcc-a024-283cde41071e")
 		)
 		(pad "2" smd rect
-			(at 1.475 0)
+			(at 1.475 0 270)
 			(size 1.05 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "GND")
@@ -33334,7 +33334,7 @@
 			(uuid "e6aa0b69-f841-457e-ba0f-016fe472c308")
 		)
 		(pad "3" smd rect
-			(at 0 1.525)
+			(at 0 1.525 270)
 			(size 1 1.05)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "Net-(IC10-RFIN)")
@@ -37425,7 +37425,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "bf35e6e7-005e-4d6d-b86f-24aa777439d6")
-		(at 108.13 38.59)
+		(at 96.48 51.09)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C5"
@@ -38818,13 +38818,13 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "cb9fb2a8-6111-49d6-8ff0-3e2974e70a6c")
-		(at 108.13 52.38)
+		(at 106.48 51.97)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C12"
 			(at 0 -1.16 0)
 			(layer "F.SilkS")
-			(uuid "4106c085-4ed5-43c3-baca-1e1abde8f2f3")
+			(uuid "c9bbcbab-5ac4-42f2-8dcb-a49f4404838f")
 			(effects
 				(font
 					(size 1 1)
@@ -38835,7 +38835,7 @@
 		(property "Value" "1uF"
 			(at 0 1.16 0)
 			(layer "F.Fab")
-			(uuid "8e183ebf-a1ba-4866-b40b-74de69302e9d")
+			(uuid "b604cdb5-4ec9-4383-96e5-94600642a55e")
 			(effects
 				(font
 					(size 1 1)
@@ -38847,7 +38847,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93630916-01ec-4bcf-bf2e-c4c77c8395ad")
+			(uuid "d2ba0d88-f23f-4882-a0a6-d011b2da6249")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38859,7 +38859,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2d580f3f-01e2-40e8-9ead-307950877fa7")
+			(uuid "257d5a8f-8a5f-4bbc-8802-74256ea22dd3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40808,7 +40808,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "de752abd-fd24-4190-9655-d53529eb87da")
-		(at 108.13 40.56)
+		(at 96.48 53.06)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C6"
@@ -41803,7 +41803,7 @@
 	(footprint "MAPS-010164-TR0500:QFN50P400X400X100-25N-D"
 		(layer "F.Cu")
 		(uuid "e5b0cd85-892e-43ec-a406-8fd541aba9ea")
-		(at 103.05 77.3)
+		(at 103.25 79.05)
 		(descr "PQFN_25_MAPS")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC3"
@@ -43513,7 +43513,7 @@
 	(footprint "MAPS-010164-TR0500:QFN50P400X400X100-25N-D"
 		(layer "F.Cu")
 		(uuid "f1a9155b-08a9-4898-b100-e1bb433b6aca")
-		(at 103 86)
+		(at 103.5 90)
 		(descr "PQFN_25_MAPS")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC9"
@@ -44781,7 +44781,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f59e4a2d-e380-4940-b64e-ee051d185fce")
-		(at 108.13 48.44)
+		(at 101.02 58)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C10"
