@@ -3736,6 +3736,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MM8030-2610RJ3:MM8030-2610RJ3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 26.67 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "MM8030-2610RJ3"
+				(at 26.67 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "MM80302610RJ3"
+				(at 26.67 -89.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+				(at 26.67 -189.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1"
+				(at 26.67 -389.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "81-MM8030-2610RJ3"
+				(at 26.67 -489.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+				(at 26.67 -589.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Murata Electronics"
+				(at 26.67 -689.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+				(at 26.67 -789.84 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "MM8030-2610RJ3_1_1"
+				(rectangle
+					(start 5.08 7.62)
+					(end 25.4 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 12.7 270)
+					(length 5.08)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -15.24 90)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "QPA9122TR7:QPA9122TR7"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4998,176 +5186,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at 24.13 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "U.FL-R-SMT-1_60_"
-				(at 24.13 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "UFLRSMT160"
-				(at 24.13 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-				(at 24.13 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.25"
-				(at 24.13 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "798-UFLRSMT160"
-				(at 24.13 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-				(at 24.13 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Hirose"
-				(at 24.13 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-				(at 24.13 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "U.FL-R-SMT-1_60__1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 22.86 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "SIG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 0 180)
-					(length 5.08)
-					(name "GND_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -2.54 180)
-					(length 5.08)
-					(name "GND_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -5295,16 +5313,10 @@
 		(uuid "05eed65b-9250-4616-883e-43075e9b023d")
 	)
 	(junction
-		(at 118.11 114.3)
+		(at 118.11 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "060b0280-6713-4dca-8c6b-3835320a9b7c")
-	)
-	(junction
-		(at 412.75 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0765bf47-711c-4e80-956f-085bce6b793b")
 	)
 	(junction
 		(at 356.87 351.79)
@@ -5343,22 +5355,16 @@
 		(uuid "0c4ba09c-f79e-48b2-805f-c7958fd2dc57")
 	)
 	(junction
+		(at 356.87 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d6d1221-4216-4d32-afde-b70e62a6603b")
+	)
+	(junction
 		(at 356.87 283.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0d8fad5b-b0e5-4719-af49-8709dd856dea")
-	)
-	(junction
-		(at 415.29 438.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0db834bd-1da3-4288-950d-c1bd078af1a5")
-	)
-	(junction
-		(at 147.32 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "117c01d4-f8c7-43f7-a311-3f9da90bbcb2")
 	)
 	(junction
 		(at 361.95 160.02)
@@ -5421,12 +5427,6 @@
 		(uuid "187487f1-370b-43d7-91c7-64f0c03ae0f8")
 	)
 	(junction
-		(at 356.87 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18ecfac8-21cb-4e6e-9363-0413709f8d17")
-	)
-	(junction
 		(at 139.7 392.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5449,6 +5449,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1db480bb-149a-4260-8ffe-ddd1b0b4dc31")
+	)
+	(junction
+		(at 367.03 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e5191b4-8f3c-48d3-b778-40d49ea1fe5c")
 	)
 	(junction
 		(at 510.54 85.09)
@@ -5479,12 +5485,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26e70c0c-4750-4d3b-84ce-6fc54e97f24b")
-	)
-	(junction
-		(at 148.59 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "270da4d3-22c9-4166-830c-ddaf6761eb3b")
 	)
 	(junction
 		(at 69.85 139.7)
@@ -5607,12 +5607,6 @@
 		(uuid "3aa3468d-07ec-4f2c-b63c-0fa9b257c4e2")
 	)
 	(junction
-		(at 543.56 326.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3bb6abc9-43d6-4451-b49a-311a6c4cbf41")
-	)
-	(junction
 		(at 217.17 400.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5629,12 +5623,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47f04915-8089-40b8-a378-6724c2664a20")
-	)
-	(junction
-		(at 148.59 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b55fdfb-2a84-445b-855e-55805ae4b6b4")
 	)
 	(junction
 		(at 130.81 444.5)
@@ -5709,10 +5697,10 @@
 		(uuid "61285cea-deb3-48c3-be13-2dd2d7aa4808")
 	)
 	(junction
-		(at 538.48 204.47)
+		(at 361.95 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "620411d3-c86a-428c-9f43-a3456f1c7ece")
+		(uuid "6224226f-c1d7-410c-a01c-6b1f3ab1ca61")
 	)
 	(junction
 		(at 165.1 224.79)
@@ -5751,7 +5739,7 @@
 		(uuid "6d0b10ce-fb66-48ca-a089-898559ca5ac5")
 	)
 	(junction
-		(at 115.57 114.3)
+		(at 115.57 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ef6db53-7202-4942-bfe0-658e1ba3f15a")
@@ -5773,12 +5761,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "711ec668-f511-490e-b1a2-889f648dd4ce")
-	)
-	(junction
-		(at 410.21 326.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "719c7f72-b9f9-4c71-8ec1-7f404ca83dcf")
 	)
 	(junction
 		(at 621.03 283.21)
@@ -5949,12 +5931,6 @@
 		(uuid "96db8b92-6663-4302-9ee2-db886d0968cb")
 	)
 	(junction
-		(at 367.03 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "976221b4-90ae-41cc-8ee4-a92def8c8633")
-	)
-	(junction
 		(at 652.78 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5967,13 +5943,7 @@
 		(uuid "99090e56-7276-4d26-bd35-05116bf27717")
 	)
 	(junction
-		(at 361.95 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a31af77c-a5b4-45b0-9181-d88dc35aede5")
-	)
-	(junction
-		(at 120.65 66.04)
+		(at 120.65 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a50dfffb-0b45-4476-a654-0095b6643286")
@@ -5985,7 +5955,7 @@
 		(uuid "a934f564-8335-4bfe-9db7-aec3566a2c30")
 	)
 	(junction
-		(at 123.19 66.04)
+		(at 123.19 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa882b2e-eb76-449a-afa7-aec7123cc972")
@@ -6007,12 +5977,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "abfddb95-5c4b-4d25-ad15-f3ad54b45ea5")
-	)
-	(junction
-		(at 541.02 438.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aefe74af-f960-4a2d-aa52-28850eb8b3b5")
 	)
 	(junction
 		(at 453.39 170.18)
@@ -6055,12 +6019,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb3ef50a-e7ee-4f3e-8052-c74de63e7eac")
-	)
-	(junction
-		(at 411.48 204.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bce47cdb-3c05-41c0-a1df-d086755d7358")
 	)
 	(junction
 		(at 481.33 110.49)
@@ -6117,10 +6075,16 @@
 		(uuid "c356115e-507c-4fcf-8cfb-c97f799d2e81")
 	)
 	(junction
-		(at 118.11 66.04)
+		(at 118.11 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c438bdd8-6b8b-47e7-b2d2-630d671cf00a")
+	)
+	(junction
+		(at 364.49 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c48fe69b-c4a0-4e46-8b46-4a0e8941b33a")
 	)
 	(junction
 		(at 623.57 49.53)
@@ -6147,12 +6111,6 @@
 		(uuid "cc3013f5-e9a6-4c75-b8eb-2ff826801950")
 	)
 	(junction
-		(at 359.41 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd760bd3-1f0c-46d0-864f-4c5c42d70c4c")
-	)
-	(junction
 		(at 650.24 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6169,6 +6127,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cfaa872a-6eb1-4e28-a4bb-6c9d270e6c63")
+	)
+	(junction
+		(at 359.41 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d20b606d-cd8f-4a1d-ac6c-64aee059d68b")
 	)
 	(junction
 		(at 650.24 267.97)
@@ -6291,12 +6255,6 @@
 		(uuid "effe76f3-146a-46d2-872e-188c6bebc185")
 	)
 	(junction
-		(at 548.64 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f0494f18-7963-4666-b5aa-f18de145db55")
-	)
-	(junction
 		(at 139.7 394.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6343,18 +6301,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb0f43db-f91f-4479-a57a-d10bd0e5e741")
-	)
-	(junction
-		(at 364.49 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbf73aff-b748-4e8d-a7f2-a9aaa4b07c21")
-	)
-	(junction
-		(at 147.32 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd126187-9ad9-4dc4-94a1-84c60ba2dc7f")
 	)
 	(junction
 		(at 74.93 91.44)
@@ -6558,6 +6504,16 @@
 	)
 	(wire
 		(pts
+			(xy 435.61 204.47) (xy 463.55 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07416d52-2150-4202-96d3-c483f951d616")
+	)
+	(wire
+		(pts
 			(xy 166.37 234.95) (xy 157.48 234.95)
 		)
 		(stroke
@@ -6595,6 +6551,16 @@
 			(type default)
 		)
 		(uuid "0932651b-b894-4892-aab4-61d26b9499ef")
+	)
+	(wire
+		(pts
+			(xy 361.95 113.03) (xy 364.49 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09889806-6124-4821-acfa-514268b0a1db")
 	)
 	(wire
 		(pts
@@ -6648,17 +6614,7 @@
 	)
 	(wire
 		(pts
-			(xy 410.21 326.39) (xy 463.55 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b699913-3ab2-451f-9b19-99bffab7d967")
-	)
-	(wire
-		(pts
-			(xy 92.71 91.44) (xy 100.33 91.44)
+			(xy 92.71 64.77) (xy 100.33 64.77)
 		)
 		(stroke
 			(width 0)
@@ -6718,17 +6674,7 @@
 	)
 	(wire
 		(pts
-			(xy 415.29 104.14) (xy 412.75 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d8b3efa-ad9d-485f-ac12-6e2f4695c3b7")
-	)
-	(wire
-		(pts
-			(xy 115.57 66.04) (xy 118.11 66.04)
+			(xy 115.57 39.37) (xy 118.11 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6885,16 +6831,6 @@
 			(type default)
 		)
 		(uuid "12f90c42-dde3-45c1-8868-045e0816d2d8")
-	)
-	(wire
-		(pts
-			(xy 410.21 337.82) (xy 410.21 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "135ff208-28b1-44c2-9caf-e8b059303819")
 	)
 	(wire
 		(pts
@@ -7348,16 +7284,6 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 113.03) (xy 356.87 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24694969-d441-49bf-bcf0-32704f9c8351")
-	)
-	(wire
-		(pts
 			(xy 650.24 162.56) (xy 650.24 173.99)
 		)
 		(stroke
@@ -7365,16 +7291,6 @@
 			(type default)
 		)
 		(uuid "2483abe6-586d-407b-bca1-7e3a0d52906a")
-	)
-	(wire
-		(pts
-			(xy 359.41 118.11) (xy 361.95 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25752a53-16d7-4b63-9247-e3d794bf2c4a")
 	)
 	(wire
 		(pts
@@ -7408,7 +7324,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 66.04) (xy 123.19 66.04)
+			(xy 120.65 39.37) (xy 123.19 39.37)
 		)
 		(stroke
 			(width 0)
@@ -7445,6 +7361,16 @@
 			(type default)
 		)
 		(uuid "2772862d-6560-4af7-9a41-8135d164f904")
+	)
+	(wire
+		(pts
+			(xy 435.61 326.39) (xy 463.55 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28286508-27e7-43cb-b9ff-521cb2bd664f")
 	)
 	(wire
 		(pts
@@ -7488,6 +7414,16 @@
 	)
 	(wire
 		(pts
+			(xy 513.08 438.15) (xy 546.1 438.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28fe54d9-adb8-4b25-af09-f2bf98f4580b")
+	)
+	(wire
+		(pts
 			(xy 652.78 76.2) (xy 652.78 92.71)
 		)
 		(stroke
@@ -7528,16 +7464,6 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 113.03) (xy 364.49 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ad6d732-38d0-4d20-be4d-7bce7cde7e1a")
-	)
-	(wire
-		(pts
 			(xy 589.28 132.08) (xy 594.36 132.08)
 		)
 		(stroke
@@ -7558,16 +7484,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 105.41) (xy 147.32 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c60db52-a1ed-4a3a-9dd5-bd4570c9b4b7")
-	)
-	(wire
-		(pts
 			(xy 367.03 351.79) (xy 367.03 346.71)
 		)
 		(stroke
@@ -7578,7 +7494,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 114.3) (xy 120.65 114.3)
+			(xy 118.11 87.63) (xy 120.65 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7595,6 +7511,16 @@
 			(type default)
 		)
 		(uuid "2dbb943c-0dc4-48d9-83a1-025e7a3dc6ce")
+	)
+	(wire
+		(pts
+			(xy 152.4 151.13) (xy 137.16 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ded1299-94fb-4bae-8b2a-71db01a99a5e")
 	)
 	(wire
 		(pts
@@ -7628,6 +7554,16 @@
 	)
 	(wire
 		(pts
+			(xy 515.62 326.39) (xy 548.64 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f75eb9f-604b-45a2-b0d6-708e70790d4d")
+	)
+	(wire
+		(pts
 			(xy 586.74 353.06) (xy 591.82 353.06)
 		)
 		(stroke
@@ -7635,16 +7571,6 @@
 			(type default)
 		)
 		(uuid "2fb87e10-4fee-4ae4-8371-5fa17a9341aa")
-	)
-	(wire
-		(pts
-			(xy 361.95 118.11) (xy 364.49 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31f767c3-c79c-4272-b3c7-0bf6eb63e950")
 	)
 	(wire
 		(pts
@@ -7708,13 +7634,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 114.3) (xy 92.71 91.44)
+			(xy 92.71 114.3) (xy 92.71 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "331fdd0d-34ca-4f8b-8b11-531de78a2d37")
+	)
+	(wire
+		(pts
+			(xy 574.04 438.15) (xy 590.55 438.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a7f535-a2f5-4083-9113-dcf54f8ccbe1")
 	)
 	(wire
 		(pts
@@ -7745,6 +7681,16 @@
 			(type default)
 		)
 		(uuid "35c60736-80b6-421b-a2fc-62c0f329aaff")
+	)
+	(wire
+		(pts
+			(xy 379.73 204.47) (xy 407.67 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363fe15d-d329-4f15-a33c-242289dcb4ce")
 	)
 	(wire
 		(pts
@@ -7838,16 +7784,6 @@
 	)
 	(wire
 		(pts
-			(xy 515.62 204.47) (xy 538.48 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a8de836-d4f4-4bb2-9f58-88a544429b8b")
-	)
-	(wire
-		(pts
 			(xy 647.7 438.15) (xy 651.51 438.15)
 		)
 		(stroke
@@ -7938,7 +7874,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 114.3) (xy 118.11 114.3)
+			(xy 115.57 87.63) (xy 118.11 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7998,6 +7934,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 156.21) (xy 152.4 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4187d005-6681-4cf0-b98f-3306620904e8")
+	)
+	(wire
+		(pts
 			(xy 584.2 464.82) (xy 584.2 477.52)
 		)
 		(stroke
@@ -8005,16 +7951,6 @@
 			(type default)
 		)
 		(uuid "41f2621b-561e-4587-85df-32b98ac6d128")
-	)
-	(wire
-		(pts
-			(xy 543.56 326.39) (xy 593.09 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4225eb66-58b7-4462-a6c7-06791a70ed70")
 	)
 	(wire
 		(pts
@@ -8048,16 +7984,6 @@
 	)
 	(wire
 		(pts
-			(xy 541.02 438.15) (xy 590.55 438.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "434127bf-15b1-4ddf-b368-a953ec6b6b62")
-	)
-	(wire
-		(pts
 			(xy 373.38 140.97) (xy 381 140.97)
 		)
 		(stroke
@@ -8065,6 +7991,16 @@
 			(type default)
 		)
 		(uuid "43b340a5-08ce-4041-bc76-9f5883bb148f")
+	)
+	(wire
+		(pts
+			(xy 575.31 204.47) (xy 593.09 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b456a7-fc0e-418c-9e40-01ed7fb5d886")
 	)
 	(wire
 		(pts
@@ -8135,6 +8071,16 @@
 			(type default)
 		)
 		(uuid "48fc49a7-10bb-4462-b601-6ad7a2095a87")
+	)
+	(wire
+		(pts
+			(xy 152.4 129.54) (xy 152.4 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "492928ef-0aa2-4b5a-8f71-f0a737a54bc3")
 	)
 	(wire
 		(pts
@@ -8268,6 +8214,16 @@
 	)
 	(wire
 		(pts
+			(xy 422.91 107.95) (xy 422.91 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc1190a-59ae-47c2-bc50-882bb2caab50")
+	)
+	(wire
+		(pts
 			(xy 116.84 264.16) (xy 116.84 252.73)
 		)
 		(stroke
@@ -8315,16 +8271,6 @@
 			(type default)
 		)
 		(uuid "4ea6a452-029b-47ea-b19d-d10654648461")
-	)
-	(wire
-		(pts
-			(xy 411.48 204.47) (xy 463.55 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ebc1f9f-3f05-4545-98f9-fd31c800fb55")
 	)
 	(wire
 		(pts
@@ -8395,16 +8341,6 @@
 			(type default)
 		)
 		(uuid "52a85720-97e2-4138-b639-733235eb0486")
-	)
-	(wire
-		(pts
-			(xy 538.48 204.47) (xy 538.48 214.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52d0b0e2-bd84-4a94-bf30-a791990b2785")
 	)
 	(wire
 		(pts
@@ -8508,16 +8444,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 105.41) (xy 147.32 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "590d657a-f375-49c6-8e79-e950d32c7816")
-	)
-	(wire
-		(pts
 			(xy 309.88 430.53) (xy 316.23 430.53)
 		)
 		(stroke
@@ -8568,6 +8494,16 @@
 	)
 	(wire
 		(pts
+			(xy 436.88 438.15) (xy 461.01 438.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf54ac1-ebd7-4dc3-a0f3-39d5696d4ea2")
+	)
+	(wire
+		(pts
 			(xy 381 427.99) (xy 377.19 427.99)
 		)
 		(stroke
@@ -8598,7 +8534,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 62.23) (xy 123.19 66.04)
+			(xy 123.19 35.56) (xy 123.19 39.37)
 		)
 		(stroke
 			(width 0)
@@ -8665,16 +8601,6 @@
 			(type default)
 		)
 		(uuid "61208c07-5824-4253-a129-eeb253773968")
-	)
-	(wire
-		(pts
-			(xy 379.73 204.47) (xy 411.48 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62361e7c-d369-4720-8588-95e68ac9f9b9")
 	)
 	(wire
 		(pts
@@ -8748,16 +8674,6 @@
 	)
 	(wire
 		(pts
-			(xy 541.02 438.15) (xy 541.02 448.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ef2462-14f0-4e60-977a-6d76590b940f")
-	)
-	(wire
-		(pts
 			(xy 325.12 82.55) (xy 328.93 82.55)
 		)
 		(stroke
@@ -8765,6 +8681,16 @@
 			(type default)
 		)
 		(uuid "6571a03b-7afd-4894-b291-28760a6aca28")
+	)
+	(wire
+		(pts
+			(xy 359.41 113.03) (xy 361.95 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6571a104-1555-41e9-8f4e-9ffd70e1a032")
 	)
 	(wire
 		(pts
@@ -8785,6 +8711,16 @@
 			(type default)
 		)
 		(uuid "65d20248-a356-4c19-9c74-5ce723df79e4")
+	)
+	(wire
+		(pts
+			(xy 379.73 326.39) (xy 407.67 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6603ed63-4a18-4907-9c68-65eb71543274")
 	)
 	(wire
 		(pts
@@ -8868,6 +8804,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 67.31) (xy 152.4 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692653a1-3237-4bab-b577-780eda3cba39")
+	)
+	(wire
+		(pts
 			(xy 149.86 232.41) (xy 148.59 232.41)
 		)
 		(stroke
@@ -8918,13 +8864,23 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 140.97) (xy 148.59 151.13)
+			(xy 582.93 92.71) (xy 595.63 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d850a74-dc34-4c3c-a5fd-50daf8622d3a")
+		(uuid "6d381261-7dc7-47c6-8a36-095d60c58665")
+	)
+	(wire
+		(pts
+			(xy 152.4 62.23) (xy 138.43 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6db7a030-52b9-4cdd-a043-ffcce6a33ca3")
 	)
 	(wire
 		(pts
@@ -8955,6 +8911,16 @@
 			(type default)
 		)
 		(uuid "6e3a33ff-72f7-4da5-9769-521e329ac3ac")
+	)
+	(wire
+		(pts
+			(xy 377.19 438.15) (xy 408.94 438.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e63440c-cf05-4659-8749-33ce2cf88b18")
 	)
 	(wire
 		(pts
@@ -9058,16 +9024,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 167.64) (xy 148.59 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "717551a4-0de4-4b18-b14a-322de127bb51")
-	)
-	(wire
-		(pts
 			(xy 359.41 269.24) (xy 359.41 290.83)
 		)
 		(stroke
@@ -9088,6 +9044,16 @@
 	)
 	(wire
 		(pts
+			(xy 518.16 92.71) (xy 554.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "729ce342-e6e0-47a6-9e2f-6d3fba99b97b")
+	)
+	(wire
+		(pts
 			(xy 505.46 430.53) (xy 508 430.53)
 		)
 		(stroke
@@ -9105,6 +9071,16 @@
 			(type default)
 		)
 		(uuid "7316a828-0c1c-4f97-822c-9b57f1932dc3")
+	)
+	(wire
+		(pts
+			(xy 356.87 113.03) (xy 359.41 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733511dc-96bc-422c-970f-e54533643775")
 	)
 	(wire
 		(pts
@@ -9255,16 +9231,6 @@
 			(type default)
 		)
 		(uuid "7a2f891a-5173-4a0d-a252-17e9b23671fe")
-	)
-	(wire
-		(pts
-			(xy 412.75 92.71) (xy 466.09 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a565692-a712-452d-853b-cd5c990cc540")
 	)
 	(wire
 		(pts
@@ -9448,16 +9414,6 @@
 	)
 	(wire
 		(pts
-			(xy 359.41 113.03) (xy 359.41 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8040fdf3-5936-428c-b4eb-00c73bda64ca")
-	)
-	(wire
-		(pts
 			(xy 321.31 344.17) (xy 335.28 344.17)
 		)
 		(stroke
@@ -9475,16 +9431,6 @@
 			(type default)
 		)
 		(uuid "80fe8300-472a-4fdf-9f18-380b1bf381bc")
-	)
-	(wire
-		(pts
-			(xy 195.58 328.93) (xy 195.58 340.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81166524-5309-41bf-942b-139d0864ae8a")
 	)
 	(wire
 		(pts
@@ -9518,6 +9464,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 113.03) (xy 369.57 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8316af74-e4c8-4916-9a06-6fe6b1846881")
+	)
+	(wire
+		(pts
 			(xy 351.79 458.47) (xy 351.79 463.55)
 		)
 		(stroke
@@ -9548,7 +9504,27 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 340.36) (xy 185.42 340.36)
+			(xy 152.4 156.21) (xy 152.4 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8591f1b2-35dc-4541-bb71-bab0c2d57b7d")
+	)
+	(wire
+		(pts
+			(xy 152.4 40.64) (xy 152.4 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ddc6f2-0446-47d4-bf46-1b854459f77e")
+	)
+	(wire
+		(pts
+			(xy 189.23 340.36) (xy 185.42 340.36)
 		)
 		(stroke
 			(width 0)
@@ -9595,26 +9571,6 @@
 			(type default)
 		)
 		(uuid "87d40a01-4c58-4121-9181-673b99b9e8bb")
-	)
-	(wire
-		(pts
-			(xy 415.29 337.82) (xy 410.21 337.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88326f05-93a0-4d6a-980c-ac89d83a8cde")
-	)
-	(wire
-		(pts
-			(xy 377.19 438.15) (xy 415.29 438.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88d1355e-bf96-4a3c-be67-c5bdad7596a2")
 	)
 	(wire
 		(pts
@@ -9688,16 +9644,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 93.98) (xy 147.32 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cca62fc-8082-4bf3-abaf-0a4498f40d22")
-	)
-	(wire
-		(pts
 			(xy 356.87 161.29) (xy 356.87 168.91)
 		)
 		(stroke
@@ -9715,16 +9661,6 @@
 			(type default)
 		)
 		(uuid "8d276004-9888-48ad-bdb6-30c224dbfb5a")
-	)
-	(wire
-		(pts
-			(xy 367.03 118.11) (xy 369.57 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dc464de-5382-481d-b0c1-7e7b6d036bc3")
 	)
 	(wire
 		(pts
@@ -9788,7 +9724,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 119.38) (xy 115.57 114.3)
+			(xy 115.57 92.71) (xy 115.57 87.63)
 		)
 		(stroke
 			(width 0)
@@ -9815,6 +9751,16 @@
 			(type default)
 		)
 		(uuid "901cbd1f-77b4-4dd5-bdc0-a75bb8862d2e")
+	)
+	(wire
+		(pts
+			(xy 515.62 204.47) (xy 547.37 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9044a165-e166-4976-9a08-5aad2811800c")
 	)
 	(wire
 		(pts
@@ -9915,6 +9861,16 @@
 			(type default)
 		)
 		(uuid "95e96a4b-7aca-4b12-845e-1091025452ad")
+	)
+	(wire
+		(pts
+			(xy 382.27 92.71) (xy 410.21 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96e0039b-3793-4ed7-9f6c-bb84c2a77b8c")
 	)
 	(wire
 		(pts
@@ -10188,16 +10144,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 167.64) (xy 148.59 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8bd61eb-b6ba-4752-b30a-22add4da1e9a")
-	)
-	(wire
-		(pts
 			(xy 497.84 63.5) (xy 502.92 63.5)
 		)
 		(stroke
@@ -10235,36 +10181,6 @@
 			(type default)
 		)
 		(uuid "a9ae72d4-7650-47d6-a070-d4e7aa75f893")
-	)
-	(wire
-		(pts
-			(xy 411.48 217.17) (xy 411.48 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aaa1071a-51d4-48f1-a2ea-8ac393e57866")
-	)
-	(wire
-		(pts
-			(xy 148.59 156.21) (xy 137.16 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aac5406f-0932-4265-899c-61b1db4f0cbe")
-	)
-	(wire
-		(pts
-			(xy 361.95 113.03) (xy 361.95 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aaea55c7-98b1-4f7a-ab8f-b4b709b9d20e")
 	)
 	(wire
 		(pts
@@ -10418,16 +10334,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 151.13) (xy 179.07 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1309edd-d91a-4094-a7f8-8abde293ce96")
-	)
-	(wire
-		(pts
 			(xy 505.46 408.94) (xy 516.89 408.94)
 		)
 		(stroke
@@ -10455,16 +10361,6 @@
 			(type default)
 		)
 		(uuid "b40aea7f-8925-4b81-941d-a3bc4e8cd6d7")
-	)
-	(wire
-		(pts
-			(xy 138.43 88.9) (xy 147.32 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b48a23ac-a9c4-4610-8344-2a07aa26fd48")
 	)
 	(wire
 		(pts
@@ -10658,16 +10554,6 @@
 	)
 	(wire
 		(pts
-			(xy 538.48 204.47) (xy 593.09 204.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfcb99c0-63f6-4f89-8ca0-48c1511b02c8")
-	)
-	(wire
-		(pts
 			(xy 494.03 196.85) (xy 508 196.85)
 		)
 		(stroke
@@ -10715,16 +10601,6 @@
 			(type default)
 		)
 		(uuid "c06b1e77-1373-483a-8c58-caf33c177f11")
-	)
-	(wire
-		(pts
-			(xy 147.32 77.47) (xy 147.32 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0a1929c-dc86-4b80-96ad-9be38f44b487")
 	)
 	(wire
 		(pts
@@ -10788,26 +10664,6 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 113.03) (xy 367.03 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2060cf7-2132-4fba-a5f3-0094b650ccee")
-	)
-	(wire
-		(pts
-			(xy 415.29 438.15) (xy 415.29 449.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2354b0d-f768-4624-9627-98243b7ee68f")
-	)
-	(wire
-		(pts
 			(xy 161.29 342.9) (xy 165.1 342.9)
 		)
 		(stroke
@@ -10858,26 +10714,6 @@
 	)
 	(wire
 		(pts
-			(xy 513.08 438.15) (xy 541.02 438.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4bc1abd-fd33-4c53-a080-32a2d20bb68b")
-	)
-	(wire
-		(pts
-			(xy 543.56 326.39) (xy 543.56 337.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c531c88e-ca7f-46dc-afe9-7d92264dd43f")
-	)
-	(wire
-		(pts
 			(xy 450.85 393.7) (xy 450.85 403.86)
 		)
 		(stroke
@@ -10915,16 +10751,6 @@
 			(type default)
 		)
 		(uuid "c6822a16-062e-442e-8cf4-4aad0bf1a25a")
-	)
-	(wire
-		(pts
-			(xy 548.64 92.71) (xy 548.64 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c708e29b-592c-4d4c-8928-34d28313631d")
 	)
 	(wire
 		(pts
@@ -11078,6 +10904,16 @@
 	)
 	(wire
 		(pts
+			(xy 438.15 92.71) (xy 466.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc775dfb-c31d-4ee6-b253-6719a92c2308")
+	)
+	(wire
+		(pts
 			(xy 215.9 387.35) (xy 198.12 387.35)
 		)
 		(stroke
@@ -11095,16 +10931,6 @@
 			(type default)
 		)
 		(uuid "cd3cde99-a203-4d52-aa02-12830ad16b4e")
-	)
-	(wire
-		(pts
-			(xy 148.59 151.13) (xy 137.16 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce691063-1068-4a97-9690-2991d6d0acb0")
 	)
 	(wire
 		(pts
@@ -11198,26 +11024,6 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 118.11) (xy 356.87 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d29ec664-74d2-40b7-b4da-800437fd38df")
-	)
-	(wire
-		(pts
-			(xy 177.8 156.21) (xy 148.59 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2aaa8da-70d8-4134-beb7-f659ad131a7d")
-	)
-	(wire
-		(pts
 			(xy 609.6 394.97) (xy 609.6 398.78)
 		)
 		(stroke
@@ -11235,6 +11041,16 @@
 			(type default)
 		)
 		(uuid "d379a98d-ae17-4455-a999-277920c6ef9c")
+	)
+	(wire
+		(pts
+			(xy 364.49 113.03) (xy 367.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3b0c95f-71b9-4d3c-96c2-15e5df43df06")
 	)
 	(wire
 		(pts
@@ -11278,16 +11094,6 @@
 	)
 	(wire
 		(pts
-			(xy 518.16 92.71) (xy 548.64 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d52bab68-1919-4b9c-88f6-dce476f81373")
-	)
-	(wire
-		(pts
 			(xy 488.95 54.61) (xy 483.87 54.61)
 		)
 		(stroke
@@ -11305,16 +11111,6 @@
 			(type default)
 		)
 		(uuid "d564a64a-8a78-40fb-a5c1-c1d386da820f")
-	)
-	(wire
-		(pts
-			(xy 147.32 88.9) (xy 182.88 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5b78507-d492-43a6-88b2-ae42f3153230")
 	)
 	(wire
 		(pts
@@ -11365,6 +11161,16 @@
 			(type default)
 		)
 		(uuid "d885e01c-585e-47f2-a375-01270a05a7e8")
+	)
+	(wire
+		(pts
+			(xy 356.87 113.03) (xy 356.87 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9199864-6192-40fe-be1d-ba064f745f6f")
 	)
 	(wire
 		(pts
@@ -11558,16 +11364,6 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 326.39) (xy 410.21 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dedebfff-324b-4cd7-8fb7-6b5728db7ee7")
-	)
-	(wire
-		(pts
 			(xy 481.33 287.02) (xy 481.33 288.29)
 		)
 		(stroke
@@ -11648,16 +11444,6 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 92.71) (xy 412.75 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3e3ef55-70a1-4fec-b5f9-88947838a4bb")
-	)
-	(wire
-		(pts
 			(xy 130.81 347.98) (xy 125.73 347.98)
 		)
 		(stroke
@@ -11678,16 +11464,6 @@
 	)
 	(wire
 		(pts
-			(xy 412.75 104.14) (xy 412.75 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4933fa9-6c82-42a0-a41f-e9f335092339")
-	)
-	(wire
-		(pts
 			(xy 589.28 111.76) (xy 589.28 119.38)
 		)
 		(stroke
@@ -11695,16 +11471,6 @@
 			(type default)
 		)
 		(uuid "e4a75f4a-e66b-4317-9a63-4beecc5a1494")
-	)
-	(wire
-		(pts
-			(xy 515.62 326.39) (xy 543.56 326.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4ac165b-d8d2-4488-b2e0-c6f3bba37526")
 	)
 	(wire
 		(pts
@@ -11728,7 +11494,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 66.04) (xy 120.65 66.04)
+			(xy 118.11 39.37) (xy 120.65 39.37)
 		)
 		(stroke
 			(width 0)
@@ -11775,16 +11541,6 @@
 			(type default)
 		)
 		(uuid "e7e6ad99-6231-47bf-ac80-5e9ead84bbfa")
-	)
-	(wire
-		(pts
-			(xy 147.32 93.98) (xy 138.43 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e81015d4-00d8-4b9e-b67d-e79b95daf220")
 	)
 	(wire
 		(pts
@@ -11938,16 +11694,6 @@
 	)
 	(wire
 		(pts
-			(xy 415.29 438.15) (xy 461.01 438.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eef136b7-5e2a-432f-83d5-6e9feb329aac")
-	)
-	(wire
-		(pts
 			(xy 173.99 232.41) (xy 167.64 232.41)
 		)
 		(stroke
@@ -12008,16 +11754,6 @@
 	)
 	(wire
 		(pts
-			(xy 364.49 118.11) (xy 367.03 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f20c2fb1-294d-4c98-818f-34efa07d38be")
-	)
-	(wire
-		(pts
 			(xy 661.67 326.39) (xy 680.72 326.39)
 		)
 		(stroke
@@ -12045,16 +11781,6 @@
 			(type default)
 		)
 		(uuid "f3855f8f-609c-4d9d-80ca-9b17d6a954f9")
-	)
-	(wire
-		(pts
-			(xy 548.64 92.71) (xy 595.63 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f39188e1-5e2b-402d-9b97-776365089efd")
 	)
 	(wire
 		(pts
@@ -12105,16 +11831,6 @@
 			(type default)
 		)
 		(uuid "f5facc24-8835-411b-a48a-33ec0ba8fd04")
-	)
-	(wire
-		(pts
-			(xy 416.56 217.17) (xy 411.48 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6543828-ff55-4f5c-99ef-1be2e71f0754")
 	)
 	(wire
 		(pts
@@ -12188,6 +11904,16 @@
 	)
 	(wire
 		(pts
+			(xy 576.58 326.39) (xy 593.09 326.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8f16903-dbe1-4390-a734-c7993205664f")
+	)
+	(wire
+		(pts
 			(xy 396.24 318.77) (xy 396.24 293.37)
 		)
 		(stroke
@@ -12248,16 +11974,6 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 118.11) (xy 359.41 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb8d3c58-7851-4f24-88d9-3ebddf355acf")
-	)
-	(wire
-		(pts
 			(xy 361.95 224.79) (xy 361.95 229.87)
 		)
 		(stroke
@@ -12265,16 +11981,6 @@
 			(type default)
 		)
 		(uuid "fbbd72f0-35f5-4bfb-b6d3-1cc684fee860")
-	)
-	(wire
-		(pts
-			(xy 369.57 118.11) (xy 369.57 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc513391-a22d-49a6-81a1-535f4552dab1")
 	)
 	(wire
 		(pts
@@ -12305,6 +12011,16 @@
 			(type default)
 		)
 		(uuid "fd527828-44e0-42ad-ba94-cbd77ed4cdb6")
+	)
+	(wire
+		(pts
+			(xy 138.43 67.31) (xy 152.4 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8ca387-0de0-4d53-977b-28b1e124b191")
 	)
 	(wire
 		(pts
@@ -12404,28 +12120,6 @@
 			)
 		)
 	)
-	(global_label "RF_IN1"
-		(shape input)
-		(at 182.88 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "06ae8755-17ea-49bb-9d6f-aeeb94abe89a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.3362 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "V_PD"
 		(shape input)
 		(at 591.82 397.51 90)
@@ -12470,7 +12164,7 @@
 			)
 		)
 	)
-	(global_label "ATTN_LE4"
+	(global_label "ATTN_LE_4"
 		(shape input)
 		(at 525.78 430.53 0)
 		(fields_autoplaced yes)
@@ -12482,7 +12176,7 @@
 		)
 		(uuid "15bef369-cd88-4036-8c4e-874f6bef5a6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 537.4737 430.53 0)
+			(at 538.4413 430.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12866,29 +12560,7 @@
 			)
 		)
 	)
-	(global_label "RF_IN4"
-		(shape input)
-		(at 177.8 156.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3894834c-2d5c-45b9-a3aa-494ab59da25f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.2562 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PS_LE2"
+	(global_label "PS_LE_2"
 		(shape input)
 		(at 382.27 154.94 0)
 		(fields_autoplaced yes)
@@ -12900,7 +12572,7 @@
 		)
 		(uuid "3abf0ff4-42af-4e95-a743-93f7d4d30438")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 392.0889 154.94 0)
+			(at 393.0565 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13152,9 +12824,31 @@
 			)
 		)
 	)
+	(global_label "RF_IN4"
+		(shape input)
+		(at 180.34 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5f119347-6fc6-4eb7-94af-5ed19bb99fcb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.7962 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RF_IN2"
 		(shape input)
-		(at 182.88 93.98 0)
+		(at 180.34 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13164,7 +12858,7 @@
 		)
 		(uuid "5f270dad-b5a5-432d-98e4-dca69760e788")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 192.3362 93.98 0)
+			(at 189.7962 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13460,6 +13154,28 @@
 			)
 		)
 	)
+	(global_label "RF_IN1"
+		(shape input)
+		(at 180.34 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a53ad8e-0899-49a1-8c59-502e7ef16346")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.7962 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "VCC"
 		(shape input)
 		(at 574.04 365.76 180)
@@ -13526,7 +13242,7 @@
 			)
 		)
 	)
-	(global_label "ATTN_LE2"
+	(global_label "ATTN_LE_2"
 		(shape input)
 		(at 527.05 196.85 0)
 		(fields_autoplaced yes)
@@ -13538,7 +13254,7 @@
 		)
 		(uuid "81c0ff8d-897e-4711-a90f-90576c1151c4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 538.7437 196.85 0)
+			(at 539.7113 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13583,6 +13299,28 @@
 		(uuid "8bbaf5f8-332d-43bc-a1ed-65d0f63774d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 393.5404 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF_IN3"
+		(shape input)
+		(at 180.34 129.54 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8fce43b3-bc59-48e2-96b4-0e8af3c9afaa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.7962 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13660,7 +13398,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 195.58 328.93 0)
+		(at 189.23 340.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13670,7 +13408,7 @@
 		)
 		(uuid "9479d1ff-7383-4baa-8f80-fa0e68ee40dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 202.1938 328.93 0)
+			(at 195.8438 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14538,7 +14276,7 @@
 			)
 		)
 	)
-	(global_label "PS_LE4"
+	(global_label "PS_LE_4"
 		(shape input)
 		(at 379.73 388.62 0)
 		(fields_autoplaced yes)
@@ -14550,7 +14288,7 @@
 		)
 		(uuid "e64505e4-dbeb-458a-bf2a-bec35c8d33c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 389.5489 388.62 0)
+			(at 390.5165 388.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14710,28 +14448,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RF_IN3"
-		(shape input)
-		(at 179.07 151.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f516a1ee-c72d-4d4e-b431-8a2a86913f03")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.5262 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -15203,73 +14919,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 175.26 77.47 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03e41989-65bc-4d26-a93f-a19d109dc1ef")
-		(property "Reference" "#PWR0233"
-			(at 181.61 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4d2ed99f-8217-4c3b-a829-b007d207ed47")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0233")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 172.72 450.85 0)
 		(unit 1)
@@ -15341,73 +14990,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 443.23 104.14 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0426e287-f9f2-4569-910b-26ce058e143b")
-		(property "Reference" "#PWR0217"
-			(at 449.58 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 447.04 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f3faeca7-08b7-4d28-b2f9-53f396c77141")
-		)
-		(instances
-			(project ""
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0217")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 326.39 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15467,252 +15049,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 548.64 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04cc2447-fcad-478e-926d-4d5219ddb8d1")
-		(property "Reference" "L9"
-			(at 562.61 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 562.61 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 572.77 199.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 572.77 299.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 548.64 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 572.77 499.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 572.77 599.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 572.77 699.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 572.77 799.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 572.77 899.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e345c73c-c798-4edb-ab84-1e7f0a19b72b")
-		)
-		(pin "2"
-			(uuid "705967a3-ede9-492d-9178-09a323455dcc")
-		)
-		(pin "1"
-			(uuid "8ee8ae96-31c6-4a37-903d-d56c274cf855")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 538.48 214.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05335e8e-aee8-48ec-8b36-e0639ee32816")
-		(property "Reference" "L8"
-			(at 552.45 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 552.45 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 562.61 309.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 562.61 409.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 538.48 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 562.61 609.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 562.61 709.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 562.61 809.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 562.61 909.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 562.61 1009.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4ad91d90-32a7-4825-8bfa-dd7915644669")
-		)
-		(pin "2"
-			(uuid "9dccd576-9e12-4bfc-9749-4e71707ce211")
-		)
-		(pin "1"
-			(uuid "7f072926-0b94-4389-9a9a-f0966629df13")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L8")
 					(unit 1)
 				)
 			)
@@ -16055,6 +15391,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 165.1 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07a94992-9365-4005-bc57-74dc3f5335b6")
+		(property "Reference" "#PWR0224"
+			(at 165.1 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3985652d-3afc-4682-bae5-5ac46156c83a")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0224")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 494.03 199.39 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16248,73 +15650,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0146")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 176.53 143.51 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a6b5c35-cc02-48ab-8854-6a8169238fa7")
-		(property "Reference" "#PWR0240"
-			(at 182.88 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 180.34 143.5099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "163400a8-4afb-43d3-b5ea-df08fd60ab29")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0240")
 					(unit 1)
 				)
 			)
@@ -16587,196 +15922,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 416.56 217.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b70862e-116b-4e7d-8215-ea5d58675c2c")
-		(property "Reference" "L5"
-			(at 430.53 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 430.53 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 440.69 312.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 440.69 412.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 416.56 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 440.69 612.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 440.69 712.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 440.69 812.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 440.69 912.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 440.69 1012.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "96fb97de-1a58-436d-b69f-bd3a34cf9013")
-		)
-		(pin "2"
-			(uuid "c787c3b5-69e1-47b8-90ba-e47684153f97")
-		)
-		(pin "1"
-			(uuid "aafe2a2d-af81-4d20-ab37-79065282feea")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 576.58 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b8a83a2-1a46-4a09-bcdc-42be78c43d8a")
-		(property "Reference" "#PWR0228"
-			(at 582.93 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 580.39 106.6799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 576.58 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 576.58 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 576.58 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1cd55103-0cf5-4299-a707-281a794a4c6e")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0228")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 487.68 400.05 90)
 		(unit 1)
@@ -16973,6 +16118,72 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 420.37 311.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d0cba02-2e0b-431c-b4f7-98fd7c38a6b9")
+		(property "Reference" "#PWR0238"
+			(at 420.37 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 420.37 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 420.37 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 420.37 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3e52281-0e34-4ef6-88f7-896633d4cfcf")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0238")
 					(unit 1)
 				)
 			)
@@ -17176,129 +16387,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 415.29 449.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dd9738e-9cb1-45b5-8be4-4a970c907ef1")
-		(property "Reference" "L7"
-			(at 429.26 441.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 429.26 444.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 439.42 544.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 439.42 644.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 415.29 449.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 439.42 844.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 439.42 944.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 439.42 1044.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 439.42 1144.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 439.42 1244.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a3a5dd93-6afb-4400-a080-1e309786e19d")
-		)
-		(pin "2"
-			(uuid "7106699f-dcff-48a7-bea4-35234cdfc161")
-		)
-		(pin "1"
-			(uuid "524d0a0d-7b2c-44b9-b644-486a25bcfcd1")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L7")
 					(unit 1)
 				)
 			)
@@ -17734,6 +16822,132 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 558.8 422.91 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10175386-aeef-40e6-81a1-425a8b7dcaf3")
+		(property "Reference" "J24"
+			(at 541.02 431.7298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 541.02 434.2698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 648.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 748.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 558.8 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 948.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 1048.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1148.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1248.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1348.64 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ffdda9c1-c240-4e79-8e60-36838b0f916d")
+		)
+		(pin "1"
+			(uuid "8f5813fa-6a98-4316-a7eb-65406f1c771a")
+		)
+		(pin "4"
+			(uuid "d5208c80-633d-4860-b468-382e3b64fc7a")
+		)
+		(pin "2"
+			(uuid "893a8488-0d75-44d1-9243-6f4d697d96c7")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J24")
 					(unit 1)
 				)
 			)
@@ -18215,7 +17429,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "13539dd4-0052-476c-ac2d-3e19bb91afc5")
 		(property "Reference" "#PWR0103"
 			(at 96.52 116.84 0)
@@ -18343,6 +17556,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 165.1 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1434ce0a-310c-465a-ac93-82d99d4c1a0c")
+		(property "Reference" "#PWR0222"
+			(at 165.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9904eb0-b009-4487-b1c4-dc159b92f60e")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0222")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 461.01 302.26 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18410,7 +17689,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 138.43 91.44 90)
+		(at 138.43 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18419,7 +17698,7 @@
 		(fields_autoplaced yes)
 		(uuid "15ac68d3-8aeb-425b-b294-185528cb5588")
 		(property "Reference" "#PWR0108"
-			(at 144.78 91.44 0)
+			(at 144.78 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18428,7 +17707,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 91.4399 90)
+			(at 142.24 64.7699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18437,7 +17716,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 91.44 0)
+			(at 138.43 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18446,7 +17725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 91.44 0)
+			(at 138.43 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18455,7 +17734,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 91.44 0)
+			(at 138.43 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19795,129 +19074,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 151.13 167.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22370e80-f8fb-4785-a7c3-9141bd52e3b5")
-		(property "Reference" "L15"
-			(at 165.1 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 165.1 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 175.26 262.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 175.26 362.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 151.13 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 175.26 562.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 175.26 662.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 175.26 762.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 175.26 862.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 175.26 962.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "98530f50-55e8-4901-897f-6bc51b5908d6")
-		)
-		(pin "2"
-			(uuid "b965cb20-aacd-456c-9d09-4cffd0ccb4d9")
-		)
-		(pin "1"
-			(uuid "302a2947-8fb0-494a-8b14-d9c05146f031")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MAPS-010164-TR0500:MAPS-010164-TR0500")
 		(at 346.71 82.55 0)
 		(unit 1)
@@ -20306,17 +19462,53 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 568.96 450.85 90)
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 561.34 311.15 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "241318ba-8638-4373-85fc-742a49ec7e47")
-		(property "Reference" "#PWR0232"
-			(at 575.31 450.85 0)
+		(uuid "23ca313e-18be-40a1-a419-7e72c8280fef")
+		(property "Reference" "J22"
+			(at 543.56 319.9698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 543.56 322.5098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 651.18 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 751.18 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 561.34 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20324,49 +19516,72 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 572.77 450.8499 90)
+		(property "Height" "1"
+			(at 951.18 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 568.96 450.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 568.96 450.85 0)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 1051.18 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 568.96 450.85 0)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1151.18 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1251.18 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1351.18 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "7b579fd5-f101-4634-bed8-7d7edf74fd98")
 		)
 		(pin "1"
-			(uuid "7b9a3f45-939f-4137-b610-d6bea1cbaa26")
+			(uuid "8709ec97-cc96-40c6-8642-8080e3e9116d")
+		)
+		(pin "4"
+			(uuid "6d2f75c8-5e30-44e6-abcf-6ec02d36b281")
+		)
+		(pin "2"
+			(uuid "3c2f9458-7ca2-47d3-a3eb-0af1a6bf4dc6")
 		)
 		(instances
 			(project "TX_Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0232")
+					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -20634,73 +19849,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 571.5 337.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25fbc434-d899-4939-b333-60462d7af925")
-		(property "Reference" "#PWR0229"
-			(at 577.85 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 575.31 337.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 571.5 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 571.5 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 571.5 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6782d3bf-801e-4fa1-961a-57614515a387")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0229")
 					(unit 1)
 				)
 			)
@@ -21925,7 +21073,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2fd742be-59e2-46f7-a595-6c4422bce363")
 		(property "Reference" "#PWR0112"
 			(at 121.92 118.11 0)
@@ -21937,7 +21084,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 121.92 119.38 0)
+			(at 121.92 118.618 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22688,73 +21835,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 88.9 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35b6a90c-06e0-4eda-ad2e-b345011c364e")
-		(property "Reference" "#PWR0104"
-			(at 93.98 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 96.52 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83a6f1b8-7a3a-427b-a881-f6dd894727c4")
-		)
-		(instances
-			(project "Beamer Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 388.62 417.83 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23296,6 +22376,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 420.37 341.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39d51786-486c-4034-bb9f-8f6bf49edb6a")
+		(property "Reference" "#PWR0240"
+			(at 420.37 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 420.37 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 420.37 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 420.37 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8608d2ef-9a3d-4c92-ae0d-5e4525afcae2")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0240")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 463.55 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23627,73 +22773,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 443.23 452.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3fd7cbda-08ea-4ec3-ad29-b45024f7bbf1")
-		(property "Reference" "#PWR0224"
-			(at 449.58 452.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 447.04 452.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 452.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 452.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 452.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91f18a31-1bae-4dec-b0ec-1c9cfabb443b")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0224")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 618.49 49.53 90)
 		(unit 1)
@@ -23889,6 +22968,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 420.37 189.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4232043b-9705-4a60-934a-599011e64418")
+		(property "Reference" "#PWR0232"
+			(at 420.37 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 420.37 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 420.37 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 420.37 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a7b7090-b065-4562-9c2e-a22eb8cc665a")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0232")
 					(unit 1)
 				)
 			)
@@ -24694,6 +23839,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 100.33 62.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47b5f98e-595f-4730-88d6-a52409b217de")
+		(property "Reference" "#PWR0104"
+			(at 93.98 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 62.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc625c5f-61bc-47c3-a4c1-0adb53623672")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 382.27 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24886,73 +24098,6 @@
 			(project "TX_Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0254")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 175.26 80.01 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a0c8fa5-082a-42a0-9098-facffe577833")
-		(property "Reference" "#PWR0234"
-			(at 181.61 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 80.0099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6538449a-e14f-4253-aba6-844669787a96")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0234")
 					(unit 1)
 				)
 			)
@@ -27298,73 +26443,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 179.07 167.64 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c9db67e-152e-4928-9553-31334046c94b")
-		(property "Reference" "#PWR0237"
-			(at 185.42 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 182.88 167.6399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4268afe3-45ca-4a1c-aa9d-62251eb80661")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0237")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 593.09 464.82 90)
 		(unit 1)
@@ -27691,6 +26769,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 561.34 311.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5de56f01-0750-4ab2-8cad-32de6df2c6c4")
+		(property "Reference" "#PWR0262"
+			(at 561.34 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 561.34 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 561.34 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 561.34 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 561.34 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df88d42f-bd36-4168-91b7-dc0ddc1428ac")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0262")
 					(unit 1)
 				)
 			)
@@ -28256,6 +27400,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0185")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63c2d36c-7e23-492f-aa2b-59b7bcab53b9")
+		(property "Reference" "#PWR0225"
+			(at 165.1 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2912f230-878d-4343-92ea-c282649352a3")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0225")
 					(unit 1)
 				)
 			)
@@ -29045,72 +28255,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 356.87 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6992fd80-e662-4c2a-8caf-407ff59b3d72")
-		(property "Reference" "#PWR01"
-			(at 356.87 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 356.87 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 356.87 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 356.87 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 356.87 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec81bddc-07e1-47de-b4d9-65f6e0015b40")
-		)
-		(instances
-			(project ""
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 375.92 43.18 90)
 		(unit 1)
@@ -29242,6 +28386,132 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 420.37 311.15 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6aef6908-99dd-4151-93de-ca6fdb6d50aa")
+		(property "Reference" "J21"
+			(at 402.59 319.9698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 402.59 322.5098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 510.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 610.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 420.37 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 810.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 910.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1010.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1110.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1210.21 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a99b59d1-24da-45b8-a8be-77efb727efbd")
+		)
+		(pin "1"
+			(uuid "eb34db72-b583-4812-9ff1-1855819fe6f2")
+		)
+		(pin "4"
+			(uuid "c733a5c3-f821-4721-907b-bf1a8e03d4f8")
+		)
+		(pin "2"
+			(uuid "ff3b07d7-546c-46e7-b6d1-f659f6e14506")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -29646,129 +28916,6 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0213")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 147.32 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bdbff1b-30ea-42b7-8b1b-096c1eeaf2cf")
-		(property "Reference" "L13"
-			(at 161.29 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 161.29 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 171.45 172.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 171.45 272.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 147.32 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 171.45 472.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 171.45 572.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 171.45 672.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 171.45 772.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 171.45 872.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1edfc6a8-d301-40fa-807e-a69b75fe9c37")
-		)
-		(pin "2"
-			(uuid "36c53272-426c-4ac0-8024-fd7ccd1467f5")
-		)
-		(pin "1"
-			(uuid "6519f080-99e9-4b50-ac72-5d68ce2e5e33")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L13")
 					(unit 1)
 				)
 			)
@@ -30241,129 +29388,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 415.29 337.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e6c9798-c1df-4997-93ee-8408300635b5")
-		(property "Reference" "L6"
-			(at 429.26 330.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 429.26 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 439.42 432.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 439.42 532.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 415.29 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 439.42 732.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 439.42 832.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 439.42 932.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 439.42 1032.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 439.42 1132.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d594f2f8-e609-46d6-8833-e17588101017")
-		)
-		(pin "2"
-			(uuid "c24a7202-be24-4f78-83dc-37469abeb981")
-		)
-		(pin "1"
-			(uuid "886d39f3-4691-4f06-be32-fc5c7a74e891")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 628.65 283.21 90)
 		(unit 1)
@@ -30698,73 +29722,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 107.95 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "71c3050c-d4cd-46cf-a23f-d98045b30418")
-		(property "Reference" "#PWR0236"
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 181.61 107.9499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3b827bc-1e56-4304-ad26-2f45b0956794")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0236")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 369.57 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30895,73 +29852,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "C35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 566.42 214.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72e18a66-13b1-4b71-acec-db22018647bf")
-		(property "Reference" "#PWR0225"
-			(at 572.77 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 570.23 214.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 566.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 566.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b248f999-c01a-4947-9389-f38c5c93cda6")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0225")
 					(unit 1)
 				)
 			)
@@ -31442,16 +30332,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 443.23 449.58 90)
+		(at 421.64 453.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7553ea23-e0d7-4675-837b-f5bffd43b75d")
-		(property "Reference" "#PWR0223"
-			(at 449.58 449.58 0)
+		(uuid "752d8e82-54aa-451d-a9fa-8fce16e09c31")
+		(property "Reference" "#PWR0267"
+			(at 421.64 459.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31460,16 +30350,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 447.04 449.5799 90)
+			(at 421.64 458.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 443.23 449.58 0)
+			(at 421.64 453.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31478,7 +30367,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 443.23 449.58 0)
+			(at 421.64 453.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31487,7 +30376,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 449.58 0)
+			(at 421.64 453.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31496,12 +30385,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "94441711-0c9f-4faf-89a9-b437eb12531a")
+			(uuid "1be3a834-62ae-4c4f-a3e8-d6e295d22e76")
 		)
 		(instances
 			(project "TX_Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0223")
+					(reference "#PWR0267")
 					(unit 1)
 				)
 			)
@@ -32135,16 +31024,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 568.96 448.31 90)
+		(at 561.34 341.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "789f30a0-53c3-48ff-86b8-4cf45d419958")
-		(property "Reference" "#PWR0231"
-			(at 575.31 448.31 0)
+		(uuid "7898da27-21b6-40b1-a2f0-5b3b1ec1586d")
+		(property "Reference" "#PWR0264"
+			(at 561.34 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32153,16 +31042,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 572.77 448.3099 90)
+			(at 561.34 346.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 568.96 448.31 0)
+			(at 561.34 341.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32171,7 +31059,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 568.96 448.31 0)
+			(at 561.34 341.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32180,7 +31068,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 568.96 448.31 0)
+			(at 561.34 341.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32189,12 +31077,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "87ba7e54-76a8-4e4e-8b2f-559032f66734")
+			(uuid "758a6521-49fc-4160-b0c9-9ede80ed4901")
 		)
 		(instances
 			(project "TX_Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0231")
+					(reference "#PWR0264")
 					(unit 1)
 				)
 			)
@@ -32329,6 +31217,132 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 422.91 77.47 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b8b8f7e-943b-464a-bd9c-80bf3b53ffbe")
+		(property "Reference" "J17"
+			(at 405.13 86.2898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 405.13 88.8298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 512.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 612.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 422.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 812.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 912.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1012.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1112.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1212.75 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "16eebfb4-45ec-4253-933e-f8fa71bf4a8d")
+		)
+		(pin "1"
+			(uuid "281658ec-bab2-41c2-9757-07bb52feb6f6")
+		)
+		(pin "4"
+			(uuid "15c69ec3-0c4d-41e9-b5ac-2e999a4669fb")
+		)
+		(pin "2"
+			(uuid "b8a4f2bb-d107-42ad-bd0e-c4e7402638b9")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -32916,129 +31930,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 541.02 448.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7eb95a9c-976b-4eb4-8bc8-01f020f529f3")
-		(property "Reference" "L12"
-			(at 554.99 440.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 554.99 443.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 565.15 543.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 565.15 643.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 541.02 448.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 565.15 843.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 565.15 943.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 565.15 1043.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 565.15 1143.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 565.15 1243.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "f6567342-de34-40fe-8772-57f861784702")
-		)
-		(pin "2"
-			(uuid "c821c6ea-d883-42a4-88fe-6af9d3a6f8d2")
-		)
-		(pin "1"
-			(uuid "981d52ce-a44d-4e12-b7ae-199d50bba313")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 346.71 394.97 270)
 		(unit 1)
@@ -33173,7 +32064,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 119.38 0)
+		(at 115.57 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33182,7 +32073,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f4d9bfb-b676-4ce5-bc96-8fe18c76dcdd")
 		(property "Reference" "#PWR0106"
-			(at 115.57 125.73 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33191,7 +32082,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 124.46 0)
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33199,7 +32090,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 119.38 0)
+			(at 115.57 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33208,7 +32099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 119.38 0)
+			(at 115.57 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33217,7 +32108,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 119.38 0)
+			(at 115.57 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33232,73 +32123,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 170.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f92402b-8be9-4226-bc80-7a2064af08bd")
-		(property "Reference" "#PWR0238"
-			(at 185.42 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 182.88 170.1799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b7a57a7-832a-4d03-b9d1-532c7128474e")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0238")
 					(unit 1)
 				)
 			)
@@ -33497,6 +32321,198 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0174")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 356.87 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "815a091e-17b3-4b82-9714-f12d2505d031")
+		(property "Reference" "#PWR01"
+			(at 356.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 356.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 356.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 356.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 356.87 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f795b7b-6240-4b17-9027-430bafc4922e")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 560.07 189.23 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81b9c717-c97a-4e41-a2cf-77f3e05d0296")
+		(property "Reference" "J20"
+			(at 542.29 198.0498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 542.29 200.5898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 649.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 749.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 560.07 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 949.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 1049.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1149.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1249.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1349.91 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f12c23dc-2fec-4ae2-9859-f97c1f70e09d")
+		)
+		(pin "1"
+			(uuid "12c2ad73-1397-4b8b-8894-7d2488ea5479")
+		)
+		(pin "4"
+			(uuid "b01add85-cc01-47cc-bf62-32f187e1c156")
+		)
+		(pin "2"
+			(uuid "32475cc8-cbe8-4810-bde9-8850d2ffcddf")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -34709,6 +33725,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 560.07 189.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ca84626-6406-4bec-92ae-d60f561804a5")
+		(property "Reference" "#PWR0235"
+			(at 560.07 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 560.07 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 560.07 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 560.07 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 560.07 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5af3e0d6-f487-476f-972f-7561dc34b0e1")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0235")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 172.72 332.74 0)
 		(unit 1)
@@ -34981,73 +34063,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 566.42 217.17 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8f1e9137-6d3a-416d-8c29-004c4e28f273")
-		(property "Reference" "#PWR0226"
-			(at 572.77 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 570.23 217.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 566.42 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 566.42 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2bb2c45-f9f3-46e0-8911-56b23393bd20")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0226")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 400.05 171.45 90)
 		(unit 1)
@@ -35314,129 +34329,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 149.86 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92c476cb-978c-4176-b539-7e91b3e3569b")
-		(property "Reference" "L14"
-			(at 163.83 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 163.83 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 173.99 200.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 173.99 300.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 149.86 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 173.99 500.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 173.99 600.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 173.99 700.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 173.99 800.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 173.99 900.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "21b9886d-fcff-4849-829b-aa4463fd3c79")
-		)
-		(pin "2"
-			(uuid "7808d154-cf8b-463b-9d62-7f98490aca16")
-		)
-		(pin "1"
-			(uuid "d254267e-0a17-4fa4-a061-81b0f4d46587")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 627.38 267.97 90)
 		(unit 1)
@@ -35632,6 +34524,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "957215db-577f-4d23-8e26-1600b67543b4")
+		(property "Reference" "#PWR0223"
+			(at 165.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f9f4ca6-b8d9-42ab-830c-648546b6bce9")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0223")
 					(unit 1)
 				)
 			)
@@ -35904,6 +34862,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99369f1f-cbe0-46d9-86f3-b2b69fa693a8")
+		(property "Reference" "#PWR0221"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffe9c611-a54c-4558-a626-afab29fc3422")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -36242,6 +35266,198 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 420.37 189.23 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ca777b2-5158-48b9-83f9-8b591f3311f3")
+		(property "Reference" "J19"
+			(at 402.59 198.0498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 402.59 200.5898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 510.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 610.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 420.37 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 810.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 910.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1010.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1110.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1210.21 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b9c60cc7-7ade-429b-96e3-154c4e70a859")
+		)
+		(pin "1"
+			(uuid "84f68270-5ca6-4901-9b7f-52e35494d50d")
+		)
+		(pin "4"
+			(uuid "44a2be28-60c6-4f71-bf2b-b9bf51efeb89")
+		)
+		(pin "2"
+			(uuid "3e9ef354-1402-4aa7-95fe-8998d5483880")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 558.8 453.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dfc3f6f-f8f5-446a-933c-945c44f857e7")
+		(property "Reference" "#PWR0270"
+			(at 558.8 459.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 558.8 458.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 558.8 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 558.8 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 558.8 453.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13c2b291-9f8d-4d7c-88e9-5fc064f3957f")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0270")
 					(unit 1)
 				)
 			)
@@ -36923,6 +36139,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 567.69 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a40a3580-f279-4406-bd6c-53c1c5a0e27e")
+		(property "Reference" "#PWR0231"
+			(at 567.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 567.69 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 567.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 567.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 567.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22e77065-6bfd-4582-a48f-650784a230e8")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0231")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 623.57 53.34 0)
 		(unit 1)
@@ -36987,73 +36269,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 443.23 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a489dc7d-2304-4e26-b4ed-e030cefb3f60")
-		(property "Reference" "#PWR0218"
-			(at 449.58 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 447.04 106.6799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e337f583-e59f-4d21-9394-e194399200d6")
-		)
-		(instances
-			(project ""
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -37691,196 +36906,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 415.29 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8de0071-b208-4f75-92a4-81fa6955efce")
-		(property "Reference" "L4"
-			(at 429.26 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 429.26 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 439.42 199.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 439.42 299.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 415.29 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 439.42 499.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 439.42 599.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 439.42 699.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 439.42 799.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 439.42 899.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e8d39c69-aeeb-4648-8d52-02eb66892546")
-		)
-		(pin "2"
-			(uuid "c762770b-c346-447a-a51d-5d182e1719ef")
-		)
-		(pin "1"
-			(uuid "92a1973e-93aa-4491-a56f-3174f03f0c5e")
-		)
-		(instances
-			(project ""
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 176.53 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9a87bef-906e-49ef-a9eb-1c4b7ed4061d")
-		(property "Reference" "#PWR0239"
-			(at 182.88 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 180.34 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8160c6b-5696-497a-8ae9-b302bacecffe")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0239")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 496.57 87.63 90)
 		(unit 1)
@@ -37942,6 +36967,72 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 560.07 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9f4fe04-b1be-45af-a281-0f9dc9982230")
+		(property "Reference" "#PWR0237"
+			(at 560.07 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 560.07 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 560.07 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 560.07 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 560.07 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "088c8496-34fd-4008-88b6-57c78a35f851")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0237")
 					(unit 1)
 				)
 			)
@@ -38151,7 +37242,7 @@
 	)
 	(symbol
 		(lib_id "GP2Y1+:GP2Y1+")
-		(at 100.33 88.9 0)
+		(at 100.33 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38160,7 +37251,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab05dade-ff78-4cda-bc5e-3851548f67a2")
 		(property "Reference" "IC6"
-			(at 138.43 82.4798 0)
+			(at 138.43 55.8098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38168,7 +37259,7 @@
 			)
 		)
 		(property "Value" "GP2Y1+"
-			(at 138.43 85.0198 0)
+			(at 138.43 58.3498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38176,7 +37267,7 @@
 			)
 		)
 		(property "Footprint" "GP2Y1+:QFN51P300X300X89-13N"
-			(at 134.62 168.58 0)
+			(at 134.62 141.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38186,7 +37277,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.minicircuits.com/WebStore/dashboard.html?model=GP2Y1%2B"
-			(at 134.62 268.58 0)
+			(at 134.62 241.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38196,7 +37287,7 @@
 			)
 		)
 		(property "Description" "2 Ways MMIC Power Splitter, 1550 - 4400 MHz, 50"
-			(at 100.33 88.9 0)
+			(at 100.33 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38205,7 +37296,7 @@
 			)
 		)
 		(property "Height" "0.89"
-			(at 134.62 468.58 0)
+			(at 134.62 441.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38215,7 +37306,7 @@
 			)
 		)
 		(property "Mouser Part Number" "139-GP2Y1"
-			(at 134.62 568.58 0)
+			(at 134.62 541.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38225,7 +37316,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Mini-Circuits/GP2Y1%2b?qs=xZ%2FP%252Ba9zWqa2gJeXJjIJ3g%3D%3D"
-			(at 134.62 668.58 0)
+			(at 134.62 641.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38235,7 +37326,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Mini-Circuits"
-			(at 134.62 768.58 0)
+			(at 134.62 741.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38245,7 +37336,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "GP2Y1+"
-			(at 134.62 868.58 0)
+			(at 134.62 841.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39168,73 +38259,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 444.5 217.17 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b1e810f8-2f9d-4891-8874-7563dad86d9c")
-		(property "Reference" "#PWR0219"
-			(at 450.85 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 448.31 217.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 444.5 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 444.5 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 444.5 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "860ee29a-00a0-4873-9fed-3b7a24376745")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0219")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 92.71 242.57 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -39632,129 +38656,6 @@
 		)
 	)
 	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 148.59 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7ac3dfe-0561-41c6-8b56-c7b25adb82f2")
-		(property "Reference" "L16"
-			(at 162.56 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 162.56 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 172.72 235.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 172.72 335.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 148.59 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 172.72 535.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 172.72 635.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 172.72 735.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 172.72 835.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 172.72 935.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a4274e01-adf1-468e-ab55-b3e6813ff8c1")
-		)
-		(pin "2"
-			(uuid "e8d808b6-e3d1-450f-adf1-aa2d96a6e66d")
-		)
-		(pin "1"
-			(uuid "a782e2e1-03b3-4aac-9019-643f1423c90e")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 635 54.61 0)
 		(unit 1)
@@ -39815,6 +38716,132 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 567.69 77.47 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b946a9fa-e31e-45a4-9426-6e6e008f8efa")
+		(property "Reference" "J18"
+			(at 549.91 86.2898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 549.91 88.8298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 657.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 757.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 567.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 957.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 1057.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1157.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1257.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1357.53 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "94835397-edb8-4125-8a15-e5ba562d9f89")
+		)
+		(pin "1"
+			(uuid "fe883398-319c-40b5-a463-a41935686708")
+		)
+		(pin "4"
+			(uuid "8d23dc58-1e4f-473a-b0a7-392f85f5261b")
+		)
+		(pin "2"
+			(uuid "976c21e8-c772-4618-b334-42a928c2c051")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -40359,7 +39386,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 93.98 270)
+		(at 100.33 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40368,7 +39395,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb4ebdf4-d359-4f2e-ac25-b8194306b5fa")
 		(property "Reference" "#PWR0105"
-			(at 93.98 93.98 0)
+			(at 93.98 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40377,7 +39404,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 93.9799 90)
+			(at 96.52 67.3099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40386,7 +39413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 93.98 0)
+			(at 100.33 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40395,7 +39422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 93.98 0)
+			(at 100.33 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40404,7 +39431,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 93.98 0)
+			(at 100.33 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40823,140 +39850,6 @@
 			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0251")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 576.58 104.14 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be6bc8cb-3414-4c0d-bbfe-06dad4118dd8")
-		(property "Reference" "#PWR0227"
-			(at 582.93 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 580.39 104.1399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 576.58 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 576.58 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 576.58 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdd4ce2f-75cf-484c-9dab-2825703ba0d0")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0227")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 443.23 340.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bee543b2-d11c-48af-b705-a07116bb2e87")
-		(property "Reference" "#PWR0222"
-			(at 449.58 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 447.04 340.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "78c6574e-a6d3-4e7d-8c75-eacd6a209f23")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0222")
 					(unit 1)
 				)
 			)
@@ -42299,6 +41192,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 567.69 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c92dcff1-f0cf-4bce-a337-b58f8670e4b6")
+		(property "Reference" "#PWR0229"
+			(at 567.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 567.69 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 567.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 567.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 567.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da72f22e-5b0f-44e3-8894-5d20a4b24480")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0229")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 593.09 207.01 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -42638,6 +41597,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 422.91 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccb7ab5a-40dd-44ae-a80d-a8724027ac15")
+		(property "Reference" "#PWR0228"
+			(at 422.91 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 422.91 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 422.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 422.91 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9063d144-1ddb-40f1-8841-89103965cf79")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0228")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 328.93 78.74 0)
 		(unit 1)
@@ -42841,16 +41866,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 105.41 90)
+		(at 165.1 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cd8de201-dd7a-4d6b-a085-1970ab8a01bc")
-		(property "Reference" "#PWR0235"
-			(at 184.15 105.41 0)
+		(uuid "ce145bf0-67d0-4936-834f-135b22b3ad74")
+		(property "Reference" "#PWR0217"
+			(at 165.1 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42859,16 +41884,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 105.4099 90)
+			(at 165.1 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 105.41 0)
+			(at 165.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42877,7 +41901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 105.41 0)
+			(at 165.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42886,7 +41910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 105.41 0)
+			(at 165.1 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42895,12 +41919,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc632f22-390d-4b25-9547-990e3f035c41")
+			(uuid "6a4e57cd-207a-4589-9db1-d386211f1bf6")
 		)
 		(instances
-			(project "TX_Board"
+			(project ""
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0235")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -43574,6 +42598,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0169")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 558.8 422.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3ef86d4-d72b-446b-915a-995f5da40219")
+		(property "Reference" "#PWR0268"
+			(at 558.8 416.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 558.8 417.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 558.8 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 558.8 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 558.8 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b1ca046-086d-4380-9304-49afa7da10de")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0268")
 					(unit 1)
 				)
 			)
@@ -44388,73 +43478,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 444.5 219.71 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d89648ac-3943-44bf-9e61-1aac2a64c4a7")
-		(property "Reference" "#PWR0220"
-			(at 450.85 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 448.31 219.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 444.5 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 444.5 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 444.5 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2915c16d-6e4e-41d9-b167-dca346caf4bc")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0220")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 365.76 35.56 270)
 		(unit 1)
@@ -45015,129 +44038,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "U_FL-R-SMT-1_60_:U.FL-R-SMT-1_60_")
-		(at 543.56 337.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de7511e5-6141-4451-83ad-196c765e9712")
-		(property "Reference" "L11"
-			(at 557.53 330.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U.FL-R-SMT-1_60_"
-			(at 557.53 332.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "UFL_R_SMT1_1_60:UFLRSMT160"
-			(at 567.69 432.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/U.FL-R-SMT-1(60).pdf"
-			(at 567.69 532.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RF Connectors / Coaxial Connectors SMT MALE RECEPT AU"
-			(at 543.56 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at 567.69 732.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "798-UFLRSMT160"
-			(at 567.69 832.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/U.FL-R-SMT-160?qs=PABxe4V6HDqIFtIEeJcXCQ%3D%3D"
-			(at 567.69 932.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Hirose"
-			(at 567.69 1032.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "U.FL-R-SMT-1(60)"
-			(at 567.69 1132.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "87175161-1ef5-4426-b9b0-281b7bb9a2ca")
-		)
-		(pin "2"
-			(uuid "03639089-0028-4a81-bc3f-75d850180688")
-		)
-		(pin "1"
-			(uuid "2c6b8919-8654-48d2-bd52-c2cec61dc14b")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "L11")
 					(unit 1)
 				)
 			)
@@ -46641,6 +45541,132 @@
 		)
 	)
 	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 165.1 114.3 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb53fb99-2551-46ca-84e5-6c4758c0c607")
+		(property "Reference" "J15"
+			(at 147.32 123.1198 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 147.32 125.6598 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 254.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 354.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 165.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 554.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 654.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 754.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 854.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 954.94 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3b42f595-9c6b-4ff8-ae33-be744e93b197")
+		)
+		(pin "1"
+			(uuid "15b025a9-d7df-4a4b-9831-4174df513557")
+		)
+		(pin "4"
+			(uuid "b09c55c5-15e5-41f2-b2c7-e6b29fb180ab")
+		)
+		(pin "2"
+			(uuid "1791c8ed-880a-48ec-b53a-73f0621d9901")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ADPL40502AUJZ-1_5-R7:ADPL40502AUJZ-1.5-R7")
 		(at 139.7 444.5 0)
 		(unit 1)
@@ -46837,6 +45863,198 @@
 		)
 	)
 	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 421.64 422.91 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee0382b6-5c9d-4c6e-b153-40eec69dd31d")
+		(property "Reference" "J23"
+			(at 403.86 431.7298 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 403.86 434.2698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 511.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 611.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 421.64 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 811.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 911.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 1011.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 1111.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 1211.48 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9e44a0b9-4c16-40dd-a18e-c3d8ad48dcc0")
+		)
+		(pin "1"
+			(uuid "e62eaa17-1fb1-4a62-9b7c-3824a09f2338")
+		)
+		(pin "4"
+			(uuid "06246388-89d1-45cd-828f-b806c5e1c958")
+		)
+		(pin "2"
+			(uuid "ffc662a8-6bb5-42c4-8f83-969e23a976cf")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 422.91 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee3eacdb-00ec-478d-b40b-1c4e4cb7e5d1")
+		(property "Reference" "#PWR0226"
+			(at 422.91 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 422.91 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 422.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 422.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a69415e5-9156-4b62-a637-9038b4635bb8")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0226")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 326.39 308.61 180)
 		(unit 1)
@@ -46897,73 +46115,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR0118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 571.5 340.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eea41158-06ce-467d-a3e5-1d547d763e60")
-		(property "Reference" "#PWR0230"
-			(at 577.85 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 575.31 340.3599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 571.5 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 571.5 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 571.5 340.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "01031165-704b-486b-a96d-75a010f745bc")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0230")
 					(unit 1)
 				)
 			)
@@ -47318,7 +46469,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f14cdfb2-0f72-4b24-abe1-fae37489fdda")
 		(property "Reference" "#PWR0113"
 			(at 143.51 153.67 0)
@@ -47330,7 +46480,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 153.6699 90)
+			(at 142.24 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47781,6 +46931,132 @@
 		)
 	)
 	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 165.1 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f394fcf3-6ed0-4a7d-82cf-46f58f392c1a")
+		(property "Reference" "J14"
+			(at 147.32 78.6698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 147.32 81.2098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 254.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 354.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 165.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 554.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 654.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 754.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 854.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 954.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3538891a-59fc-44db-94f4-c051a503e575")
+		)
+		(pin "1"
+			(uuid "f478e1b2-9b15-4cfc-9d62-f0a70a7aff11")
+		)
+		(pin "4"
+			(uuid "690d5764-2a2b-4a78-97fc-56c83d916659")
+		)
+		(pin "2"
+			(uuid "d0c6369a-7abc-4ec6-95fd-dee317d7dee9")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 364.49 290.83 180)
 		(unit 1)
@@ -47972,6 +47248,72 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 421.64 422.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f516cab3-371a-4f21-b4f8-eeb960ea0a8d")
+		(property "Reference" "#PWR0265"
+			(at 421.64 416.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 421.64 417.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 421.64 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 421.64 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 421.64 422.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb103569-60d5-4030-88e1-a3f1231e4c45")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0265")
 					(unit 1)
 				)
 			)
@@ -48339,6 +47681,198 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6daf7a8-cadb-403c-8805-ec2d99faba97")
+		(property "Reference" "#PWR0219"
+			(at 165.1 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "734b0326-4b80-4d8b-a65e-c983cadf7a39")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0219")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 165.1 25.4 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7b61064-83ea-4314-8be9-4fc3f259d6e3")
+		(property "Reference" "J13"
+			(at 147.32 34.2198 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 147.32 36.7598 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 254.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 354.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 165.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 554.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 654.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 754.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 854.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 954.94 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "20d8fa2c-db96-4a33-af51-41d45f8cc3a3")
+		)
+		(pin "1"
+			(uuid "8ec894ca-87b7-4d03-825b-1246c67674b6")
+		)
+		(pin "4"
+			(uuid "0136d868-dc20-480f-b266-05de21d732e9")
+		)
+		(pin "2"
+			(uuid "23df0ad9-dfdc-4af9-ad77-88f95262cfce")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -48821,6 +48355,132 @@
 		)
 	)
 	(symbol
+		(lib_id "MM8030-2610RJ3:MM8030-2610RJ3")
+		(at 165.1 158.75 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa9cae55-61f5-48bb-8295-d4cff92e4d09")
+		(property "Reference" "J16"
+			(at 147.32 167.5698 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MM8030-2610RJ3"
+			(at 147.32 170.1098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MM8030:MM80302610RJ3"
+			(at 254.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
+			(at 354.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
+			(at 165.1 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1"
+			(at 554.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-MM8030-2610RJ3"
+			(at 654.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
+			(at 754.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 854.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
+			(at 954.94 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "af9890ec-c0b9-4765-8101-8f8b5462b6b4")
+		)
+		(pin "1"
+			(uuid "cd115892-fc5f-4d0a-91f4-8f124dd00b89")
+		)
+		(pin "4"
+			(uuid "64d7a9bc-92b6-4ad7-8a08-373262adc1bb")
+		)
+		(pin "2"
+			(uuid "73f67da5-1108-4978-a091-2f530e140401")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 403.86 171.45 90)
 		(unit 1)
@@ -49022,6 +48682,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 165.1 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd4a9363-05f5-45e5-89f4-7566ff075938")
+		(property "Reference" "#PWR0220"
+			(at 165.1 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bd4e974-c5ee-4057-b97e-6fde41682292")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 420.37 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fda85734-ca05-4a47-b58b-c10691026981")
+		(property "Reference" "#PWR0234"
+			(at 420.37 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 420.37 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 420.37 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 420.37 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 420.37 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cc8eaed-df57-4828-8ff0-f502f74fb1e2")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
+					(reference "#PWR0234")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 370.84 388.62 90)
 		(unit 1)
@@ -49083,73 +48875,6 @@
 			(project "Beamer Board"
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
 					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 443.23 337.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff29b960-ee00-4e31-96d0-c43886914d04")
-		(property "Reference" "#PWR0221"
-			(at 449.58 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 447.04 337.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 443.23 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 443.23 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 443.23 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "756b3d0b-ddb4-48ab-bebd-8ba18cb8fc69")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf"
-					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -49224,7 +48949,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 62.23 180)
+		(at 123.19 35.56 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -49233,7 +48958,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffc03a38-15f6-4f9e-8a24-101d800d1780")
 		(property "Reference" "#PWR0107"
-			(at 123.19 55.88 0)
+			(at 123.19 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49242,7 +48967,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 57.15 0)
+			(at 123.19 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49250,7 +48975,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 62.23 0)
+			(at 123.19 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49259,7 +48984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 62.23 0)
+			(at 123.19 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49268,7 +48993,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 62.23 0)
+			(at 123.19 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
