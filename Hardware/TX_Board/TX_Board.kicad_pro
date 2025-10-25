@@ -638,7 +638,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
+    "net_format_name": "KiCad",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -655,6 +655,22 @@
     [
       "ca6f0547-784a-45aa-9c4a-84ccc33d2bdf",
       "Root"
+    ],
+    [
+      "a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6",
+      "TX_Channel0"
+    ],
+    [
+      "20289cd5-7f64-400a-85b5-527b93622f25",
+      "TX_Channel1"
+    ],
+    [
+      "29f67bc9-c244-44a6-89b9-0daa0a5c96e3",
+      "TX_Channel2"
+    ],
+    [
+      "4e4b9e6c-a834-42ed-90e9-47de97e0b481",
+      "TX_Channel3"
     ]
   ],
   "text_variables": {}

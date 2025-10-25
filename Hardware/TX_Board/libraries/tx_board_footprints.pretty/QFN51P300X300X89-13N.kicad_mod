@@ -1,0 +1,323 @@
+(footprint "QFN51P300X300X89-13N"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "QFN-12")
+	(tags "Integrated Circuit")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "592c551c-fe54-4261-810e-dd07f1afe91a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "GP2Y1+"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9d78cc90-b2ad-4b6c-a922-ceffe7342a01")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.minicircuits.com/WebStore/dashboard.html?model=GP2Y1%2B"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b75004d5-52a8-42ca-9279-c3f877915103")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2 Ways MMIC Power Splitter, 1550 - 4400 MHz, 50"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9bfe2a6d-95d3-4857-a59e-578b01f2f69e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.89"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "910324ce-2c1b-4424-b801-23e87ff2c140")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "139-GP2Y1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05e9b6d2-4b48-419a-a0d2-7b448e8279f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Mini-Circuits/GP2Y1%2b?qs=xZ%2FP%252Ba9zWqa2gJeXJjIJ3g%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "891942d0-2a21-4697-994c-6f165e971111")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Mini-Circuits"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "edef1429-eadd-4cbb-b411-c446379672ca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "GP2Y1+"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0489ec0-8ef6-455b-86f2-ecf52c9bcd83")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -1.8755 -1.275)
+		(end -1.8755 -1.1475)
+		(stroke
+			(width 0.255)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "37c8e119-215c-4e08-8073-92ae962aba01")
+	)
+	(fp_line
+		(start -2.125 -2.125)
+		(end 2.125 -2.125)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "813633cc-008b-470d-be6d-c9241242fd6c")
+	)
+	(fp_line
+		(start -2.125 2.125)
+		(end -2.125 -2.125)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aece966d-4016-4cee-8f14-69630a6ebbac")
+	)
+	(fp_line
+		(start 2.125 -2.125)
+		(end 2.125 2.125)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "23871db0-ae5b-467d-9ba6-17ea15af3c9a")
+	)
+	(fp_line
+		(start 2.125 2.125)
+		(end -2.125 2.125)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "528435f1-a081-47c0-98e2-40ee355df46d")
+	)
+	(fp_line
+		(start -1.5 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "42c93b4b-a9a1-4b2c-b93e-d7dbaf92b27c")
+	)
+	(fp_line
+		(start -1.5 -0.99)
+		(end -0.99 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6c7a9f45-06a7-4e13-b860-9f2d05c6987d")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8e4bd453-f227-4efc-aea8-fed4a151a251")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eef4f064-f0f6-4f7b-b8aa-d25d976003c3")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0d4f6005-6756-4419-b8e9-b3f0654fce93")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "67a265f4-5893-4898-b893-47a1c0bfc717")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.45 -0.51 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "05050f06-e36d-4c32-867f-4f127f8ecc41")
+	)
+	(pad "2" smd rect
+		(at -1.45 0 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "77c94881-0986-4427-96c4-7d7af06bf084")
+	)
+	(pad "3" smd rect
+		(at -1.45 0.51 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c9b04232-e0bf-4cba-af4d-aa97353252d8")
+	)
+	(pad "4" smd rect
+		(at -0.51 1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d32a1b1b-0d80-4ff2-bfed-4093a2541cb3")
+	)
+	(pad "5" smd rect
+		(at 0 1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f4ea925e-2055-4e1b-90bf-64e14e82b7db")
+	)
+	(pad "6" smd rect
+		(at 0.51 1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ffd509ed-e28a-43fc-a9ee-ff0ad0d82c06")
+	)
+	(pad "7" smd rect
+		(at 1.45 0.51 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2d38c33c-ebfd-4440-9206-5f8c38148e4e")
+	)
+	(pad "8" smd rect
+		(at 1.45 0 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "664b50fb-a8b9-417f-82aa-c32b84ad38bd")
+	)
+	(pad "9" smd rect
+		(at 1.45 -0.51 90)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b0a24e95-d11b-4cc7-8d88-aa0133ffe720")
+	)
+	(pad "10" smd rect
+		(at 0.51 -1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c773a1e8-9222-47a4-88a8-0f3b3219746a")
+	)
+	(pad "11" smd rect
+		(at 0 -1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "49d645e9-1251-4e81-b754-8cd6eb102a88")
+	)
+	(pad "12" smd rect
+		(at -0.51 -1.45)
+		(size 0.3 0.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9730bbb8-49ed-4829-ba3d-35a541b8cd74")
+	)
+	(pad "13" smd rect
+		(at 0 0)
+		(size 1.45 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aa8dc9e9-4cc9-4f9a-a994-6d4d760ff6db")
+	)
+	(embedded_fonts no)
+	(model "GP2Y1+.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

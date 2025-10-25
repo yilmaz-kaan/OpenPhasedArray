@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "tx_board_footprints")(type "KiCad")(uri "${KIPRJMOD}/libraries/tx_board_footprints.pretty")(options "")(descr ""))
+)

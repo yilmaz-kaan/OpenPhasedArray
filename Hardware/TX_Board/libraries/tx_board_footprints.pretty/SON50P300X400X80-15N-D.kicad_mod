@@ -1,0 +1,335 @@
+(footprint "SON50P300X400X80-15N-D"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "DE Package 14-Lead Plastic DFN (4mm × 3mm)")
+	(tags "Integrated Circuit")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "bb3b5795-bc07-48d6-8a7a-359a4911858e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "LT3099ADE#PBF"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3fbaa5bb-0d3d-473b-9483-6230b78e4894")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.analog.com/LT3099/datasheet"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3878be7-49d4-4a58-a16b-24806bc94641")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-20V, 1A, Ultralow Noise, Ultrahigh PSRR Negative Linear Regulator"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cee8be1-6ef7-42be-9be4-0f93553a91cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.8"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5e69f3c6-f8e7-4c67-a7ec-77c90f4b2e88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4c6c58b6-690d-4916-8caf-ce554df03488")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31a5e4a0-1245-42da-aff4-d5ddfb76461d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Analog Devices"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0f66755-2fda-4269-bac4-f2a8f7dd3f48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "LT3099ADE#PBF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "243d7f86-a505-4f55-9549-b5a3d05ab4a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -1.9 -2.15)
+		(end -1.9 -2.025)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5077c120-1e7c-4640-865f-2cdb45619048")
+	)
+	(fp_line
+		(start -2.125 -2.3)
+		(end 2.125 -2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "12252678-6b1b-4393-ae7b-dfcdae12467b")
+	)
+	(fp_line
+		(start -2.125 2.3)
+		(end -2.125 -2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "577e7681-6c38-413e-98bb-9bbf1a5f9b93")
+	)
+	(fp_line
+		(start 2.125 -2.3)
+		(end 2.125 2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "15716835-e36a-4939-b077-029feb4e6dfc")
+	)
+	(fp_line
+		(start 2.125 2.3)
+		(end -2.125 2.3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "878cda4c-1882-4e3e-b0b5-af5793413ac5")
+	)
+	(fp_line
+		(start -1.5 -2)
+		(end 1.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b0b4e2ea-17e7-426b-8186-3d59f7de103f")
+	)
+	(fp_line
+		(start -1.5 -1.25)
+		(end -0.75 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9abf2e59-5fea-4f1d-9b3f-32f166b0c366")
+	)
+	(fp_line
+		(start -1.5 2)
+		(end -1.5 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d92919fe-b65d-481c-91c1-10bd819291f7")
+	)
+	(fp_line
+		(start 1.5 -2)
+		(end 1.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "863ba9d1-e7fd-4f68-be0d-2c27cf4769cc")
+	)
+	(fp_line
+		(start 1.5 2)
+		(end -1.5 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "886d1f3c-c3e7-4e7c-9ade-473d20c4a007")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "eb229551-0282-4f6c-a0d3-6461d2a76e6e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.5 -1.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5b3cc083-d1c5-486c-afff-649ad8533ec2")
+	)
+	(pad "2" smd rect
+		(at -1.5 -1 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ad2eaf33-c04b-497e-8fc5-a7a3fdf9047d")
+	)
+	(pad "3" smd rect
+		(at -1.5 -0.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cd253f13-0d91-496a-9fbf-9869022aae21")
+	)
+	(pad "4" smd rect
+		(at -1.5 0 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "08d191c8-2642-440e-bbe8-944acbe256c5")
+	)
+	(pad "5" smd rect
+		(at -1.5 0.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c684d3e2-a861-430d-a05f-d4eaf37221ff")
+	)
+	(pad "6" smd rect
+		(at -1.5 1 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d8f501f4-3572-4d1d-a930-cb15095d07ff")
+	)
+	(pad "7" smd rect
+		(at -1.5 1.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c009dbdd-d169-4c41-90ea-aee2e84e753d")
+	)
+	(pad "8" smd rect
+		(at 1.5 1.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "29af66db-7b4f-49ca-bc0c-c3d6e365c9ae")
+	)
+	(pad "9" smd rect
+		(at 1.5 1 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cf12da0c-465e-40e6-baa7-33ae27829884")
+	)
+	(pad "10" smd rect
+		(at 1.5 0.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dc9ce325-3aea-4a53-a39e-bf16b43f981e")
+	)
+	(pad "11" smd rect
+		(at 1.5 0 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e425a0f1-88eb-4954-b66d-e2538190b8fc")
+	)
+	(pad "12" smd rect
+		(at 1.5 -0.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8ad9db12-b114-4da0-ac08-a3d7e20a8dff")
+	)
+	(pad "13" smd rect
+		(at 1.5 -1 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6705ae15-9725-4d53-bf84-c5808b7ef15b")
+	)
+	(pad "14" smd rect
+		(at 1.5 -1.5 90)
+		(size 0.3 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "512438ce-5b9c-4903-9c0b-8d496612c0c9")
+	)
+	(pad "15" smd rect
+		(at 0 0)
+		(size 1.8 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5b499064-f90a-4ad4-9ece-a2f63e1f40de")
+	)
+	(embedded_fonts no)
+	(model "LT3099ADE#PBF.stp"
+		(offset
+			(xyz 0 0 0.04999999999)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

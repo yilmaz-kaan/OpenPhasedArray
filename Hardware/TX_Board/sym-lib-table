@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TX_Board_Symbols")(type "KiCad")(uri "${KIPRJMOD}/libraries/TX_Board_Symbols.kicad_sym")(options "")(descr ""))
+  (lib (name "tx_board_symbol_library")(type "KiCad")(uri "${KIPRJMOD}/libraries/tx_board_symbol_library.kicad_sym")(options "")(descr ""))
+)
