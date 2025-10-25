@@ -7881,7 +7881,7 @@
 			)
 		)
 	)
-	(global_label "ATTN_LE_1"
+	(global_label "ATTN_LE_2"
 		(shape input)
 		(at 259.08 114.3 270)
 		(fields_autoplaced yes)
@@ -8893,7 +8893,7 @@
 			)
 		)
 	)
-	(global_label "PS_LE_1"
+	(global_label "PS_LE_4"
 		(shape input)
 		(at 269.24 220.98 270)
 		(fields_autoplaced yes)
@@ -8937,7 +8937,7 @@
 			)
 		)
 	)
-	(global_label "ATTN_LE_1"
+	(global_label "ATTN_LE_3"
 		(shape input)
 		(at 256.54 168.91 270)
 		(fields_autoplaced yes)
@@ -8959,7 +8959,7 @@
 			)
 		)
 	)
-	(global_label "ATTN_LE_1"
+	(global_label "ATTN_LE_4"
 		(shape input)
 		(at 259.08 220.98 270)
 		(fields_autoplaced yes)
@@ -9091,7 +9091,7 @@
 			)
 		)
 	)
-	(global_label "PS_LE_1"
+	(global_label "PS_LE_2"
 		(shape input)
 		(at 269.24 114.3 270)
 		(fields_autoplaced yes)
@@ -9509,7 +9509,7 @@
 			)
 		)
 	)
-	(global_label "PS_LE_1"
+	(global_label "PS_LE_3"
 		(shape input)
 		(at 266.7 168.91 270)
 		(fields_autoplaced yes)
