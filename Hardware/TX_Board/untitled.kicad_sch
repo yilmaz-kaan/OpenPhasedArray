@@ -2416,6 +2416,12 @@
 		(uuid "7dc4ba36-75f8-4544-8876-81d5f8ca6f9c")
 	)
 	(junction
+		(at 313.69 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ea3da5f-7f5e-40f3-bc5b-049d97a5bd10")
+	)
+	(junction
 		(at 364.49 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2456,6 +2462,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a30bccf5-931f-4a4b-aa17-74ffb55659ce")
+	)
+	(junction
+		(at 308.61 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa3c05b8-ad37-4c8c-8b84-e1546a58bfcb")
 	)
 	(junction
 		(at 187.96 168.91)
@@ -3125,7 +3137,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 121.92) (xy 327.66 121.92)
+			(xy 308.61 121.92) (xy 313.69 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3382,6 +3394,16 @@
 			(type default)
 		)
 		(uuid "d7704ba4-45be-4dfd-b319-a95d79bb0944")
+	)
+	(wire
+		(pts
+			(xy 313.69 121.92) (xy 327.66 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8985468-c16a-4e5a-81a0-25bb12f76a25")
 	)
 	(wire
 		(pts
@@ -4209,6 +4231,84 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
+		(at 313.69 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10680a81-e468-4c15-9dfd-20603e872d29")
+		(property "Reference" "#PWR0262"
+			(at 313.69 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 313.69 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 313.69 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 313.69 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 313.69 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c638020-8258-4ac3-bfa5-23a760b8113d")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "#PWR0263")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "#PWR0264")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "#PWR0265")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "#PWR0262")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
 		(at 330.2 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4913,6 +5013,84 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 308.61 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35faf2f4-ffa5-4c1f-b4eb-a1b34e9ff1b8")
+		(property "Reference" "#PWR0266"
+			(at 308.61 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 308.61 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 308.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 308.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 308.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "142cc2ef-800c-452c-b00a-fa486ffb22ae")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "#PWR0267")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "#PWR0268")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "#PWR0269")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "#PWR0266")
 					(unit 1)
 				)
 			)
@@ -10093,6 +10271,85 @@
 		)
 	)
 	(symbol
+		(lib_id "tx_board_symbol_library:C")
+		(at 313.69 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8917c7c-ff7a-445e-a05c-38857c113066")
+		(property "Reference" "C106"
+			(at 318.262 129.032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100 pF"
+			(at 319.278 126.746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 312.7248 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 313.69 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "695e2ccd-c066-484f-a31c-0b7c8ef34da0")
+		)
+		(pin "2"
+			(uuid "1ed20a45-6e29-49e1-abfc-6eb5f307f3f4")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "C108")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "C110")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "C112")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "C106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:GND")
 		(at 93.98 146.05 90)
 		(unit 1)
@@ -10932,6 +11189,85 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:C")
+		(at 308.61 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ebb19e42-cb97-415e-a687-0d032ab1b694")
+		(property "Reference" "C105"
+			(at 302.26 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1 uF"
+			(at 304.292 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 307.6448 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 308.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 308.61 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ab768b7-fb7f-4924-a0b6-35ebb7c13efe")
+		)
+		(pin "2"
+			(uuid "3e57605f-69af-4fda-be86-1a60e69d1dc0")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "C107")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "C109")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "C111")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "C105")
 					(unit 1)
 				)
 			)
