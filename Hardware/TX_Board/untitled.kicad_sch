@@ -2637,6 +2637,16 @@
 	)
 	(wire
 		(pts
+			(xy 280.67 151.13) (xy 294.64 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e8e187-047b-42cc-905d-91a8b41a2d0f")
+	)
+	(wire
+		(pts
 			(xy 97.79 140.97) (xy 93.98 140.97)
 		)
 		(stroke
@@ -3047,7 +3057,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 151.13) (xy 266.7 151.13)
+			(xy 208.28 151.13) (xy 252.73 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3515,6 +3525,56 @@
 		)
 		(uuid "fbcb9ab3-42dc-4a08-9838-bf7e5a854020")
 	)
+	(label "ATTN-RF_IN"
+		(at 163.83 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "405db355-5c75-4321-ba51-23ec3b0fb9e9")
+	)
+	(label "AMP-RF_OUT"
+		(at 389.89 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "62aff6aa-c1b8-413a-a6e9-8dd0d84828a6")
+	)
+	(label "PS-RF_OUT"
+		(at 116.84 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "86cee3bf-2e56-4ebe-ad72-02f9325c25ec")
+	)
+	(label "AMP-RF_IN"
+		(at 292.1 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b68a9205-e93d-4966-9212-10968ae39b47")
+	)
+	(label "ATTN-RF_OUT"
+		(at 234.95 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8dc739d-0087-40ef-8814-b71bf89b60a7")
+	)
 	(hierarchical_label "ATTN_CLK"
 		(shape input)
 		(at 237.49 121.92 0)
@@ -3712,6 +3772,161 @@
 			(justify right)
 		)
 		(uuid "e39806d3-ee58-4caf-871f-50d77f25b1eb")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 283.21 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e24a897-cf49-4e36-afd3-eac34d7d3f34")
+		(property "Netclass" "WaveGuide127um"
+			(at 283.9085 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 66.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 153.67 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e39a372-f4e7-48dc-8395-3384e4ecaad6")
+		(property "Netclass" "WaveGuide127um"
+			(at 154.3685 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -63.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.41 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8da55633-daa0-4672-a17c-ee86bb28392b")
+		(property "Netclass" "WaveGuide127um"
+			(at 106.1085 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -111.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 222.25 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cf854a0e-6c50-43c7-9489-21302d588c03")
+		(property "Netclass" "WaveGuide127um"
+			(at 222.9485 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 5.08 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 378.46 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e5889847-9335-4fe5-98cc-21d7559ace94")
+		(property "Netclass" "WaveGuide127um"
+			(at 379.1585 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 161.29 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
@@ -7098,7 +7313,7 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
-		(at 279.4 166.37 0)
+		(at 265.43 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7107,7 +7322,7 @@
 		(fields_autoplaced yes)
 		(uuid "74376191-fc4c-4c18-b907-8d9423ce17fd")
 		(property "Reference" "#PWR084"
-			(at 279.4 172.72 0)
+			(at 265.43 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7116,7 +7331,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 279.4 171.45 0)
+			(at 265.43 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,7 +7339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 166.37 0)
+			(at 265.43 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7133,7 +7348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 166.37 0)
+			(at 265.43 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7142,7 +7357,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 279.4 166.37 0)
+			(at 265.43 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7965,7 +8180,7 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
-		(at 279.4 135.89 180)
+		(at 265.43 135.89 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7974,7 +8189,7 @@
 		(fields_autoplaced yes)
 		(uuid "9529f693-58bb-4aa5-a0f3-0899b8c604d7")
 		(property "Reference" "#PWR083"
-			(at 279.4 129.54 0)
+			(at 265.43 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7983,7 +8198,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 279.4 130.81 0)
+			(at 265.43 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,7 +8206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 135.89 0)
+			(at 265.43 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8000,7 +8215,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 135.89 0)
+			(at 265.43 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8009,7 +8224,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 279.4 135.89 0)
+			(at 265.43 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11275,7 +11490,7 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:MM8030-2610RJ3")
-		(at 279.4 135.89 90)
+		(at 265.43 135.89 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11284,7 +11499,7 @@
 		(dnp no)
 		(uuid "ee8e122c-1666-4491-ad50-914f6f8877eb")
 		(property "Reference" "J14"
-			(at 261.62 144.7098 90)
+			(at 247.65 144.7098 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11292,7 +11507,7 @@
 			)
 		)
 		(property "Value" "MM8030-2610RJ3"
-			(at 261.62 147.2498 90)
+			(at 247.65 147.2498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11300,7 +11515,7 @@
 			)
 		)
 		(property "Footprint" "tx_board_footprints:MM80302610RJ3"
-			(at 369.24 162.56 0)
+			(at 355.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11310,7 +11525,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/-/media/webrenewal/support/library/catalog/products/connector/o30e.ashx?la=en-sg&cvid=20230202042145000000"
-			(at 469.24 162.56 0)
+			(at 455.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11320,7 +11535,7 @@
 			)
 		)
 		(property "Description" "RF Connectors / Coaxial Connectors 250Vrms 0.07ohms 11GHZ"
-			(at 279.4 135.89 0)
+			(at 265.43 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11329,7 +11544,7 @@
 			)
 		)
 		(property "Height" "1"
-			(at 669.24 162.56 0)
+			(at 655.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11339,7 +11554,7 @@
 			)
 		)
 		(property "Mouser Part Number" "81-MM8030-2610RJ3"
-			(at 769.24 162.56 0)
+			(at 755.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11349,7 +11564,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/MM8030-2610RJ3?qs=dnvuLCnOKpt0o1NKcCkttA%3D%3D"
-			(at 869.24 162.56 0)
+			(at 855.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11359,7 +11574,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Murata Electronics"
-			(at 969.24 162.56 0)
+			(at 955.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11369,7 +11584,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "MM8030-2610RJ3"
-			(at 1069.24 162.56 0)
+			(at 1055.27 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
