@@ -1,0 +1,13 @@
+Board Stackup: 
+
+Top Solder Mask: LPI Solder Mask, 0.01mm
+F.Cu: Copper ,0.035mm (1 oz)
+Dielectric 1: (Top Prepreg) Rogers RO4450F (2 plies), 0.203mm (8 mil)
+In1.Cu: Copper, 0.035mm (1 oz)
+Dielectric 2,(Central Core),FR-4 (TG150), 1.08mm
+In2.Cu: Copper ,0.035mm (1 oz)
+Dielectric 3,(Bottom Prepreg), FR-4 Prepreg (7628), 0.18mm
+B.Cu, Copper, 0.035mm (1 oz)
+Bottom Solder Mask: LPI Solder Mask, 0.01mm
+
+Total Thickness, 1.623 mm
