@@ -3597,17 +3597,6 @@
 		)
 		(uuid "14a91f8f-8225-4acf-b6b4-c50d5888dd8e")
 	)
-	(hierarchical_label "ATTN_A2"
-		(shape input)
-		(at 190.5 120.65 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c9fe444-4f32-4617-b425-72d2f037ac62")
-	)
 	(hierarchical_label "PS_LE_1"
 		(shape input)
 		(at 96.52 101.6 0)
@@ -3663,17 +3652,6 @@
 		)
 		(uuid "4923ab4d-a697-46e8-9238-67dacac72537")
 	)
-	(hierarchical_label "ATTN_A0"
-		(shape input)
-		(at 162.56 146.05 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "65a02642-63c3-4ecc-b486-44b1e05bf639")
-	)
 	(hierarchical_label "V_PD"
 		(shape input)
 		(at 308.61 110.49 90)
@@ -3706,17 +3684,6 @@
 			(justify left)
 		)
 		(uuid "97afcd84-fb39-4c23-b47b-f209b6fd7d6b")
-	)
-	(hierarchical_label "ATTN_A1"
-		(shape input)
-		(at 193.04 120.65 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "98c8fbfd-dad4-48f3-ae61-b0d1d1712812")
 	)
 	(hierarchical_label "VCC"
 		(shape input)
@@ -4760,6 +4727,84 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
+		(at 190.5 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c172f0a-5cdd-471d-b0ef-88998ccd3ca9")
+		(property "Reference" "#PWR0277"
+			(at 190.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bb9f279-49b2-43d4-960a-a690fad4a5a9")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "#PWR0278")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "#PWR0279")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "#PWR0280")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "#PWR0277")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
 		(at 346.71 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4991,6 +5036,85 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 162.56 146.05 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fe9a678-345c-4463-94a2-2ec9253ea529")
+		(property "Reference" "#PWR0281"
+			(at 156.21 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 146.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ef801af-00a6-4aa4-a6f5-4d47629beea1")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "#PWR0282")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "#PWR0283")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "#PWR0284")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "#PWR0281")
 					(unit 1)
 				)
 			)
@@ -11857,6 +11981,84 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 193.04 120.65 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f41a8137-803f-472c-93ab-352d243ba283")
+		(property "Reference" "#PWR0273"
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5212740a-e941-4831-8266-321795bb192c")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "#PWR0274")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "#PWR0275")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "#PWR0276")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "#PWR0273")
 					(unit 1)
 				)
 			)
