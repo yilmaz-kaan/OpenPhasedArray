@@ -279,6 +279,30 @@
 	(net 133 "/TX_Channel3/PS-RF_OUT")
 	(net 134 "unconnected-(J25-Pin_27-Pad27)")
 	(net 135 "unconnected-(J25-Pin_28-Pad28)")
+	(net 136 "Net-(AT1-VDD)")
+	(net 137 "Net-(AT2-VDD)")
+	(net 138 "Net-(AT3-VDD)")
+	(net 139 "Net-(AT4-VDD)")
+	(net 140 "Net-(IC7-P{slash}S)")
+	(net 141 "Net-(IC7-VEE)")
+	(net 142 "Net-(IC7-VCC)")
+	(net 143 "Net-(C29-Pad1)")
+	(net 144 "Net-(IC9-P{slash}S)")
+	(net 145 "Net-(IC9-VEE)")
+	(net 146 "Net-(IC9-VCC)")
+	(net 147 "Net-(C52-Pad1)")
+	(net 148 "Net-(IC11-P{slash}S)")
+	(net 149 "Net-(IC11-VEE)")
+	(net 150 "Net-(IC11-VCC)")
+	(net 151 "Net-(C75-Pad1)")
+	(net 152 "Net-(IC13-P{slash}S)")
+	(net 153 "Net-(IC13-VEE)")
+	(net 154 "Net-(IC13-VCC)")
+	(net 155 "Net-(C98-Pad1)")
+	(net 156 "Net-(C105-Pad2)")
+	(net 157 "Net-(C107-Pad2)")
+	(net 158 "Net-(C109-Pad2)")
+	(net 159 "Net-(C111-Pad2)")
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "015058fc-d46f-4656-8dd7-142fcb3249dd")
@@ -1647,7 +1671,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 143 "Net-(C29-Pad1)")
 			(pintype "passive")
 			(uuid "7b30957b-1268-47d4-b2fd-366aa8c99d1b")
 		)
@@ -3166,6 +3190,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "0abe9fa2-e175-4b07-9902-457d0ff76233")
+		(at 203.785 20.42)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L18"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "ba10b736-dbb3-40f0-9622-57f71e0e9fe1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "f050b3b4-e262-49ba-a924-15004ddbde54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32e77d6b-a8e9-4bfd-8fea-1b6d1fcfca54")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f13e04f6-cd1c-4e49-9a93-aa41603f6fab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/a0b944ea-4520-4627-8d3e-806465bfb980")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bf868047-f1e7-49ea-a645-de9a465ed50c")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6315ab6f-6a9c-432d-b89c-9a53b14e23c4")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "40c06a2b-94b2-463f-8fd3-f56e81d64d39")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "561e87b5-7ece-4832-97d7-551c08c6b8e5")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1fb82f47-6ae8-42ee-b631-747d809ed402")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dd82037f-d007-423e-8b85-60913386b341")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f52cc78e-37c9-4c61-9405-fd550c015929")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ba226724-d4e5-4db7-81e5-24fc605399f8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9e439b09-8f14-4710-8caa-59e3aca3f794")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "361007d6-a6d0-4283-b540-efceec335667")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 144 "Net-(IC9-P{slash}S)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "e1cc8f30-c3f8-415b-9ca3-51cce8d1ebd4")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0ac93ebc-44fd-4e8a-b6c0-1802c5e9eb7b")
@@ -3942,6 +4147,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "0b2f8f1e-a290-44d4-8873-f3bf260defa7")
+		(at 208.695 14.45)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L7"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "ef324170-fd9c-4cea-9c8f-b144cc13d6b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "2608c5de-6b47-43bd-8e12-26bd5531a3ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "271c08b9-e1f0-4787-8d3e-14868d023c2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3eacfa3-e068-40e4-b1ab-2fde027f2a50")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/1d19f709-2e5c-4ae5-9832-5467eda5b1b0")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4e679a16-a97c-4f63-9f00-4ce83bbda031")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "57274edf-0706-4342-899f-916cd5977a97")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5e9b82d1-0c15-485d-96ef-765838ebb09d")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d552dabe-25e0-451a-881a-1d5c46feb3b1")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "abb573f1-abb7-4b25-8167-ea114362cae3")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f3988eb4-1a9a-467b-81c8-d7b4f3b8b662")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "58f174b7-3362-4d02-987b-c4a804731094")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ae159e1d-d43a-43b5-8ffb-03f98176e802")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "576c4971-3f72-4b48-a361-9f7be26b29a9")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "b8bb6526-3f12-4ad5-8f81-9a6c34e46174")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 138 "Net-(AT3-VDD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "c2104642-bb91-40c4-a24e-16c737fbf024")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0fbae7e2-a828-4cc0-a5c9-096fe0f4b37a")
@@ -4141,6 +4527,187 @@
 			)
 		)
 	)
+	(footprint "tx_board_footprints:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "10de9c15-bc45-4b08-8fa9-14e6823e58a5")
+		(at 208.695 22.41)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L23"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "dbe70115-eca8-4bc0-b903-f9b73a4aeb7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "d908709a-6aa7-4f2f-84d9-33f5796dfa67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eaa29fb4-1097-4f0b-a57b-a387b39c693b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2fbe5862-2358-4956-b613-316e5e9e166e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/d01cf944-5db1-43e3-b597-a05f2e0181ce")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "835dd54b-163c-4d7c-8087-4ccdf4f4bbfb")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "873dbab1-6040-420f-a44f-5b0f5a248a3c")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "587f1392-0dcd-4290-9910-53d5fce784c7")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4827e178-cc50-4090-811b-f34a0fbb5680")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bf31fb1f-48e9-468a-9baf-097f133d5fd5")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "61e829a6-0cb5-49ab-8048-0eb44b2257a7")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77dbc3ef-1943-4d79-b73c-4836f9a05c63")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4dec40f9-bf2a-4bad-be08-3576efee1100")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "02263d54-0d18-4e45-ae16-ee03808fd98f")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 158 "Net-(C109-Pad2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "afffa72f-841c-4012-9570-201d8e628a32")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 71 "Net-(IC12-VPD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "877e1085-7144-429b-be20-7b70a0908ea1")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "136693a0-2017-490e-aab2-86e831424f80")
@@ -4329,6 +4896,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "172adc00-7ede-42f3-bd98-a0617b7550ca")
+		(at 213.605 16.44)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L12"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "6ac9e853-a46c-4411-8dba-a7a7b66bdccc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "87490f4d-08db-4755-8e21-81bb7ac94e92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9630254f-0d8d-4913-ae8b-452c206007c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b9fe38a-d16b-4029-890f-b786c0281779")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/30410ae7-26c5-4b08-ab35-e325e57f9514")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "19b72628-e3e9-44bd-9ab6-d3a57994375c")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b4e7fe2d-5bfa-47f1-8a17-d23929d54dcd")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "860bdabc-2c9b-41c1-a474-593df2416fdc")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3e20d85f-330a-4e4d-b9bc-8c3e0a213f1f")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "82e11443-db01-41f2-a9d6-9f270c66a7b6")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5c62ece7-8fc4-4a74-88c3-c81ab9d57d05")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f5815bfd-a707-49dc-8e19-f1f7aa20d4b2")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "92620805-b1ae-4bbe-b5fa-58c77d8f125d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b71a01cf-b3bb-4497-9b7f-43363d04cbb4")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "a8d63115-1686-4a38-9094-50100d16d3c1")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 154 "Net-(IC13-VCC)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "9f2c94e9-f10f-47a4-b672-9adc178d171e")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4777,7 +5525,7 @@
 			(at -1.45 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 139 "Net-(AT4-VDD)")
 			(pinfunction "VDD")
 			(pintype "passive")
 			(uuid "8ed69815-f072-4f66-bffa-aa0e91d28ebe")
@@ -5712,7 +6460,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "VEE")
+			(net 149 "Net-(IC11-VEE)")
 			(pintype "passive")
 			(uuid "65fc0040-324a-4c69-9024-415660ad4126")
 		)
@@ -6300,7 +7048,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 140 "Net-(IC7-P{slash}S)")
 			(pintype "passive")
 			(uuid "9172a381-26cb-4034-9d0b-4c86571702b4")
 		)
@@ -6557,6 +7305,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "tx_board_footprints:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "208a0fc7-840f-4507-9888-c58425b10d7b")
+		(at 203.785 22.41)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L22"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "d658d1b2-b637-4e21-b7c5-cff1ddaa3220")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "4e42a8f3-9201-429a-86fa-8d41a35cb4f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67fa8ae5-2f7e-45b9-b077-9bd610e0de08")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32e71da3-ad49-4fc4-a9e0-22b06ae7f188")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/d01cf944-5db1-43e3-b597-a05f2e0181ce")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4dec9d16-ce1f-4432-a4f9-d4dd1c3b1abe")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "490cbefd-f1c4-42fa-9ab2-b602b9387de3")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f282b08a-942c-4f87-a660-ea944f1df821")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bea0e0ca-5ee0-4a40-aaac-a8639514ad84")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8d7f013d-0937-446c-a737-2af8dfa91bca")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a4b75278-173a-4574-a14b-ea3ad702ca38")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6a5c10bd-3a62-42b6-a0de-bb812499e326")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e6f42a4b-311b-45f1-a9d7-809acc3f7d49")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5d933d3f-66b3-4503-9b2b-fd4688c07d29")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 157 "Net-(C107-Pad2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "40437de5-1460-423d-90f9-d53633b07c98")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 116 "Net-(IC10-VPD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "4139c8e7-6b91-4eac-b03b-108814e22cd8")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6966,6 +7895,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "2454ed7a-8bf8-4631-80cb-cfb0e01690aa")
+		(at 203.785 16.44)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L10"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "18ca5a7e-d603-4f9c-bb21-134cba7017d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "9d4e6e95-b43d-4b61-bc89-a06348963910")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "829a42d2-584f-454f-ba18-9a1e9ef52342")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cbe69c1-2d22-4c02-9be2-0a0f2145399d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/30410ae7-26c5-4b08-ab35-e325e57f9514")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d1231b86-c65a-41d2-bc05-6ed2193f1630")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a3586c49-935a-4533-bdcc-8498dd54475c")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e89e5b8d-78b7-48ab-8eed-5ccee3e1de03")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f937ec73-8a59-4255-b80d-54d9f935c681")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7910db4d-f36a-4877-8f1c-52116bdb6fd5")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "df52d4b5-52ac-4e41-acb1-714087983e71")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6861e138-f800-4fa3-80b6-7e9aebad4d3d")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6d4f7a62-4742-4d1c-a0b7-3a854b689252")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b48e4df4-5a92-4a32-afb3-431d5bec997a")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "0aa77cec-09c6-415b-b8f1-52ff8081d09a")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 146 "Net-(IC9-VCC)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "60cb92e6-a4f3-4a1a-a28f-0b13222b4fa1")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "25bc2c67-2303-4711-b09d-80d52807d0a3")
@@ -7148,7 +8258,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "VEE")
+			(net 141 "Net-(IC7-VEE)")
 			(pintype "passive")
 			(uuid "d1492d3f-d2b2-40fa-a257-b3c370ba3de0")
 		)
@@ -7537,7 +8647,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 147 "Net-(C52-Pad1)")
 			(pintype "passive")
 			(uuid "b9087b3c-a784-44be-ac93-8fda3aa6552e")
 		)
@@ -7552,6 +8662,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "2962dfd8-352b-47f1-8201-e3cd58191e71")
+		(at 218.515 14.45)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L5"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "77b951a7-41e6-438d-a7f2-220ce4b9ab2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "baa82b7c-f829-4524-88c7-8f3dec79ab91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91ca2556-8523-42f9-be49-a57fc32f7d2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "430b2c01-9e48-4c23-9c34-7f322182e873")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/1d19f709-2e5c-4ae5-9832-5467eda5b1b0")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "271badfe-27d2-4185-85d8-5670ddec8a2f")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "690cce8d-03cc-410f-89d7-c6bfd7b565d0")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dd429852-3103-4902-9ffa-5ad50adbb84e")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "37d3c437-8ab5-4085-bf86-c00e434d6130")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c0c44c38-9c9c-436a-9240-feca34b6e9a8")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3f80d9ef-cfb5-402b-806c-f4de71b208ea")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1c912e0e-30b6-4915-87ce-7844844cc68b")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d69aabdd-51b0-4c79-87f1-1df752bc9671")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "4bafe7d2-94a7-4f08-b74f-5770ac6c4cb6")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "22bfb01e-bb50-4fb2-8d87-4262a87a665b")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 136 "Net-(AT1-VDD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "9ca47af7-6676-44b0-b9b7-2e66a4eb88b4")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8049,7 +9340,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 83 "Net-(IC14-VPD)")
+			(net 159 "Net-(C111-Pad2)")
 			(pintype "passive")
 			(uuid "9f9631dd-13c0-4828-98d5-6e3b034709b7")
 		)
@@ -8254,6 +9545,368 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "2dcc6354-7a19-4383-be39-fcc9fb804801")
+		(at 213.605 14.45)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L8"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "ca5060a2-a5cb-4831-8854-1c511da0cb89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "02ad578f-d698-480c-b853-7764586fbd32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0da7a01d-90e4-431b-ae09-a09f7bff2909")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ebe3a35-c2a9-413e-8d49-33e816763159")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/1d19f709-2e5c-4ae5-9832-5467eda5b1b0")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9b2ec3cf-9680-4410-b7f0-e8a5156c866c")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "951931b7-4f89-40c6-a25a-9ae44a0e879b")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f681e7d8-7df9-4bf0-88e5-cbccea251721")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3ca4b3bc-540d-4271-8a00-7128b0a20d7d")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e587174d-10aa-4b4b-b4dd-8b5f8970b131")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b631f40c-56ee-4028-b383-05121c2c99aa")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "af5188d2-6998-43b0-bd06-627fcab7d6e8")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0c257d98-f12e-4614-8bb1-404b9cb9af13")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9aa23ebf-8963-487a-bbde-cd6b1a1b4ae5")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "db829037-0e48-43b1-a5c8-1ca62735a7b9")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 139 "Net-(AT4-VDD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "d915a9d1-b9d4-475b-9fb6-d4407feabb5b")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "2ef646da-edb0-42e7-839a-038188ece058")
+		(at 203.785 18.43)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L14"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "f09ee926-5efb-4e9b-9208-ed4a47fdf375")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "ce7692c9-3037-483f-84d8-162aaa6183a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d426c72a-1482-485d-8ef7-35dce8734968")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "addd0239-ef59-4899-b572-6d00f40aecab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/8f9c7b5f-14ae-49dd-8c2e-4ba6021eb89b")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dcd5dab1-8386-4f29-85fa-0244bb3ed739")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b65f5011-0b0d-44a2-a3d6-d7a876558c85")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "288c9c10-0eff-4c95-b1e5-6924ae6c13b5")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f2368a6c-85d5-4e51-ae27-107767d19722")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "85999634-3642-496e-9df7-68186eeb2df2")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ec0012f7-5b7e-470c-a786-d21ac720fda4")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f4b93349-ac41-4fab-b098-9f83bda91cd6")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "598acf5a-20dd-42b6-84bc-838ea065f0a8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "ae95f11e-c209-473d-b9b2-fe9d99eef1f4")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "VEE")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "279d53c1-7f60-46eb-b1fa-4119045f446c")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 145 "Net-(IC9-VEE)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "267899e8-c7b1-4775-8006-d2d14349c3c4")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15117,7 +16770,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "VEE")
+			(net 153 "Net-(IC13-VEE)")
 			(pintype "passive")
 			(uuid "00221a51-b381-4d34-90f9-d7f4a0425954")
 		)
@@ -16118,6 +17771,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "tx_board_footprints:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "57b8b2c7-05ea-4c40-8701-03a77707cbff")
+		(at 213.605 22.41)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L24"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "4b9f8584-c17b-4d9a-bf72-aeb53f641492")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "a6398122-e165-4bad-8c1d-cd96983644a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fea4a6a8-fd87-4b0d-b154-a778161d377b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e48ad38-cf1b-4e42-8055-c396c763235c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/d01cf944-5db1-43e3-b597-a05f2e0181ce")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dfcb316d-0544-40b9-96bd-5b76c3ea74f0")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "79cbdc07-16e9-45b5-b1e4-ffca9cb0b393")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "428c9c3d-6166-4729-9699-f67b17584bf8")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7c038c6e-2935-4b42-9d00-753b2517bacf")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3edfa5d5-d031-421f-9614-49a2f626024d")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d8625a42-b10a-474a-9bbb-c350c075ae91")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5f8fa3f7-1634-4adc-ab77-11594f8005be")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2b087583-70e9-4eda-b628-40d701737961")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "17f22a37-e3a2-4cee-b45a-f5e94e0e61c6")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 159 "Net-(C111-Pad2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "01b4b4f4-2d48-4dde-b462-34dc28e228f8")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 83 "Net-(IC14-VPD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "2cc9cca6-92a1-49cc-932b-e0fc17da5403")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -17308,7 +19142,7 @@
 			(at -1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 18 "VEE")
+			(net 153 "Net-(IC13-VEE)")
 			(pinfunction "VEE")
 			(pintype "passive")
 			(uuid "883c9017-e2c1-4fc0-809f-8b0c39d6c46b")
@@ -17317,7 +19151,7 @@
 			(at -1.95 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 152 "Net-(IC13-P{slash}S)")
 			(pinfunction "P/S")
 			(pintype "passive")
 			(uuid "523ec92b-6c84-4628-b03c-b7b8b2ab94a0")
@@ -17461,7 +19295,7 @@
 			(at 1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 154 "Net-(IC13-VCC)")
 			(pinfunction "VCC")
 			(pintype "passive")
 			(uuid "154bb80c-6cb2-4c8d-ab3f-fb443e6addb9")
@@ -18719,7 +20553,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 114 "Net-(IC8-VPD)")
+			(net 156 "Net-(C105-Pad2)")
 			(pintype "passive")
 			(uuid "04b70ae9-785d-481f-96d3-703d0188045b")
 		)
@@ -19836,6 +21670,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "68663e9a-545b-46a9-912c-581ab0d256ba")
+		(at 203.785 24.4)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L26"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "cf47e9d9-da6a-423a-8a4c-7701a339e9c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "733c1237-26d5-462e-b9d8-a7924ac9d874")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57d2a0cf-eb99-444c-8d09-99dcca7d9665")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f2782b1-5a32-4645-ae9c-78c6050b2350")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/e0f790e3-fdb4-411e-bbe4-f5dad9d2b8c9")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "de006fb5-61d6-4ebc-bf41-ea69bc54b463")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d588c4d7-6073-4ac9-bd25-4677f8b5fdc4")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4f4a786a-7933-4aac-812f-2657a638f911")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f7b27363-cbea-4b2f-8a62-e7fe91d7d92b")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eb71cc81-893c-45b1-8d2f-e483d6adc1f9")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6cc93b33-0bda-4bef-9239-675108702f10")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "13bdd36f-ef35-4b27-8692-239fbdefc972")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "efb92cc0-e5c7-4f6b-9b32-29bf2ab33587")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "092e32cc-0ff9-4954-a122-13e6236ba8c6")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "96d4992b-249a-41c8-8a22-4ef8d69aee3b")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 147 "Net-(C52-Pad1)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "45e390cf-c8ba-4836-bbe2-17849ecb788d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "tx_board_footprints:MM80302610RJ3"
 		(layer "F.Cu")
 		(uuid "68cc3549-663b-46c2-a625-126cea8e826a")
@@ -20512,7 +22527,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 151 "Net-(C75-Pad1)")
 			(pintype "passive")
 			(uuid "e8c5ab10-ca7b-4531-9273-1f2deca277df")
 		)
@@ -22948,7 +24963,7 @@
 			(at -1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 18 "VEE")
+			(net 149 "Net-(IC11-VEE)")
 			(pinfunction "VEE")
 			(pintype "passive")
 			(uuid "81df74ca-6d0d-430b-a96c-483556fc6bde")
@@ -22957,7 +24972,7 @@
 			(at -1.95 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 148 "Net-(IC11-P{slash}S)")
 			(pinfunction "P/S")
 			(pintype "passive")
 			(uuid "c523f2d3-8b87-417c-8132-27eef629baba")
@@ -23101,7 +25116,7 @@
 			(at 1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 150 "Net-(IC11-VCC)")
 			(pinfunction "VCC")
 			(pintype "passive")
 			(uuid "1f469ed2-6bfe-4532-9c19-8a7ef9266416")
@@ -23381,6 +25396,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "7be6fce4-fe9d-4200-8b2f-5a07e3be1da2")
+		(at 218.515 20.42)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L17"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "7477b98e-d451-4601-a836-f72b13b86f02")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "1877aa14-ec41-4041-ae1f-0b0507447e8a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac3e0f57-3731-422a-9d2c-3138e5b30562")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06c93d10-27b5-4061-a427-b908098b2d92")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/a0b944ea-4520-4627-8d3e-806465bfb980")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b9993b20-dfb8-498e-b145-7d5ff69adc17")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7d6b1152-8cc9-4bfe-81e7-f2dbf8effdf2")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8180b312-b529-4897-9c87-97b2225325d9")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "25e1b727-8fff-4fce-8fa4-1c1dd539d93a")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "89ed819f-d8cd-43ed-8268-c460f7439b43")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "417ce6c5-1922-46a5-adfd-c73668d4b02a")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c470bfe5-cd28-42ae-9ca2-d6ffca130a92")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9a620811-d3a0-4dcf-99b8-c0e91d8d8f90")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "68873012-4ee5-424a-8956-7bfc5a58f6c3")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5f0f7b54-8c66-43b4-b81b-7d38c5da3c4d")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 140 "Net-(IC7-P{slash}S)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "9923a373-fa24-4802-a388-4cad83fbb852")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "7c9edc85-bef3-4334-a5e2-acbecf578386")
@@ -23563,7 +25759,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 146 "Net-(IC9-VCC)")
 			(pintype "passive")
 			(uuid "84eea635-ee31-4af4-9458-94f705ec7108")
 		)
@@ -23779,6 +25975,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "7d6ccbca-b40c-4cb3-ac38-a348f48ee9ad")
+		(at 208.695 24.4)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L27"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "02e7220c-8a00-4d9d-9a4d-2efc591eb83b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "f77b0eb4-551e-4086-9116-73765d5e499d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e14dfc4-8493-42e8-b63a-ee327ac333f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef07eb77-3936-48da-9bbf-1f3be6a2168d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/e0f790e3-fdb4-411e-bbe4-f5dad9d2b8c9")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "22e2d8f8-79f9-434e-8f34-9dbe768a2692")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "175fe86d-0f71-420c-9af3-6fa8ebb24fe3")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f611c12a-d97f-410b-9181-062a998c5c27")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4871f563-4f39-4c61-a301-a6486c33a71c")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a5577e7b-fb2b-4a5b-82a2-9bdf4c735268")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9ee00180-0c4e-46db-b0e9-0ed51982313f")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "012633b7-eb37-4228-a7e9-2d9da4870c31")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4bbb391c-463d-4304-849b-aaa77bfafb08")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "84123f07-1b4d-4503-9760-113e079776ba")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "e0f70848-3ece-4b89-a48d-ed382a86c182")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 151 "Net-(C75-Pad1)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "4cfe25e4-2cf3-447e-bce5-cfa1723dd5c9")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "7f2387d3-866e-4098-9e17-3ed56dbcbabc")
@@ -23952,7 +26329,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 155 "Net-(C98-Pad1)")
 			(pintype "passive")
 			(uuid "acf48716-eaaa-4a46-bd1f-8a21f6bf3fa0")
 		)
@@ -24657,7 +27034,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 155 "Net-(C98-Pad1)")
 			(pintype "passive")
 			(uuid "8dd9d617-0d45-42bc-b8de-6e1728d66a53")
 		)
@@ -26059,7 +28436,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 151 "Net-(C75-Pad1)")
 			(pintype "passive")
 			(uuid "3de906cf-fc03-405f-9338-b0362313a1fd")
 		)
@@ -28785,7 +31162,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 114 "Net-(IC8-VPD)")
+			(net 156 "Net-(C105-Pad2)")
 			(pintype "passive")
 			(uuid "c5a38c01-2cf6-4ab4-ab53-6874a9bc232d")
 		)
@@ -29567,6 +31944,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "tx_board_footprints:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "8dec717d-648e-4429-89e1-43e9db4df505")
+		(at 218.515 22.41)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L21"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "6bee8502-ef39-4490-a9ea-4aac6cc85b00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "834519bb-9e54-4d02-850a-18edaff155c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46b3eb82-b3b8-4a24-b9e7-8bcd63af665d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5db9d1b0-6680-4100-92d4-87d71e3f9e55")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/d01cf944-5db1-43e3-b597-a05f2e0181ce")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ff5b573d-8690-4d2f-9f2a-73d5876e4a58")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ede1d2a3-bae8-40c2-b92e-be4402f909d7")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "17f5b912-a2c4-41c3-9849-a5e536f1ab8f")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fa175104-dc1d-4f9f-8cc3-8e9bb9503c1f")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "38f0f23f-0675-415d-90a6-dbb69b373475")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "131eb4ca-2de1-4f84-8edb-b74656ca05a0")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "898e8800-63dc-4fbd-b00d-cb83b03f9636")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "29b5e594-5f66-4da0-829d-100bd3a7c77b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c5acdb5f-9a3c-4b82-b80f-ea59c6c927da")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 156 "Net-(C105-Pad2)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "4fdcc3a2-bc0a-4ee2-a10a-6cb8edd6f2fd")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 114 "Net-(IC8-VPD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "c51d3b2d-1059-4095-b829-f857f56e262d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30462,7 +33020,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 116 "Net-(IC10-VPD)")
+			(net 157 "Net-(C107-Pad2)")
 			(pintype "passive")
 			(uuid "2d449bfd-8ce0-4cec-96a8-08ea4705b69c")
 		)
@@ -31050,7 +33608,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 138 "Net-(AT3-VDD)")
 			(pintype "passive")
 			(uuid "403dcae2-06d5-47a9-826f-92888b4cae34")
 		)
@@ -31911,7 +34469,7 @@
 			(at -1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 18 "VEE")
+			(net 141 "Net-(IC7-VEE)")
 			(pinfunction "VEE")
 			(pintype "passive")
 			(uuid "4a5a163d-03fc-4c32-9a56-c43c99852192")
@@ -31920,7 +34478,7 @@
 			(at -1.95 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 140 "Net-(IC7-P{slash}S)")
 			(pinfunction "P/S")
 			(pintype "passive")
 			(uuid "68b75704-ce8c-415d-a333-2919d233488b")
@@ -32064,7 +34622,7 @@
 			(at 1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 142 "Net-(IC7-VCC)")
 			(pinfunction "VCC")
 			(pintype "passive")
 			(uuid "81416db8-d8e5-4d5d-960e-de9faed9464b")
@@ -34123,12 +36681,193 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 142 "Net-(IC7-VCC)")
 			(pintype "passive")
 			(uuid "7bd52b83-19c1-4633-bec4-f89b12b79f87")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "9f4d7a89-2684-4d32-969a-1a0d6bd0ead6")
+		(at 213.605 20.42)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L20"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "858b1dc4-e7a6-4521-9517-e9a12bd59db6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "cd5cef02-d5f5-4f9a-8dbb-c6d3a4fbf9d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2cac970-4d1a-48a7-817e-bb4f0fc3594c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "051edaef-1b4a-4caa-863c-ebf2c7f91ef0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/a0b944ea-4520-4627-8d3e-806465bfb980")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8a3072eb-3955-453f-8a31-ef7bf0dda2b0")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2baba786-4b4c-42ce-b25c-df553bd2b54e")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "39a5fcf0-50dc-4e78-83f1-50ec9b069e33")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1b593cd9-b119-42e5-a9ce-0c63c202ab1d")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5773a749-970b-4960-a2cf-2500ad1bc3c0")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0bded9cb-397a-4eba-8df8-f570a84a6ef5")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bf77d694-5991-4322-b355-1a50cb0adc1f")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "68f2e9d3-7e8a-4a14-b208-b98c5d714cba")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "dbda6e7c-ad1a-4020-9c71-818020d839ef")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "5150b7ef-9479-4064-90fa-687f72b4875d")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 152 "Net-(IC13-P{slash}S)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "d6d7d0b7-f85e-4f0e-9aeb-0daa4986639b")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -34313,7 +37052,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 143 "Net-(C29-Pad1)")
 			(pintype "passive")
 			(uuid "2ddc48bb-cf21-45a4-997d-963083b56f4e")
 		)
@@ -34720,7 +37459,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 71 "Net-(IC12-VPD)")
+			(net 158 "Net-(C109-Pad2)")
 			(pintype "passive")
 			(uuid "d5d6222a-6c5f-403a-848d-d0fc294076d1")
 		)
@@ -35174,7 +37913,7 @@
 			(at -1.45 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 137 "Net-(AT2-VDD)")
 			(pinfunction "VDD")
 			(pintype "passive")
 			(uuid "c969f5b3-2e86-48dd-a3cd-fd0975e0a983")
@@ -35920,7 +38659,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 150 "Net-(IC11-VCC)")
 			(pintype "passive")
 			(uuid "bc2484b4-d004-4af0-902d-df697863860c")
 		)
@@ -36517,7 +39256,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 154 "Net-(IC13-VCC)")
 			(pintype "passive")
 			(uuid "e83014bd-4e5a-40be-b5dc-23ba4a335a9c")
 		)
@@ -36722,6 +39461,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "b0b5d64e-e2d3-4eb6-a4bd-3c4c4f928c9e")
+		(at 218.515 24.4)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L25"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "959cc22d-19d7-4622-83d2-56ae652441de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "ad337114-a7d2-40db-864d-670cbf0e2a03")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02e78f7f-6516-4218-bee8-cc1903cf50f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08ae32d2-07e2-40b3-9302-de564f24d257")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/e0f790e3-fdb4-411e-bbe4-f5dad9d2b8c9")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "00b68ca4-617d-409b-8a49-ac1342a48246")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7effb1a9-3894-4d07-ab83-31d095f988c7")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d52c5fd4-ae99-45ff-bf19-2c20d765a750")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "22c683c5-bc41-45f4-9c3e-d255a2e2d15d")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2bac6ec7-e576-4a2b-8462-500f39adf3c9")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4212237e-08a2-415e-b38e-d568684f6709")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "188b1298-036b-46b1-898e-a60616347b59")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "59f9edd4-a4dd-46b6-b0c6-4922517adfee")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "c7915781-6bef-4cd3-bef3-a3840eab4b3a")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "91047c19-8d64-492f-b0b4-462e7a294171")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 143 "Net-(C29-Pad1)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "b91238d1-2975-49be-bcc2-bf05ad23c198")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37105,7 +40025,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 144 "Net-(IC9-P{slash}S)")
 			(pintype "passive")
 			(uuid "61cfd806-b1a3-48f2-b7fc-50529abfefd1")
 		)
@@ -40792,7 +43712,7 @@
 			(at -1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 18 "VEE")
+			(net 145 "Net-(IC9-VEE)")
 			(pinfunction "VEE")
 			(pintype "passive")
 			(uuid "a003e746-0a08-4846-b0a5-9fe09afeb1f6")
@@ -40801,7 +43721,7 @@
 			(at -1.95 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 144 "Net-(IC9-P{slash}S)")
 			(pinfunction "P/S")
 			(pintype "passive")
 			(uuid "bcf8a36f-22dd-4eb4-878b-1b6c70b6a708")
@@ -40945,7 +43865,7 @@
 			(at 1.95 -1.25 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 146 "Net-(IC9-VCC)")
 			(pinfunction "VCC")
 			(pintype "passive")
 			(uuid "bf948aa9-96dd-4841-a81b-418e012f1935")
@@ -42001,6 +44921,368 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "cfc50e77-d70e-4542-a311-b5011878e02f")
+		(at 213.605 24.4)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L28"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "86db9df3-b2cb-4bde-ac78-ed0e07af8844")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "6cfc67b2-0949-4acc-b89f-eab22685ca91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e89520b1-9e3a-4858-9f57-b58d69c435e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d53c01ec-7d15-45eb-b1ce-ac32c7e62067")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/e0f790e3-fdb4-411e-bbe4-f5dad9d2b8c9")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5d264db7-1880-4a48-8e70-8227eb6f2786")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ffb713c9-e712-4962-ba05-902a96c22b0e")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c14067ba-051a-4064-bf1a-072f15971957")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dc7f9e25-d6b6-48e4-89cd-7be41d96186d")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "30cabebd-e852-4676-8e65-b98e63e3a22d")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bf2774a5-a6a1-4ed6-8831-efb31ca40f10")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bef462ed-7f08-4649-94f2-ac753f76fb36")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3813a0f9-ba73-40af-b265-256fd96b519d")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "46f8f6f8-559e-4cd9-b168-8d746c9d7bed")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "077babcf-a2b2-46ba-adf0-04636aa298dc")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 155 "Net-(C98-Pad1)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "11279967-b1ce-431d-8224-6cdc7b44e000")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "d090452f-89ec-4746-bd32-f499d4187e49")
+		(at 218.515 16.44)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L9"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "c23dcbaa-489f-43d9-93f7-c1a0d6dd87ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "449f450b-d950-4b93-b00b-c01cf17fdd29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6070f5f5-3e90-49e9-be93-1a2c982e642f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5c88f88-6620-4f93-89ac-44c74b962258")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/30410ae7-26c5-4b08-ab35-e325e57f9514")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a341da98-6239-4ad1-bf04-40e3453da587")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e2270d86-3e18-4c09-a70a-cc7563ffe23a")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e2ad6efe-5c92-40de-9917-bec0b34e5678")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "11a21ed3-d908-4afc-84c2-7fe046e1b52c")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "685fc004-df94-4e3a-b10d-24c07d076706")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e33744a7-1b49-44c5-8300-7b235c08cfa9")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dd08fe7d-0c49-498b-8e81-c772c5785c3a")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d6fbc112-28a4-4227-a449-0bba56033fc7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "211d474f-4e59-449b-a83c-4d8609d21299")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "cc813973-ccd1-4697-86d9-7fc4998dfb2e")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 142 "Net-(IC7-VCC)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "83b0d069-cf70-4c62-987e-9527cb7f7801")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "tx_board_footprints:QFN50P300X300X90-17N"
 		(layer "F.Cu")
 		(uuid "d0e3847e-4367-44da-ae69-54ae1b62d77a")
@@ -42239,7 +45521,7 @@
 			(at -1.45 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 138 "Net-(AT3-VDD)")
 			(pinfunction "VDD")
 			(pintype "passive")
 			(uuid "90f29199-f72e-46bd-bbb1-fb83da1b4160")
@@ -42799,6 +46081,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "d3afdbc0-4550-4fbe-be0d-cac6de62367f")
+		(at 213.605 18.43)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L16"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "3f463657-83e3-47db-8fb2-fe713d4eb579")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "96fc5c8f-b014-4454-b469-6eb2a1463ede")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b923e8d1-ca05-416e-aaa8-7c6247b8b363")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28519ab6-83b8-48f5-9c1b-303e3054b2aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/4e4b9e6c-a834-42ed-90e9-47de97e0b481/8f9c7b5f-14ae-49dd-8c2e-4ba6021eb89b")
+		(sheetname "/TX_Channel3/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f653e835-fee4-4e5b-9853-d56d1aa1fc7a")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f274c7b7-3600-4b13-b15c-94e333006303")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "979259b0-36e5-4d18-8010-34b831571029")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "02a7fa0a-0e17-412f-bc59-f74e033f2bdc")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1bfb09cd-4fef-484b-b54a-2343a54aa3da")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3362ad1b-4d6a-41bd-88e3-c01e7159b1c9")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cff42af5-3920-4b60-a9c5-bb4c63b14a3d")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "28f23f2a-af11-49e6-a4a5-6ac0aaa7e164")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "3468eb07-3207-4b3e-8bf2-657ddb5a49cf")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "VEE")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "96c95ba2-d254-4b2b-8669-9007ce55cbbc")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 153 "Net-(IC13-VEE)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "30b89acb-9ca7-468a-8b97-8b1c49bd90f6")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d43e71a8-8cd6-49e1-b910-642da4fc4d67")
@@ -43171,7 +46634,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 139 "Net-(AT4-VDD)")
 			(pintype "passive")
 			(uuid "184e5c47-7f4d-4a10-931e-f4dcf72f280d")
 		)
@@ -43385,6 +46848,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "d7040eb6-78b5-47ce-ae9c-9e84c6c968f8")
+		(at 208.695 16.44)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L11"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "b19541db-c0fe-4ef7-b5db-e86921a7c7ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "85682c97-1f8d-41b7-b714-a15b57dcbd25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ec2dc70-f508-4e06-974e-0b68111035a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee848fcc-c2de-4570-8f3d-ea7ebe2410a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/30410ae7-26c5-4b08-ab35-e325e57f9514")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "de087944-5dc9-43cd-ba2d-7b13939e1bdc")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "541d8a95-96ad-41ea-aa5f-0f2b9ff1b91a")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c3e1e0d7-d64e-4ffa-b31e-039d854fcd83")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "27a4348c-e630-487a-a629-9bfc1be0970d")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c67065e6-1772-401d-83cf-89d2b5f89fd8")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "32ff91da-6d63-4e19-b379-41f4407948d2")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7049663c-9435-42d9-b4f9-dc47db57610c")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f5abec19-999c-4b07-85b9-ef326867d6e8")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "edb88aef-295f-4f41-811d-47e5be825ab7")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "7a5b6446-6dec-4b7d-948b-ae753f52cdf1")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 150 "Net-(IC11-VCC)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "fa4af232-1324-45fa-b6dc-7a0d57068195")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44573,7 +48217,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 83 "Net-(IC14-VPD)")
+			(net 159 "Net-(C111-Pad2)")
 			(pintype "passive")
 			(uuid "81af1599-b460-474d-93e6-b703840b6b97")
 		)
@@ -45386,6 +49030,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "e0e19fd0-b6ce-4617-b699-6f03e2eb5841")
+		(at 208.695 20.42)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L19"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "124e7ddc-e518-4c3f-8645-d8926e5b5272")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "c24f6985-35a2-474d-a5ef-67169a814916")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65407a31-5ef0-4edb-bde1-9cf78cc485b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c48b74b-053d-451d-9258-83a18247cb3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/a0b944ea-4520-4627-8d3e-806465bfb980")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "74a74325-1ec3-45d3-bfe7-f611e5ca0165")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ec1602cb-335b-444e-91bd-ba8a7690194d")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7b7cb50c-596c-4e52-aaee-e556276bc5a5")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d8b5a407-6977-406a-9300-2184d4ef9038")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a5d31d9c-6aaa-45b7-a324-b673869830e2")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "301b4601-d12d-47ad-9b29-5e0237b9bed9")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "df55f7f3-251c-4ce9-b463-fbde21c04dce")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "30fb1025-55fc-481c-9a16-df12aa5509e1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "84b539bc-629d-4441-b293-c8e7eabdf2d4")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "249d7a58-6680-4a32-9501-a139ca19c8c5")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 148 "Net-(IC11-P{slash}S)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "c048c205-2bc1-41c0-af22-7a109fd03b70")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "e0f55da4-624f-493e-bee8-e6056de9d1a8")
@@ -45957,7 +49782,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 137 "Net-(AT2-VDD)")
 			(pintype "passive")
 			(uuid "d07a4fb2-55a4-401c-a414-3e8461bc61b0")
 		)
@@ -48097,7 +51922,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "VEE")
+			(net 145 "Net-(IC9-VEE)")
 			(pintype "passive")
 			(uuid "5e8c84dc-7001-4f83-a2e5-19cd7ed55082")
 		)
@@ -48884,7 +52709,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 152 "Net-(IC13-P{slash}S)")
 			(pintype "passive")
 			(uuid "0a289d2e-ffd2-4226-bc84-a52af71083bc")
 		)
@@ -49481,7 +53306,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 148 "Net-(IC11-P{slash}S)")
 			(pintype "passive")
 			(uuid "b606b2c6-1eb8-4729-bc89-c4fea2da789e")
 		)
@@ -49689,12 +53514,193 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 116 "Net-(IC10-VPD)")
+			(net 157 "Net-(C107-Pad2)")
 			(pintype "passive")
 			(uuid "9413b10f-7f38-4be0-9c54-043a08e4b181")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "f3c11dd3-df0a-41fc-ac72-fc87db84f21c")
+		(at 208.695 18.43)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L15"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "196512e7-daa0-4242-8921-bc8de3c4b217")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "f306bf93-ab93-4e5a-8a6f-afe4ce72b5ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d541983-8de4-4d19-bf22-3c889226169c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9275c33c-6aa9-41d2-9441-da9404537e29")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/29f67bc9-c244-44a6-89b9-0daa0a5c96e3/8f9c7b5f-14ae-49dd-8c2e-4ba6021eb89b")
+		(sheetname "/TX_Channel2/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d2be2426-70c7-4b9d-835f-fc35d6f43281")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a09d0239-c5d8-4bcf-a07f-5de554c9d072")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "17d7b55a-2de2-4927-a6c1-640a681b2761")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7d491232-fa21-4b87-8b6e-2f46a1106ef7")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f9baf790-86f2-4a86-a2be-9c309971f20d")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f672db83-aecf-4ed1-ada8-38170f51ea83")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1ee45e51-f1dd-4f82-97ac-ac1924f13007")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e065edee-c51c-4582-a05c-3394d3867fda")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "68b6a5ed-88c7-4d37-b33d-90d494495883")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "VEE")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "9c3783a5-9b4a-4ee5-805a-16fa57c7992e")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 149 "Net-(IC11-VEE)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "74839de1-8523-4a24-962e-ebe0224a2408")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -51238,7 +55244,7 @@
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 136 "Net-(AT1-VDD)")
 			(pintype "passive")
 			(uuid "c1a606f9-1238-41e1-b9fc-7d954decc8a9")
 		)
@@ -51446,7 +55452,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 71 "Net-(IC12-VPD)")
+			(net 158 "Net-(C109-Pad2)")
 			(pintype "passive")
 			(uuid "9b5fab59-3de9-46bd-805a-f6620203938c")
 		)
@@ -52253,6 +56259,187 @@
 			)
 		)
 	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "fd2b4b90-4e1b-4c2e-8577-30b25ef1de7f")
+		(at 203.785 14.45)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L6"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "16183c95-3e8c-43cd-b71f-75da04363265")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "19e1feda-177f-41dc-9305-732d9ed564d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3d896a2-1b5b-4b51-aaa5-ad38d24a85f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99eda611-391c-4c39-af5b-a4e18c050ec5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/20289cd5-7f64-400a-85b5-527b93622f25/1d19f709-2e5c-4ae5-9832-5467eda5b1b0")
+		(sheetname "/TX_Channel1/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "de57de33-62ee-4875-83eb-01b9862bfd9a")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f28619aa-7ac8-4147-8261-6b42ef66b1f7")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9aabe296-a25a-44a4-98e2-4c3bde7cd9d7")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b6ab376f-243d-48bc-88d9-f025bfcc37c1")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fbaa7381-b392-420c-85d0-65d1552726e6")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cb6ab2b0-8f23-4530-8667-2c95c5a87895")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d0358662-cb36-40a9-8c80-e08f1d027f51")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1a0fcf26-e03e-4af0-9096-5d76acc95905")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "855880e2-98aa-443c-8c22-05a8acc85065")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 4 "VCC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "1b035029-f192-4540-8dd2-ea95ca9fc501")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 137 "Net-(AT2-VDD)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "c6621bbd-2b84-48ef-adc6-4ae60101e806")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "fd2c8502-ddbc-4bcb-8048-a79793c6f78d")
@@ -52426,7 +56613,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 4 "VCC")
+			(net 147 "Net-(C52-Pad1)")
 			(pintype "passive")
 			(uuid "f1b7e04d-192a-48cc-90ce-60dd4e10751c")
 		)
@@ -52441,6 +56628,187 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Inductor_SMD:L_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "fe26ab69-2c15-466a-bc54-64016b23e909")
+		(at 218.515 18.43)
+		(descr "Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+		(tags "inductor")
+		(property "Reference" "L13"
+			(at 0 -1.17 0)
+			(layer "F.SilkS")
+			(uuid "fd84cfcb-8971-41eb-8906-659b7a38f299")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 0 1.17 0)
+			(layer "F.Fab")
+			(uuid "8af6ff50-0557-4519-b84f-ccf7decd9039")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d96ef42-8228-4aa7-9a1e-2b1db3d14c95")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16c1bad4-076c-4fe2-94fe-f4bb8da80385")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6/8f9c7b5f-14ae-49dd-8c2e-4ba6021eb89b")
+		(sheetname "/TX_Channel0/")
+		(sheetfile "untitled.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.93 -0.47)
+			(end 0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ef0de6c4-7c4b-4686-972b-b22b2eff6f94")
+		)
+		(fp_line
+			(start -0.93 0.47)
+			(end -0.93 -0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1c4d6228-4998-462f-9c03-f56f6de7509c")
+		)
+		(fp_line
+			(start 0.93 -0.47)
+			(end 0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8104d4b8-8bf0-42d3-ba3a-7c104d2abb75")
+		)
+		(fp_line
+			(start 0.93 0.47)
+			(end -0.93 0.47)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "849fa07b-b15e-4538-959a-5c6388602316")
+		)
+		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "540487bd-2e51-453e-9034-d847180efd8a")
+		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8408b03e-c71b-4bfe-b809-5df17b817eb2")
+		)
+		(fp_line
+			(start 0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "160b94fd-cb4b-4664-ace9-1a1b0acb4c5d")
+		)
+		(fp_line
+			(start 0.5 0.25)
+			(end -0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "78e5223e-e1b8-4337-bbb0-e66101ee3db0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "d2b265ed-6447-4258-9b33-863a2db8119e")
+			(effects
+				(font
+					(size 0.25 0.25)
+					(thickness 0.04)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "VEE")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "8248dc7a-fd04-4d3a-a892-cb23f487845e")
+		)
+		(pad "2" smd roundrect
+			(at 0.485 0)
+			(size 0.59 0.64)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 141 "Net-(IC7-VEE)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "3e94a7f1-9eaf-4976-acce-79083a65a066")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0402_1005Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -52690,7 +57058,7 @@
 			(at -1.45 -0.75 90)
 			(size 0.3 0.85)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 4 "VCC")
+			(net 136 "Net-(AT1-VDD)")
 			(pinfunction "VDD")
 			(pintype "passive")
 			(uuid "d34c9a74-5cbb-4056-ab4e-d21cf17cf9e3")

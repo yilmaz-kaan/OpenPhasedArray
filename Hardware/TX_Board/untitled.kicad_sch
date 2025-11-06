@@ -5,6 +5,312 @@
 	(uuid "93434a54-0369-4e40-ac25-e45bd59f7c24")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Device:L_Ferrite"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L_Ferrite"
+				(at 2.794 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor with ferrite core"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_Ferrite_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 2.286) (xy 1.016 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0.254) (xy 1.016 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -0.762) (xy 1.016 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.778) (xy 1.016 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -2.794) (xy 1.016 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 2.794) (xy 1.524 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.778) (xy 1.524 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -0.254) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.27) (xy 1.524 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -2.286) (xy 1.524 -2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Ferrite_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "tx_board_symbol_library:C"
 			(pin_numbers
 				(hide yes)
@@ -2350,6 +2656,12 @@
 		)
 	)
 	(junction
+		(at 317.5 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "020ec88f-454b-4c2f-a419-d427b0dfc1fb")
+	)
+	(junction
 		(at 78.74 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2414,12 +2726,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7dc4ba36-75f8-4544-8876-81d5f8ca6f9c")
-	)
-	(junction
-		(at 313.69 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ea3da5f-7f5e-40f3-bc5b-049d97a5bd10")
 	)
 	(junction
 		(at 364.49 120.65)
@@ -2597,7 +2903,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 121.92) (xy 97.79 130.81)
+			(xy 97.79 121.92) (xy 97.79 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2807,7 +3113,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 116.84) (xy 167.64 127)
+			(xy 167.64 116.84) (xy 167.64 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2974,6 +3280,16 @@
 			(type default)
 		)
 		(uuid "6593caed-6147-41e1-9018-07f2f9d5caf9")
+	)
+	(wire
+		(pts
+			(xy 167.64 125.73) (xy 167.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a08533e-e4f2-4b82-9bd3-87139b1cfd16")
 	)
 	(wire
 		(pts
@@ -3147,7 +3463,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 121.92) (xy 313.69 121.92)
+			(xy 308.61 121.92) (xy 309.88 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3164,16 +3480,6 @@
 			(type default)
 		)
 		(uuid "a4b7b3fd-9cc1-4a33-ab18-7a4ed76e68d1")
-	)
-	(wire
-		(pts
-			(xy 33.02 143.51) (xy 40.64 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5b07a79-c1d7-4021-90e0-218f2f0d2f78")
 	)
 	(wire
 		(pts
@@ -3407,16 +3713,6 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 121.92) (xy 327.66 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8985468-c16a-4e5a-81a0-25bb12f76a25")
-	)
-	(wire
-		(pts
 			(xy 93.98 143.51) (xy 110.49 143.51)
 		)
 		(stroke
@@ -3424,6 +3720,16 @@
 			(type default)
 		)
 		(uuid "d9205646-4cc8-40a5-a3bc-c3b4f78514be")
+	)
+	(wire
+		(pts
+			(xy 300.99 187.96) (xy 300.99 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf786da-5d27-4e44-8b38-5b07e2f7a06c")
 	)
 	(wire
 		(pts
@@ -3437,7 +3743,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 140.97) (xy 49.53 140.97)
+			(xy 40.64 140.97) (xy 41.91 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3487,6 +3793,16 @@
 	)
 	(wire
 		(pts
+			(xy 317.5 121.92) (xy 327.66 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9b55884-df5f-4a1b-bc10-7db67d031ccd")
+	)
+	(wire
+		(pts
 			(xy 68.58 171.45) (xy 71.12 171.45)
 		)
 		(stroke
@@ -3497,7 +3813,7 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 177.8) (xy 300.99 190.5)
+			(xy 300.99 177.8) (xy 300.99 180.34)
 		)
 		(stroke
 			(width 0)
@@ -4413,7 +4729,7 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:GND")
-		(at 313.69 129.54 0)
+		(at 317.5 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4422,7 +4738,7 @@
 		(fields_autoplaced yes)
 		(uuid "10680a81-e468-4c15-9dfd-20603e872d29")
 		(property "Reference" "#PWR0262"
-			(at 313.69 135.89 0)
+			(at 317.5 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,7 +4747,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 313.69 134.62 0)
+			(at 317.5 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4439,7 +4755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 313.69 129.54 0)
+			(at 317.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 313.69 129.54 0)
+			(at 317.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 313.69 129.54 0)
+			(at 317.5 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,6 +5120,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 167.64 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d19f709-2e5c-4ae5-9832-5467eda5b1b0")
+		(property "Reference" "L5"
+			(at 170.18 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 170.18 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 167.64 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 167.64 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bc96f7c3-beec-49a4-9338-842e8b1a31c3")
+		)
+		(pin "1"
+			(uuid "692a5177-64e6-489f-912e-89dff50366a8")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L6")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L7")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L8")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:GND")
 		(at 346.71 113.03 0)
 		(unit 1)
@@ -5115,6 +5513,88 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "#PWR0281")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 97.79 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30410ae7-26c5-4b08-ab35-e325e57f9514")
+		(property "Reference" "L9"
+			(at 100.33 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 100.33 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a491cab2-fe38-4198-9c02-b610bb3a20b2")
+		)
+		(pin "1"
+			(uuid "26633a48-1dcc-49a3-b1a7-7c549d3039c0")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L10")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L11")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L12")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L9")
 					(unit 1)
 				)
 			)
@@ -8303,6 +8783,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 45.72 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f9c7b5f-14ae-49dd-8c2e-4ba6021eb89b")
+		(property "Reference" "L13"
+			(at 45.72 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 45.72 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 45.72 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 45.72 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "965c5788-3363-46e4-a8cd-f7baae6299ad")
+		)
+		(pin "1"
+			(uuid "845bc55c-8a2b-4d2a-959a-682ddf068673")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L14")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L15")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L16")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:GND")
 		(at 265.43 135.89 180)
 		(unit 1)
@@ -8929,6 +9489,86 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 36.83 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0b944ea-4520-4627-8d3e-806465bfb980")
+		(property "Reference" "L17"
+			(at 36.83 137.2017 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 36.83 139.7417 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 36.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 36.83 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6dc19123-11d7-491b-aa55-f5815777a8b0")
+		)
+		(pin "1"
+			(uuid "8404cbd5-9861-4c51-8d50-e05964f39248")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L18")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L19")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L20")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L17")
 					(unit 1)
 				)
 			)
@@ -10297,6 +10937,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 313.69 121.92 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d01cf944-5db1-43e3-b597-a05f2e0181ce")
+		(property "Reference" "L21"
+			(at 313.69 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 313.69 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "tx_board_footprints:L_0402_1005Metric"
+			(at 313.69 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.69 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 313.69 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8aa9ca2-cad3-48ff-8a5b-6290b17f81b6")
+		)
+		(pin "1"
+			(uuid "b79b69b4-3759-44c7-a6cb-86d4e36b28c0")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L22")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L23")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L24")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:GND")
 		(at 58.42 148.59 270)
 		(unit 1)
@@ -10611,7 +11331,7 @@
 	)
 	(symbol
 		(lib_id "tx_board_symbol_library:C")
-		(at 313.69 125.73 180)
+		(at 317.5 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10619,7 +11339,7 @@
 		(dnp no)
 		(uuid "d8917c7c-ff7a-445e-a05c-38857c113066")
 		(property "Reference" "C106"
-			(at 318.262 129.032 0)
+			(at 322.072 129.032 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10627,7 +11347,7 @@
 			)
 		)
 		(property "Value" "100 pF"
-			(at 319.278 126.746 0)
+			(at 323.088 126.746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10635,7 +11355,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 312.7248 121.92 0)
+			(at 316.5348 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10644,7 +11364,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 313.69 125.73 0)
+			(at 317.5 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +11373,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 313.69 125.73 0)
+			(at 317.5 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10998,6 +11718,88 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Ferrite")
+		(at 300.99 184.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0f790e3-fdb4-411e-bbe4-f5dad9d2b8c9")
+		(property "Reference" "L25"
+			(at 302.26 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "L_Ferrite"
+			(at 302.26 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 300.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with ferrite core"
+			(at 300.99 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "776d559e-f9d7-4cde-9e9f-d0b27eddac88")
+		)
+		(pin "1"
+			(uuid "faab26e3-a431-4d06-877a-676893a2d572")
+		)
+		(instances
+			(project "TX_Board"
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "L26")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "L27")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "L28")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "L25")
 					(unit 1)
 				)
 			)

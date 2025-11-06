@@ -1,4 +1,4 @@
-26648694192038363
+26685043221718880
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -62425,13 +62425,6 @@ GDT 3R-6
 0
 3
 3
-GP2Y1+
-QFN51P300X300X89-13N
-QFN-12
-Integrated Circuit
-0
-13
-13
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -70559,13 +70552,6 @@ Yellow 5381 Series LED
 0
 2
 2
-MAPS-010164-TR0500
-QFN50P400X400X100-25N-D
-PQFN_25_MAPS
-Integrated Circuit
-0
-25
-25
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -93498,13 +93484,6 @@ Potentiometer vertical vishay
 0
 3
 3
-QPA9122TR7
-QPA9122TR7
-16-VFQFN_2024
-Integrated Circuit
-0
-17
-17
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
@@ -93519,13 +93498,6 @@ Skyworks
 0
 7
 7
-RFSA3713TR7
-QFN50P300X300X90-17N
-QFN-16_2022
-Attenuator or Isolator
-0
-17
-17
 RF_Antenna
 AVX_M620720
 868Mhz, 915Mhz ISM antenna, 6 x 2 x 1.08mm, http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf
@@ -97131,27 +97103,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-SN74HCT138NSR
-NS16
-
-SN74HCT138NSR 
-0
-16
-16
-SN74HCT138NSR
-NS16-L
-
-SN74HCT138NSR 
-0
-16
-16
-SN74HCT138NSR
-NS16-M
-
-SN74HCT138NSR 
-0
-16
-16
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -105517,13 +105468,6 @@ igbt diode module
 0
 25
 25
-UFL_R_SMT1_1_60
-UFLRSMT160
-U.FL-R-SMT-1(60)-2
-Inductor
-0
-3
-3
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
@@ -106308,3 +106252,157 @@ Varistor VF
 0
 2
 2
+tx_board_footprints
+C_0402_1005Metric
+Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+tx_board_footprints
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+tx_board_footprints
+C_1206_3216Metric
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+tx_board_footprints
+IND_1005_TDK
+
+MMZ1005A222ET000 
+0
+2
+2
+tx_board_footprints
+IND_1005_TDK-L
+
+MMZ1005A222ET000 
+0
+2
+2
+tx_board_footprints
+IND_1005_TDK-M
+
+MMZ1005A222ET000 
+0
+2
+2
+tx_board_footprints
+L_0402_1005Metric
+Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+inductor
+0
+2
+2
+tx_board_footprints
+MM80302610RJ3
+MM8030-2610RJ3-4
+Connector
+0
+4
+4
+tx_board_footprints
+NS16
+
+SN74HCT138NSR 
+0
+16
+16
+tx_board_footprints
+PinHeader_1x01_P2.00mm_Vertical
+Through hole straight pin header, 1x01, 2.00mm pitch, single row
+Through hole pin header THT 1x01 2.00mm single row
+0
+1
+1
+tx_board_footprints
+PinHeader_2x08_P2.00mm_Vertical
+Through hole straight pin header, 2x08, 2.00mm pitch, double rows
+Through hole pin header THT 2x08 2.00mm double row
+0
+16
+16
+tx_board_footprints
+PinHeader_2x12_P2.00mm_Vertical
+Through hole straight pin header, 2x12, 2.00mm pitch, double rows
+Through hole pin header THT 2x12 2.00mm double row
+0
+24
+24
+tx_board_footprints
+PinSocket_1x03_P2.00mm_Vertical
+Through hole straight socket strip, 1x03, 2.00mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x03 2.00mm single row
+0
+3
+3
+tx_board_footprints
+QFN50P300X300X90-17N
+QFN-16_2022
+Attenuator or Isolator
+0
+17
+17
+tx_board_footprints
+QFN50P400X400X100-25N-D
+PQFN_25_MAPS
+Integrated Circuit
+0
+25
+25
+tx_board_footprints
+QFN51P300X300X89-13N
+QFN-12
+Integrated Circuit
+0
+13
+13
+tx_board_footprints
+QPA9122TR7
+16-VFQFN_2024
+Integrated Circuit
+0
+17
+17
+tx_board_footprints
+R_0201_0603Metric
+Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
+resistor
+0
+4
+2
+tx_board_footprints
+R_0402_1005Metric
+Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+tx_board_footprints
+SMA_Amphenol_132289_EdgeMount
+https://www.amphenolrf.com/library/download/link/link_id/595984/parent/132289/
+SMA
+0
+5
+2
+tx_board_footprints
+SON50P300X400X80-15N-D
+DE Package 14-Lead Plastic DFN (4mm × 3mm)
+Integrated Circuit
+0
+15
+15
+tx_board_footprints
+SOT95P280X100-5N
+UJ-5 (TSOT)_2
+Integrated Circuit
+0
+5
+5

@@ -1,10 +1,10 @@
 results_filename = 'antenna_patterns.mat';
 
-SubObject = design(patchMicrostrip, 2.4e9);
-arrayObject = design(rectangularArray('Element', SubObject), 2.4e9, SubObject);
+SubObject = design(patchMicrostrip, 3.8e9);
+arrayObject = design(rectangularArray('Element', SubObject), 3.8e9, SubObject);
 arrayObject.Element.Load.Impedance = 50;
 arrayObject.Size = [2, 4];
-plotFrequency = 2.4e9;
+plotFrequency = 3.8e9;
 
 % Define the range of steering angles.
 az_angles = -80:5:80;
