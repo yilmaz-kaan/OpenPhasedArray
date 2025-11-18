@@ -678,7 +678,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "TX_Board_GRB/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
