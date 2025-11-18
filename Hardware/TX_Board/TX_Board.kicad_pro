@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.0,
-          "width": 1.0
+          "height": 2.16,
+          "width": 0.76
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -566,6 +566,9 @@
       "/TX_Channel0/CPL_OUT": [
         "WaveGuide127um"
       ],
+      "/TX_Channel0/OUTPUT": [
+        "WaveGuide127um"
+      ],
       "/TX_Channel0/PS-RF_OUT": [
         "WaveGuide127um"
       ],
@@ -585,6 +588,9 @@
         "WaveGuide127um"
       ],
       "/TX_Channel1/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel1/OUTPUT": [
         "WaveGuide127um"
       ],
       "/TX_Channel1/PS-RF_OUT": [
@@ -608,6 +614,9 @@
       "/TX_Channel2/CPL_OUT": [
         "WaveGuide127um"
       ],
+      "/TX_Channel2/OUTPUT": [
+        "WaveGuide127um"
+      ],
       "/TX_Channel2/PS-RF_OUT": [
         "WaveGuide127um"
       ],
@@ -627,6 +636,9 @@
         "WaveGuide127um"
       ],
       "/TX_Channel3/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel3/OUTPUT": [
         "WaveGuide127um"
       ],
       "/TX_Channel3/PS-RF_OUT": [

@@ -301,6 +301,176 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L_Ferrite"
 			(pin_numbers
 				(hide yes)
@@ -729,176 +899,6 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "tx_board_symbol_library:Conn_Coaxial"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_Coaxial"
-				(at 2.921 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_Coaxial_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.778 0)
-					(mid 0.222 -1.8079)
-					(end -1.778 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid 0.2221 1.8084)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Conn_Coaxial_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "In"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4257,7 +4257,7 @@
 		)
 		(uuid "b68a9205-e93d-4966-9212-10968ae39b47")
 	)
-	(label "CPL_OUT"
+	(label "OUTPUT"
 		(at 386.08 217.17 0)
 		(effects
 			(font
@@ -6447,6 +6447,88 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 401.32 198.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e55812a-9697-4cc4-bbed-2166822c77d2")
+		(property "Reference" "J6"
+			(at 405.13 197.1431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 405.13 199.6831 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical"
+			(at 401.32 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 401.32 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 401.32 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57cb11e2-7611-437d-ac1a-5a0c7e3f9706")
+		)
+		(pin "1"
+			(uuid "f5e623ab-5df1-48d9-bc45-76c0a9a1c805")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "J15")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "J18")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "J21")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -8680,88 +8762,6 @@
 		)
 	)
 	(symbol
-		(lib_id "tx_board_symbol_library:Conn_Coaxial")
-		(at 396.24 217.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f5a46bb-f087-4411-b628-6f1946c8de96")
-		(property "Reference" "J24"
-			(at 400.05 216.1931 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_Coaxial"
-			(at 400.05 218.7331 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "CONSMA001_SMD_G_T:LINX_CONSMA001-SMD-G-T"
-			(at 396.24 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 396.24 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 396.24 217.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9152d3a6-55b0-4f02-866f-699348fd9430")
-		)
-		(pin "2"
-			(uuid "851b7495-97b9-4046-b107-f8eadbbd4e28")
-		)
-		(instances
-			(project ""
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
-					(reference "J26")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
-					(reference "J27")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
-					(reference "J28")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
-					(reference "J24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tx_board_symbol_library:C")
 		(at 40.64 147.32 0)
 		(unit 1)
@@ -9704,6 +9704,88 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "#PWR0304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 396.24 217.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87dafb26-e189-4bcc-aeaf-6da41799f38e")
+		(property "Reference" "J24"
+			(at 400.05 216.1931 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 400.05 218.7331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
+			(at 396.24 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 396.24 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 396.24 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e895cb5-3dd3-4bf0-921a-726fca85602d")
+		)
+		(pin "2"
+			(uuid "589d766e-8b94-4dfd-9f08-ff1ede02b8fe")
+		)
+		(instances
+			(project ""
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
+					(reference "J26")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
+					(reference "J27")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
+					(reference "J28")
+					(unit 1)
+				)
+				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
+					(reference "J24")
 					(unit 1)
 				)
 			)
@@ -11066,88 +11148,6 @@
 				)
 				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
 					(reference "#PWR0100")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "tx_board_symbol_library:Conn_Coaxial")
-		(at 401.32 198.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aea435a2-d855-4778-9c24-942b86135dbe")
-		(property "Reference" "J6"
-			(at 405.13 197.1431 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_Coaxial"
-			(at 405.13 199.6831 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 401.32 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 401.32 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 401.32 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e3f707c-172f-4ea5-b2b7-ad179136bc7e")
-		)
-		(pin "2"
-			(uuid "3b3e53fb-4d33-42ff-b428-bddc964f47f5")
-		)
-		(instances
-			(project "TX_Board"
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/20289cd5-7f64-400a-85b5-527b93622f25"
-					(reference "J15")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/29f67bc9-c244-44a6-89b9-0daa0a5c96e3"
-					(reference "J18")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/4e4b9e6c-a834-42ed-90e9-47de97e0b481"
-					(reference "J21")
-					(unit 1)
-				)
-				(path "/ca6f0547-784a-45aa-9c4a-84ccc33d2bdf/a3e338dc-9ba3-4797-a3b2-2c3d22ee34c6"
-					(reference "J6")
 					(unit 1)
 				)
 			)
