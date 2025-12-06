@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 2.16,
+          "width": 0.76
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -147,7 +147,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": true,
+          "td_ontrackend": false,
           "td_onvia": true
         }
       ],
@@ -471,7 +471,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -560,6 +560,15 @@
       "/TX_Channel0/ATTN-RF_OUT": [
         "WaveGuide127um"
       ],
+      "/TX_Channel0/CPL_FWD": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel0/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel0/OUTPUT": [
+        "WaveGuide127um"
+      ],
       "/TX_Channel0/PS-RF_OUT": [
         "WaveGuide127um"
       ],
@@ -573,6 +582,15 @@
         "WaveGuide127um"
       ],
       "/TX_Channel1/ATTN-RF_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel1/CPL_FWD": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel1/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel1/OUTPUT": [
         "WaveGuide127um"
       ],
       "/TX_Channel1/PS-RF_OUT": [
@@ -590,6 +608,15 @@
       "/TX_Channel2/ATTN-RF_OUT": [
         "WaveGuide127um"
       ],
+      "/TX_Channel2/CPL_FWD": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel2/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel2/OUTPUT": [
+        "WaveGuide127um"
+      ],
       "/TX_Channel2/PS-RF_OUT": [
         "WaveGuide127um"
       ],
@@ -605,11 +632,17 @@
       "/TX_Channel3/ATTN-RF_OUT": [
         "WaveGuide127um"
       ],
-      "/TX_Channel3/PS-RF_OUT": [
+      "/TX_Channel3/CPL_FWD": [
         "WaveGuide127um"
       ],
-      "ATTN_A0": [
-        "GND"
+      "/TX_Channel3/CPL_OUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel3/OUTPUT": [
+        "WaveGuide127um"
+      ],
+      "/TX_Channel3/PS-RF_OUT": [
+        "WaveGuide127um"
       ],
       "GND": [
         "GND"
@@ -657,7 +690,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "TX_Board_GRB/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
