@@ -6,7 +6,7 @@
 #define CSPin 10
 #define ADDR 0x00
 
-uint8_t serialBuffer[SERIALBUFSIZE] = {'\0'};
+uint8_t serialBuffer[SERIALBUFSIZE] = { '\0' };
 uint8_t serialOutput;
 uint8_t phaseShifter;
 uint8_t attenuator;
@@ -55,7 +55,7 @@ uint8_t waitForUInt() {
 void SPITransmit(uint8_t *SPIBuf, int bufLength) {
   digitalWrite(CSPin, LOW);
   SPI.transfer(SPIBuf, bufLength);
-  delay(1); // wait 1ms
+  delay(1);  // wait 1ms
   digitalWrite(CSPin, HIGH);
 }
 
@@ -64,7 +64,7 @@ void setup() {
   Serial.begin(9600);
   SPI.begin();
   pinMode(CSPin, OUTPUT);
-  digitalWrite(CSPin, HIGH); // set high initially
+  digitalWrite(CSPin, HIGH);  // set high initially
 }
 
 void loop() {
@@ -82,24 +82,26 @@ void loop() {
       phaseShifter = 1;
 
     } else if (serialOutput == 'A') {
-      SPI.beginTransaction(SPISettings(1e6, LSBFIRST, SPI_MODE0)); 
+      SPI.beginTransaction(SPISettings(1e6, LSBFIRST, SPI_MODE0));
       attenuator = 1;
       Serial.print("Input attuator address 0-7: \r\n");
       customAddress = waitForUInt();
-      
-    } else {continue;} // try again if invalid input
+
+    } else {
+      continue;
+    }  // try again if invalid input
 
     Serial.print("Input SPI Command for DUT as integer 0-255: \r\n");
     serialOutput = waitForUInt();
     if (phaseShifter) {
-      uint8_t spiCommand[] = {serialOutput};
+      uint8_t spiCommand[] = { serialOutput };
       SPITransmit(spiCommand, 1);
-      }
-    else if (attenuator) {
-      uint8_t spiCommand[] = {serialOutput, customAddress};
+    } else if (attenuator) {
+      uint8_t spiCommand[] = { serialOutput, customAddress };
       SPITransmit(spiCommand, 2);
+    } else {
+      continue;
     }
-    else {continue;}
 
     Serial.print("Command Sent \r\n");
     delay(100);
