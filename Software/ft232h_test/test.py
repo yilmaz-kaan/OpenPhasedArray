@@ -1,6 +1,6 @@
 # FT232H TX Board control script
 # To setup, follow instructions at: https://learn.adafruit.com/circuitpython-on-any-computer-with-ft232h/setup
-
+# format for instruction is "<Mode><Device Number> <Value>" (ex. A1 0 to set Attenuator 1 to 0)
 
 import time
 import board
@@ -8,7 +8,7 @@ import digitalio
 
 # --- Configuration for SN74HCT138 Connections ---
 # command threshold to ensure proper timing between commands
-cmd_threshold = 0.5
+cmd_threshold = 45e-9  # 45 nanoseconds
 # Select pins (A, B, C) and G1 mapped to FT232H C-pins
 # C is MSB | B is middle | A is LSB
 PIN_C = board.C0 
@@ -114,7 +114,7 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
     # --- 1. Determine Decoder Output & Protocol ---
     target_y = 0
     data_bytes = bytearray()
-
+    print(device_type)
     if device_type == 'P':
         target_y = 8 - device_id 
         # send 1 byte, the relevant 6 bits are shifted in last.
@@ -130,7 +130,7 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
         
         data_bytes.append(reversed_val)
         data_bytes.append(reversed_addr)
-
+    
     else:
         print("Unknown Device Type")
         return
@@ -155,6 +155,8 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
     elapsed_time = time.monotonic() - elapsed_time
     if elapsed_time < cmd_threshold:
         time.sleep(cmd_threshold - elapsed_time)
+    print(f"Elapsed Time: {elapsed_time:.3f} seconds")
+    
 
 
 
@@ -170,22 +172,22 @@ if __name__ == '__main__':
             
             if mode_input == 'EXIT':
                 break
-            
-            if mode_input not in ['P', 'A']:
+            mode_sel = mode_input[0]
+            if mode_sel not in ['P', 'A']:
                 print("Invalid mode. Please try again.")
                 continue
                 
-            dev_input = input("Enter Device Number (1-4): ")
-            if not dev_input.isdigit() or not (1 <= int(dev_input) <= 4):
+            dev_sel = mode_input[1]
+            if not dev_sel.isdigit() or not (1 <= int(dev_sel) <= 4):
                 print("Invalid Device Number. Must be 1-4.")
                 continue
                 
-            val_input = input("Enter Value (Integer 0-255): ")
-            if not val_input.isdigit():
+            val_sel = mode_input[3:]
+            if not val_sel.isdigit():
                 print("Invalid Value.")
                 continue
                 
-            send_spi_command(mode_input, int(dev_input), int(val_input), decoder_pins)
+            send_spi_command(mode_sel, int(dev_sel), int(val_sel), decoder_pins)
 
     except Exception as e:
         print(f"An error occurred: {e}")
