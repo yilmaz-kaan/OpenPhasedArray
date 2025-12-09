@@ -2,9 +2,16 @@
 # To setup, follow instructions at: https://learn.adafruit.com/circuitpython-on-any-computer-with-ft232h/setup
 # format for instruction is "<Mode><Device Number> <Value>" (ex. A1 0 to set Attenuator 1 to 0)
 
+
+import os
+
+os.environ['BLINKA_FT232H'] = '1'
+
+
 import time
 import board
 import digitalio
+
 
 # --- Configuration for SN74HCT138 Connections ---
 # command threshold to ensure proper timing between commands
@@ -168,7 +175,7 @@ if __name__ == '__main__':
         while True:
             print('-' * 40)
             print("Mode Selection:")
-            mode_input = input("Enter 'P' for Phase Shifter, 'A' for Attenuator, or 'exit': ").upper()
+            mode_input = input("Enter IC command (ex. 'A2 64') or 'exit': ").upper()
             
             if mode_input == 'EXIT':
                 break
