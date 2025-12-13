@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PMA3-63GLN+")(type "KiCad")(uri "/Users/kaan/Downloads/LIB_PMA3-63GLN+/PMA3-63GLN+/KiCad")(options "")(descr ""))
+  (lib (name "PE42423B-Z")(type "KiCad")(uri "/Users/kaan/Downloads/LIB_PE42423B-Z/PE42423B-Z/KiCad")(options "")(descr ""))
+)
