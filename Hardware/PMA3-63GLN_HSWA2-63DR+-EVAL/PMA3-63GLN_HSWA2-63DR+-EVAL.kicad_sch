@@ -5,7 +5,7 @@
 	(uuid "b30034a6-eb9b-49a7-8a70-4018958638d3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x03_Pin"
+		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,8 +21,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_Pin"
-				(at 0 -5.08 0)
+			(property "Value" "Conn_01x04_Pin"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x03, script generated"
+			(property "Description" "Generic connector, single row, 01x04, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_Pin_1_1"
+			(symbol "Conn_01x04_Pin_1_1"
 				(rectangle
 					(start 0.8636 2.667)
 					(end 0 2.413)
@@ -108,6 +108,17 @@
 				(rectangle
 					(start 0.8636 -2.413)
 					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -143,6 +154,18 @@
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -199,6 +222,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1843,7 +1884,7 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 74.93 139.7 0)
+		(at 54.61 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1853,7 +1894,7 @@
 		)
 		(uuid "614ac2ea-7e13-4dd8-a7d6-6b3a7828cf4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5438 139.7 0)
+			(at 61.2238 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1865,7 +1906,7 @@
 	)
 	(global_label "LS"
 		(shape input)
-		(at 74.93 137.16 0)
+		(at 54.61 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1875,7 +1916,7 @@
 		)
 		(uuid "6e31fc2e-7786-4668-a42a-b0f3e2e64c52")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.1528 137.16 0)
+			(at 59.8328 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1909,28 +1950,6 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 248.92 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "90ca5fdf-a307-4af7-bf5c-a592dc6b890a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 255.5338 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VDD"
-		(shape input)
 		(at 248.92 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1953,7 +1972,7 @@
 	)
 	(global_label "CTRL"
 		(shape input)
-		(at 74.93 134.62 0)
+		(at 54.61 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1963,7 +1982,7 @@
 		)
 		(uuid "caf5425b-c7e6-415f-af3e-908af814f918")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.4509 134.62 0)
+			(at 62.1309 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2337,7 +2356,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
+		(lib_id "Connector:Conn_01x04_Pin")
 		(at 243.84 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2345,8 +2364,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "10bd0e12-4431-4fd8-8804-8e3b4a629eb3")
-		(property "Reference" "J9"
+		(uuid "0cc564c2-0825-4c6a-a317-6381bc831aec")
+		(property "Reference" "J8"
 			(at 244.475 86.36 0)
 			(effects
 				(font
@@ -2354,7 +2373,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x03_Pin"
+		(property "Value" "Conn_01x04_Pin"
 			(at 244.475 88.9 0)
 			(effects
 				(font
@@ -2362,7 +2381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 243.84 93.98 0)
 			(effects
 				(font
@@ -2380,7 +2399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
+		(property "Description" "Generic connector, single row, 01x04, script generated"
 			(at 243.84 93.98 0)
 			(effects
 				(font
@@ -2390,18 +2409,21 @@
 			)
 		)
 		(pin "3"
-			(uuid "3445cc40-cf7b-419c-bcdb-40dec0704287")
+			(uuid "e6247f1d-1f0a-4bb3-8355-aa7b2756d6fe")
 		)
 		(pin "2"
-			(uuid "0bb171f6-6f61-42ba-97a3-f10e5ac8c3ef")
+			(uuid "427cb75a-bc57-4e3e-a480-d5e21f60434d")
 		)
 		(pin "1"
-			(uuid "aad28e1b-f918-4c07-b60c-a6388357132a")
+			(uuid "2a983f15-4cab-4cce-81ef-9c619ad9a68a")
+		)
+		(pin "4"
+			(uuid "73572ad6-84a1-4546-a6a6-f6e98f77b730")
 		)
 		(instances
 			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
 				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2743,77 +2765,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 69.85 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a307d7c-1ffd-405d-a1be-a1657edbb028")
-		(property "Reference" "J8"
-			(at 70.485 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 70.485 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 69.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 69.85 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "9b6e7f4d-b080-4417-ae94-12f210c574cd")
-		)
-		(pin "2"
-			(uuid "aa7ec0ee-ad24-45cb-8fe0-27c41bd0047d")
-		)
-		(pin "1"
-			(uuid "ac543302-3829-4998-983d-49fa91e19601")
-		)
-		(instances
-			(project ""
-				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 237.49 58.42 0)
 		(unit 1)
@@ -2948,6 +2899,73 @@
 			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
 				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d7457da-4d01-4b8d-8cb9-1d93f1aa0ddf")
+		(property "Reference" "#PWR035"
+			(at 60.96 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f24f8071-aed2-4c73-b38f-4829bcbf2e57")
+		)
+		(instances
+			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
+				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4243,6 +4261,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 248.92 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84f8f29a-fc27-4568-916d-cc72f66fbb07")
+		(property "Reference" "#PWR037"
+			(at 255.27 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 252.73 99.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17e07801-ccf2-48e2-92b1-c4093f09aba0")
+		)
+		(instances
+			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
+				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 93.98 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4774,6 +4859,80 @@
 			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
 				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 49.53 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11b0277-8b24-46db-befc-081177482b69")
+		(property "Reference" "J10"
+			(at 50.165 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 50.165 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 49.53 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 49.53 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "78f34a1c-c90a-4e27-88d6-20068f4f7d88")
+		)
+		(pin "2"
+			(uuid "75d12607-faba-4860-a410-7069be70b183")
+		)
+		(pin "1"
+			(uuid "6ed51a67-615d-4965-acd6-f209e3d01fa1")
+		)
+		(pin "4"
+			(uuid "3c3d70de-349f-4a78-a91f-38e26779e26b")
+		)
+		(instances
+			(project ""
+				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -5472,6 +5631,73 @@
 			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
 				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 248.92 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee4a2caa-c2cf-409a-9322-c9e7a5ca4859")
+		(property "Reference" "#PWR036"
+			(at 255.27 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 252.73 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 248.92 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "060a958e-e277-43ca-80ea-46779a3abf28")
+		)
+		(instances
+			(project "PMA3-63GLN_HSWA2-63DR+-EVAL"
+				(path "/b30034a6-eb9b-49a7-8a70-4018958638d3"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
