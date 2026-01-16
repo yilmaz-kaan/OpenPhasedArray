@@ -5679,7 +5679,7 @@
 		)
 		(uuid "fe6c696c-88ba-4a6f-bcfb-bec87d74aa25")
 	)
-	(hierarchical_label "ATTN_LE_0"
+	(hierarchical_label "ATTN_LE_2"
 		(shape input)
 		(at 405.13 280.67 0)
 		(effects
@@ -5888,7 +5888,7 @@
 		)
 		(uuid "d81a8cf6-8e37-4f36-9193-711645f8ceb3")
 	)
-	(hierarchical_label "PS_LE_0"
+	(hierarchical_label "PS_LE_2"
 		(shape input)
 		(at 295.91 238.76 0)
 		(effects
