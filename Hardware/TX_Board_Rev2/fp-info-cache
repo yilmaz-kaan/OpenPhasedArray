@@ -1,4 +1,4 @@
-26158469606612756
+26146098228653291
 694106301002
 694106301002_1
 694106301002
@@ -20,20 +20,6 @@ TE_5227161-2
 0
 4
 4
-ADP5600
-QFN65P400X400X80-17N-D
-CP-16-17 (LFCSP)
-Integrated Circuit
-0
-17
-17
-ADPL40502AUJZ-1.8-R7
-SOT95P280X100-5N
-UJ-5_2025
-Integrated Circuit
-0
-5
-5
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2862,13 +2848,6 @@ LINX_CONSMA001-SMD-G-T
 0
 3
 3
-CONSMA022_G
-LINX_CONSMA022-G
-
-
-0
-5
-5
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -60752,13 +60731,6 @@ GDT 3R-6
 0
 3
 3
-GP2Y1A+
-QFN51P300X300X99-13N
-DQ1225_2025-1
-Integrated Circuit
-0
-13
-13
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -68893,13 +68865,6 @@ Integrated Circuit
 0
 25
 25
-MM8030-2610RJ3
-MM80302610RJ3
-MM8030-2610RJ3-4
-Connector
-0
-4
-4
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -95283,13 +95248,6 @@ SW_SLW-865144-2A-N-SMT-TR
 0
 3
 3
-SN74HCT138NSR
-SOIC127P780X200-16N
-NS(R-PDSO-G16)
-Integrated Circuit
-0
-16
-16
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -97390,13 +97348,6 @@ Logo WEEE
 0
 0
 0
-TPS7A4701RGWT
-QFN65P500X500X100-21N-D
-TPS7A4701RGWT-1
-Integrated Circuit
-0
-21
-21
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
