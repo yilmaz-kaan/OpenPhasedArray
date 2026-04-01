@@ -7,15 +7,20 @@ import os
 
 os.environ['BLINKA_FT232H'] = '1'
 
-
+import busio
 import time
 import board
 import digitalio
-
+import math
+import numpy as np
+import pandas as pd
 
 # --- Configuration for SN74HCT138 Connections ---
 # command threshold to ensure proper timing between commands
 cmd_threshold = 45e-9  # 45 nanoseconds
+ELEMENT_COUNT = 4
+D_OVER_LAMBDA = 0.5  # Standard half-wavelength spacing
+CMD_THRESHOLD = 45e-9
 # Select pins (A, B, C) and G1 mapped to FT232H C-pins
 # C is MSB | B is middle | A is LSB
 PIN_C = board.C0 
@@ -92,7 +97,6 @@ def disable_decoder(pin_objects):
     pin_g1.value = False
     print("Decoder disabled (G1=LOW). All outputs are High.")
 
-import busio
 
 # SPI Configuration
 # Initialize the SPI bus on the FT232H
@@ -166,38 +170,112 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
     
 
 
+def calculate_phases(angle_deg):
+    """
+    Calculates the required phase shift for each element.
+    :param angle_deg: Steering angle in degrees (-90 to 90)
+    :return: List of 4 phase values in degrees (0-360)
+    """
+    angle_rad = math.radians(angle_deg)
+    # Calculate phase difference between elements
+    delta_phi_rad = 2 * math.pi * D_OVER_LAMBDA * math.sin(angle_rad)
+    delta_phi_deg = math.degrees(delta_phi_rad)
+    
+    phases = []
+    for i in range(ELEMENT_COUNT):
+        # Calculate progressive phase and wrap to [0, 360)
+        p = (i * delta_phi_deg) % 360
+        if p < 0: p += 360
+        phases.append(p)
+    return phases
 
-# Main CLI Loop
+def deg_to_bits(degrees):
+    """Maps 0-360 degrees to 0-255 bit value."""
+    return int((degrees / 360.0) * 255)
+def get_calibration_offsets(freq_hz):
+    """Reads S-parameters and calculates offsets relative to Channel 1."""
+    files = ['out1.csv', 'out2.csv', 'out3.csv', 'out4.csv']
+    offsets = []
+    raw_s21 = []
+    
+    print(f"Loading calibration for {freq_hz/1e9:.3f} GHz...")
+    for f in files:
+        df = pd.read_csv(f, comment='#')
+        # Find row closest to target frequency
+        idx = (df['freq[Hz]'] - freq_hz).abs().idxmin()
+        row = df.loc[idx]
+        # S21 is Trc3 in your files
+        val = complex(row['re:Trc3_S21'], row['im:Trc3_S21'])
+        raw_s21.append(val)
+    
+    # Reference everything to Channel 1
+    ref_phase = np.degrees(np.angle(raw_s21[0]))
+    ref_mag = np.abs(raw_s21[0])
+    
+    for i in range(4):
+        p_off = (ref_phase - np.degrees(np.angle(raw_s21[i]))) % 360
+        m_ratio = ref_mag / np.abs(raw_s21[i])
+        att_off_db = 20 * np.log10(m_ratio)
+        offsets.append({'p_off': p_off, 'att_off_db': att_off_db})
+        print(f"  Ch{i+1} Offset: Phase={p_off:.1f}°, Amp={att_off_db:.2f}dB")
+    
+    return offsets
+
+# --- UPDATED: Calibrated Beam Update ---
+def update_beam_calibrated(angle_deg, offsets, decoder_pins):
+    """Calculates phase + calibration and updates all 4 elements."""
+    # Theoretical steering math
+    d_lambda = 0.5 
+    delta_phi_steer = math.degrees(2 * math.pi * d_lambda * math.sin(math.radians(angle_deg)))
+    
+    print(f"\nSteering to {angle_deg}°...")
+    for i in range(4):
+        dev_id = i + 1
+        # 1. Calculate Target Phase (Theory + Calibration)
+        theory_p = (i * delta_phi_steer) % 360
+        final_p = (theory_p + offsets[i]['p_off']) % 360
+        p_bits = int((final_p / 360.0) * 255)
+        
+        # 2. Calculate Target Attenuation (Equalization)
+        # We start at a baseline (e.g. 10dB) so we have room to go up/down
+        base_att = 10.0 
+        final_att_db = base_att + offsets[i]['att_off_db']
+        # RFSA3713 0.25dB step mapping
+        a_bits = max(0, min(255, int(final_att_db / 0.25)))
+        
+        # 3. Send Commands
+        send_spi_command('P', dev_id, p_bits, decoder_pins)
+        send_spi_command('A', dev_id, a_bits, decoder_pins)
+        print(f"  CH{dev_id} -> Phase: {final_p:5.1f}° ({p_bits:3d} bits), Att: {final_att_db:4.1f}dB")
+# --- Main CLI Loop Adapted for Steering ---
 if __name__ == '__main__':
     try:
         decoder_pins = setup_decoder()
-        
+        spi = busio.SPI(clock=board.SCK, MOSI=board.MOSI, MISO=board.MISO)
+
+        print("Beamforming Controller Active.")
+        print("Enter steering angle between -90 and 90 degrees.")
+        f_ghz = float(input("Enter operating frequency (GHz): "))
+        offsets = get_calibration_offsets(f_ghz * 1e9)
         while True:
-            print('-' * 40)
-            print("Mode Selection:")
-            mode_input = input("Enter IC command (ex. 'A2 64') or 'exit': ").upper()
+            user_input = input("\nEnter Angle (or 'exit'): ").strip().lower()
             
-            if mode_input == 'EXIT':
+            if user_input == 'exit':
                 break
-            mode_sel = mode_input[0]
-            if mode_sel not in ['P', 'A']:
-                print("Invalid mode. Please try again.")
-                continue
+            
+            try:
+                angle = float(user_input)
+                if not -90 <= angle <= 90:
+                    print("Error: Angle must be between -90 and 90.")
+                    continue
                 
-            dev_sel = mode_input[1]
-            if not dev_sel.isdigit() or not (1 <= int(dev_sel) <= 4):
-                print("Invalid Device Number. Must be 1-4.")
-                continue
+                update_beam_calibrated(angle, offsets, decoder_pins)
                 
-            val_sel = mode_input[3:]
-            if not val_sel.isdigit():
-                print("Invalid Value.")
-                continue
-                
-            send_spi_command(mode_sel, int(dev_sel), int(val_sel), decoder_pins)
+            except ValueError:
+                print("Invalid input. Please enter a number.")
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"Error: {e}")
     finally:
         if 'decoder_pin_objects' in globals() and decoder_pin_objects:
             disable_decoder(decoder_pin_objects)
