@@ -1,208 +1,127 @@
-# FT232H TX Board control script
-# To setup, follow instructions at: https://learn.adafruit.com/circuitpython-on-any-computer-with-ft232h/setup
-# format for instruction is "<Mode><Device Number> <Value>" (ex. A1 0 to set Attenuator 1 to 0)
-
-
 import os
-
-os.environ['BLINKA_FT232H'] = '1'
-
-
 import time
 import board
 import digitalio
-
-
-# --- Configuration for SN74HCT138 Connections ---
-# command threshold to ensure proper timing between commands
-cmd_threshold = 45e-9  # 45 nanoseconds
-# Select pins (A, B, C) and G1 mapped to FT232H C-pins
-# C is MSB | B is middle | A is LSB
-PIN_C = board.C0
-PIN_B = board.C1
-PIN_A = board.C2
-PIN_G1 = board.C3
-PIN_SPI_CLK = board.SCK # D0
-PIN_SPI_MOSI = board.MOSI # D1
-PIN_SPI_MISO = board.MISO # D2
-# Store the pin objects as a global list for easy management
-decoder_pin_objects = []
-
-def setup_decoder():
-    """
-    Initializes the GPIO pins as digital outputs and enables the decoder.
-    Returns a list of DigitalInOut objects: [C_pin, B_pin, A_pin, G1_pin].
-    """
-    
-    #  Create DigitalInOut objects
-    pin_c = digitalio.DigitalInOut(PIN_C)
-    pin_b = digitalio.DigitalInOut(PIN_B)
-    pin_a = digitalio.DigitalInOut(PIN_A)
-    pin_g1 = digitalio.DigitalInOut(PIN_G1)
-    
-    #  Set all pins to output direction
-    pin_c.direction = digitalio.Direction.OUTPUT
-    pin_b.direction = digitalio.Direction.OUTPUT
-    pin_a.direction = digitalio.Direction.OUTPUT
-    pin_g1.direction = digitalio.Direction.OUTPUT
-    
-    #  Enable the HCT138 by setting G1 to HIGH (True)
-    pin_g1.value = True 
-    
-    print("Decoder setup complete.")
-    print("SN74HCT138 Enabled (G1=HIGH, G2A/G2B=GND).")
-    
-    # Store and return the pin objects: [C, B, A, G1]
-    global decoder_pin_objects
-    decoder_pin_objects = [pin_c, pin_b, pin_a, pin_g1]
-    return decoder_pin_objects
-
-def select_output(pin_objects, output_index):
-    """
-    Sets the C, B, A select pins to choose a specific output (Y0-Y7).
-    
-    :param pin_objects: List of pin objects [C_pin, B_pin, A_pin, G1_pin].
-    :param output_index: The desired output index (0 to 7).
-    """
-    if not 0 <= output_index <= 7:
-        raise ValueError("Output index must be between 0 and 7.")
-    
-    pin_c, pin_b, pin_a, pin_g1 = pin_objects
-    
-    # Ensure G1 is HIGH to keep the decoder enabled
-    pin_g1.value = True
-    
-
-    binary_select = format(output_index, '03b')
-    
-
-    pin_c.value = binary_select[0] == '1'
-    pin_b.value = binary_select[1] == '1'
-    pin_a.value = binary_select[2] == '1'
-    
-    print(f"Selected output Y{output_index} (CBA={binary_select}). The pin is LOW.")
-
-def disable_decoder(pin_objects):
-    """
-    Disables the SN74HCT138 by setting G1 to LOW, forcing all outputs Y0-Y7 to High.
-    """
-    _, _, _, pin_g1 = pin_objects
-    
-    # Set G1 LOW (False) to disable all outputs
-    pin_g1.value = False
-    print("Decoder disabled (G1=LOW). All outputs are High.")
-
 import busio
 
-# SPI Configuration
-# Initialize the SPI bus on the FT232H
-spi = busio.SPI(clock=board.SCK, MOSI=board.MOSI, MISO=board.MISO)
+os.environ['BLINKA_FT232H'] = '1'
 
-def reverse_bits(byte_val):
-    """
-    Reverses the bits of an 8-bit integer.
-    Required because RFSA3713 expects LSB First, but busio.SPI sends MSB First.
-    """
-    byte_val = ((byte_val & 0xF0) >> 4) | ((byte_val & 0x0F) << 4)
-    byte_val = ((byte_val & 0xCC) >> 2) | ((byte_val & 0x33) << 2)
-    byte_val = ((byte_val & 0xAA) >> 1) | ((byte_val & 0x55) << 1)
-    return byte_val
+# --- Pin Configuration ---
+PIN_A = board.C0 # Decoder pin A
+PIN_B = board.C1 # Decoder pin B
+PIN_C = board.C2 # Decoder pin C
+PIN_TR = board.C3   # TX/RX control
+PIN_VEN = board.C4  # IC enable
+PIN_VPF = board.C5  # Amp enable
+PIN_DID = board.C6  # Device ID LED
+PIN_G1 = board.C7   # Decoder enable
 
-def send_spi_command(device_type, device_id, value, decoder_pins):
-    """
-    Handles the specific protocols for Phase Shifters and Attenuators.
-    
-    :param device_type: 'P' for Phase Shifter, 'A' for Attenuator
-    :param device_id: Integer 1-4
-    :param value: Integer value to write (0-255)
-    :param decoder_pins: The list of decoder pin objects
-    """
-    elapsed_time = time.monotonic()
-    # --- 1. Determine Decoder Output & Protocol ---
-    target_y = 0
-    data_bytes = bytearray()
-    print(device_type)
-    if device_type == 'P':
-        target_y = 8 - device_id 
-        # send 1 byte, the relevant 6 bits are shifted in last.
-        data_bytes.append(value)
+# SPI Pins (Standard FT232H D-Bus)
+PIN_CLK = board.SCK   # D0
+PIN_MOSI = board.MOSI # D1
+PIN_MISO = board.MISO # D2
 
-    elif device_type == 'A': 
-        target_y = 4 - device_id
+class SystemController:
+    def __init__(self):
+        # Initialize Decoder Pins
+        self.a = digitalio.DigitalInOut(PIN_A)
+        self.b = digitalio.DigitalInOut(PIN_B)
+        self.c = digitalio.DigitalInOut(PIN_C)
+        self.g1 = digitalio.DigitalInOut(PIN_G1)
         
+        for p in [self.a, self.b, self.c, self.g1]:
+            p.direction = digitalio.Direction.OUTPUT
+
+        # Initialize System control Pins
+        self.tr_ctrl = digitalio.DigitalInOut(PIN_TR)
+        self.v_en = digitalio.DigitalInOut(PIN_VEN)
+        self.vpf = digitalio.DigitalInOut(PIN_VPF)
+        self.dev_id = digitalio.DigitalInOut(PIN_DID)
+
+        for p in [self.tr_ctrl, self.v_en, self.vpf, self.dev_id]:
+            p.direction = digitalio.Direction.OUTPUT
+            p.value = False # Default safety: All OFF
+
+        # Setup SPI
+        self.spi = busio.SPI(clock=PIN_CLK, MOSI=PIN_MOSI, MISO=PIN_MISO)
         
-        # Since hardware SPI is MSB First, reverse the bits of each byte.
-        reversed_val = reverse_bits(value)
-        reversed_addr = reverse_bits(0x00)
+        # Turn on Blue LED (Device ID)
+        self.dev_id.value = True
+        print("System Initialized. Device ID LED: ON")
+
+    def set_decoder_output(self, index):
+        """Sets A, B, C to select Y0-Y7. G1 is set HIGH to enable."""
+        if not 0 <= index <= 7: return
         
-        data_bytes.append(reversed_val)
-        data_bytes.append(reversed_addr)
-    
-    else:
-        print("Unknown Device Type")
-        return
+        # HCT138 Logic: A=LSB, B=Mid, C=MSB [cite: 31, 247]
+        self.a.value = (index & 0b001) > 0
+        self.b.value = (index & 0b010) > 0
+        self.c.value = (index & 0b100) > 0
+        self.g1.value = True 
 
-    print(f"Communicating with {device_type}{device_id} on Mux Y{target_y}...")
-    
-    # Select the Device (Assert CS)
-    select_output(decoder_pins, target_y)
-    
-    # Write Data
-    while not spi.try_lock():
-        pass
-    try:
-        spi.write(data_bytes)
-    finally:
-        spi.unlock()
-    
-    # Setting G1=Low disables the decoder, forcing all Y outputs HIGH.
-    # This creates the Rising Edge required to latch data.
-    disable_decoder(decoder_pins)
-    print("Command Sent & Latched.\n")
-    elapsed_time = time.monotonic() - elapsed_time
-    if elapsed_time < cmd_threshold:
-        time.sleep(cmd_threshold - elapsed_time)
-    print(f"Elapsed Time: {elapsed_time:.3f} seconds")
-    
+    def latch_and_disable(self):
+        """Sets G1 LOW. Forces all Y outputs HIGH (creates rising edge)."""
+        self.g1.value = False
 
+    def reverse_bits(self, byte_val):
+        """Reverses bits for LSB-first devices."""
+        return int('{:08b}'.format(byte_val)[::-1], 2)
 
-
-# Main CLI Loop
-if __name__ == '__main__':
-    try:
-        decoder_pins = setup_decoder()
+    def send_command(self, dev_type, dev_num, val):
+        target_y = (8 - dev_num) if dev_type == 'P' else (4 - dev_num)
+        data = bytearray()
         
-        while True:
-            print('-' * 40)
-            print("Mode Selection:")
-            mode_input = input("Enter IC command (ex. 'A2 64') or 'exit': ").upper()
+        if dev_type == 'P':
+            data.append(val)
+        else: # Attenuator protocol (Address + Data)
+            data.append(self.reverse_bits(val))
+            data.append(self.reverse_bits(0x00))
+
+        self.set_decoder_output(target_y)
+        
+        while not self.spi.try_lock(): pass
+        try:
+            self.spi.write(data)
+        finally:
+            self.spi.unlock()
             
-            if mode_input == 'EXIT':
-                break
-            mode_sel = mode_input[0]
-            if mode_sel not in ['P', 'A']:
-                print("Invalid mode. Please try again.")
-                continue
-                
-            dev_sel = mode_input[1]
-            if not dev_sel.isdigit() or not (1 <= int(dev_sel) <= 4):
-                print("Invalid Device Number. Must be 1-4.")
-                continue
-                
-            val_sel = mode_input[3:]
-            if not val_sel.isdigit():
-                print("Invalid Value.")
-                continue
-                
-            send_spi_command(mode_sel, int(dev_sel), int(val_sel), decoder_pins)
+        self.latch_and_disable()
+        print(f"Sent {val} to {dev_type}{dev_num} (Mux Y{target_y})")
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
+# --- Main CLI ---
+if __name__ == '__main__':
+    ctrl = SystemController()
+    print("\n--- Command Interface Guide ---")
+    print("A[1-4] [val] : Set Attenuator")
+    print("P[1-4] [val] : Set Phase Shifter")
+    print("TX / RX      : Switch Transmit/Receive")
+    print("VON / VOFF   : Global IC Power (V_EN)")
+    print("PON / POFF   : Amp Power (VPF)")
+    print("EXIT         : Shutdown")
+
+    try:
+        while True:
+            cmd = input("\nEnter Command: ").upper().split()
+            if not cmd: continue
+            
+            base = cmd[0]
+            
+            if base == 'EXIT': break
+            elif base == 'TX': ctrl.tr_ctrl.value = True; print("Mode: TX")
+            elif base == 'RX': ctrl.tr_ctrl.value = False; print("Mode: RX")
+            elif base == 'VON': ctrl.v_en.value = True; print("ICs: Powered")
+            elif base == 'VOFF': ctrl.v_en.value = False; print("ICs: Off")
+            elif base == 'PON': ctrl.vpf.value = True; print("Amps: Enabled")
+            elif base == 'POFF': ctrl.vpf.value = False; print("Amps: Disabled")
+            
+            elif (base[0] in ['A', 'P']) and len(base) > 1:
+                dtype = base[0]
+                dnum = int(base[1])
+                val = int(cmd[1])
+                ctrl.send_command(dtype, dnum, val)
     finally:
-        if 'decoder_pin_objects' in globals() and decoder_pin_objects:
-            disable_decoder(decoder_pin_objects)
-            for pin in decoder_pin_objects:
-                pin.deinit()
-        if 'spi' in globals():
-            spi.deinit()
-        print("\nHardware de-initialized.")
+        # Emergency Shutdown
+        ctrl.v_en.value = False
+        ctrl.vpf.value = False
+        ctrl.dev_id.value = False
+        print("Hardware Safely De-initialized.")
