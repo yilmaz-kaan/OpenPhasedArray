@@ -21,13 +21,32 @@ After the sweep a polar plot is generated.  If the sweep does not cover
 the full 360 °, the missing arc is padded with NaN so the plot always
 displays a complete polar axes.
 
-Usage
-─────
+Usage – standalone
+──────────────────
   Adjust the CONFIGURATION section below, then:
       python azimuth_pattern_sweep.py
 
   Use --dry-run to simulate both instruments (no hardware needed):
       python azimuth_pattern_sweep.py --dry-run
+
+  Use --suffix to embed a label in the output filenames:
+      python azimuth_pattern_sweep.py --suffix "P0-16-32-48"
+      → pattern_20260404_141019_P0-16-32-48.csv / .png
+
+Public API (import from another script)
+────────────────────────────────────────
+  from azimuth_pattern_sweep import (
+      Turntable, SpectrumAnalyzer,
+      _DryRunTurntable, _DryRunSA,   # dry-run stubs
+      run_sweep,                      # main entry point
+  )
+
+  run_sweep(turntable, sa, log_dir, file_suffix="P0-16-32-48",
+            start_deg=-90, stop_deg=90, step_deg=2, hold_sec=3)
+
+  Passing already-open instrument objects means the turntable and SA
+  stay connected across multiple back-to-back sweeps — no reconnect
+  overhead or dropped state between steering angles.
 """
 
 from __future__ import annotations
@@ -56,8 +75,8 @@ TURNTABLE_TCP_BUFFER  = 128             # Receive buffer size (bytes)
 TURNTABLE_CMD_DELAY   = 0.15            # Seconds to wait after each write
                                          # (prevents command loss on fast bursts)
 
-TURNTABLE_SPEED_DEG_S  = 5.0    # Rotation speed  (°/s)
-TURNTABLE_ACCEL_DEG_S2 = 10.0   # Acceleration    (°/s²) — verify command below
+TURNTABLE_SPEED_DEG_S  = 2.0    # Rotation speed  (°/s)
+TURNTABLE_ACCEL_DEG_S2 = 4.0   # Acceleration    (°/s²) — verify command below
                                  # against your FCU3 firmware if this doesn't work
 
 # ── Sweep Parameters ──────────────────────────────────────────────────────────
@@ -73,7 +92,7 @@ HOLD_TIME_SEC      =   3.0    # Max Hold dwell time at each angle (seconds)
 SA_RESOURCE_STRING = 'USB0::2907::6::6261932852::0::INSTR'  # pyvisa resource
 
 # ── Output ────────────────────────────────────────────────────────────────────
-LOG_DIR = Path(".")           # CSV + plot saved here
+LOG_DIR = Path("./sweeps/")           # CSV + plot saved here
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -366,7 +385,13 @@ class _DryRunSA:
 # ═══════════════════════════════════════════════════════════════════════════════
 
 class PatternLogger:
-    """Writes each PatternPoint to a CSV file immediately after measurement."""
+    """
+    Writes each PatternPoint to a CSV file immediately after measurement.
+
+    The *filepath* passed in is used verbatim, so callers control the name.
+    Use ``make_file_stem()`` to build consistent timestamped names with an
+    optional suffix that identifies the phase/steering vector being measured.
+    """
 
     HEADER = ["timestamp", "angle_deg", "power_dbm", "freq_hz"]
 
@@ -616,6 +641,105 @@ def generate_polar_plot(
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# PUBLIC API  (importable by external scripts such as a sequence runner)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def make_file_stem(timestamp_str: str, file_suffix: str = "") -> str:
+    """
+    Build the base filename (without extension) for a sweep's outputs.
+
+    Format:
+        pattern_{timestamp}              – no suffix
+        pattern_{timestamp}_{suffix}     – with suffix
+
+    The suffix is sanitised: any character that is not alphanumeric, a hyphen,
+    or an underscore is replaced with '_' so the result is safe as a filename
+    on all platforms.
+
+    Examples:
+        make_file_stem("20260404_141019")                → "pattern_20260404_141019"
+        make_file_stem("20260404_141019", "P0-16-32-48") → "pattern_20260404_141019_P0-16-32-48"
+    """
+    import re
+    safe_suffix = re.sub(r"[^\w\-]", "_", file_suffix).strip("_")
+    if safe_suffix:
+        return f"pattern_{timestamp_str}_{safe_suffix}"
+    return f"pattern_{timestamp_str}"
+
+
+def run_sweep(
+    turntable:   "Turntable | _DryRunTurntable",
+    sa:          "SpectrumAnalyzer | _DryRunSA",
+    log_dir:     Path = LOG_DIR,
+    file_suffix: str  = "",
+    start_deg:   float = SWEEP_START_DEG,
+    stop_deg:    float = SWEEP_STOP_DEG,
+    step_deg:    float = SWEEP_STEP_DEG,
+    hold_sec:    float = HOLD_TIME_SEC,
+) -> List[PatternPoint]:
+    """
+    Run a single azimuth pattern sweep using already-open instrument objects.
+
+    This is the primary importable entry point for external scripts (e.g. a
+    multi-steering-angle sequence runner).  Passing pre-connected instruments
+    means the turntable and SA stay live across back-to-back calls — no
+    reconnect latency or lost configuration between sweeps.
+
+    Parameters
+    ──────────
+    turntable    Open Turntable (or _DryRunTurntable) instance.
+    sa           Open SpectrumAnalyzer (or _DryRunSA) instance.
+    log_dir      Directory for CSV and PNG outputs.
+    file_suffix  String appended to the timestamped filename stem, e.g.
+                 "P0-16-32-48".  Sanitised automatically.
+    start_deg    Sweep start angle (°).
+    stop_deg     Sweep stop angle (°).
+    step_deg     Angular step size (°).
+    hold_sec     Max Hold dwell time per point (s).
+
+    Returns
+    ───────
+    List of PatternPoints measured during this sweep (may be partial if an
+    exception occurred; the caller should handle KeyboardInterrupt).
+    """
+    log_dir = Path(log_dir)
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    ts   = datetime.now().strftime("%Y%m%d_%H%M%S")
+    stem = make_file_stem(ts, file_suffix)
+    csv_path  = log_dir / f"{stem}.csv"
+    plot_path = log_dir / f"{stem}.png"
+
+    results: List[PatternPoint] = []
+    try:
+        with PatternLogger(csv_path) as logger:
+            sweeper = PatternSweeper(
+                turntable = turntable,
+                sa        = sa,
+                logger    = logger,
+                start_deg = start_deg,
+                stop_deg  = stop_deg,
+                step_deg  = step_deg,
+                hold_sec  = hold_sec,
+            )
+            results = sweeper.run()
+    finally:
+        if results:
+            log.info("Sweep outputs  →  %s  |  %s", csv_path.name, plot_path.name)
+            generate_polar_plot(
+                results    = results,
+                out_path   = plot_path,
+                start_deg  = start_deg,
+                stop_deg   = stop_deg,
+                step_deg   = step_deg,
+            )
+        else:
+            log.warning("run_sweep: no data collected — skipping plot.")
+
+    return results
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # ENTRY POINT
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -655,17 +779,18 @@ def parse_args() -> argparse.Namespace:
         "--accel", type=float, default=TURNTABLE_ACCEL_DEG_S2,
         help=f"Turntable acceleration in °/s² (default: {TURNTABLE_ACCEL_DEG_S2}).",
     )
+    parser.add_argument(
+        "--suffix", type=str, default="",
+        help=(
+            "Optional label appended to output filenames, e.g. 'P0-16-32-48'. "
+            "Produces: pattern_{timestamp}_{suffix}.csv / .png"
+        ),
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-
-    # ── Output paths ──────────────────────────────────────────────────────────
-    args.log_dir.mkdir(parents=True, exist_ok=True)
-    ts       = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_path  = args.log_dir / f"pattern_{ts}.csv"
-    plot_path = args.log_dir / f"pattern_{ts}.png"
 
     # ── Instantiate hardware (or dry-run stubs) ───────────────────────────────
     if args.dry_run:
@@ -682,43 +807,25 @@ def main() -> None:
         )
         sa = SpectrumAnalyzer(resource_string=SA_RESOURCE_STRING)
 
-    # ── Run sweep with automatic cleanup ─────────────────────────────────────
-    results: List[PatternPoint] = []
+    # ── Run sweep, delegating all file/plot logic to run_sweep() ──────────────
     try:
-        with turntable, sa, PatternLogger(csv_path) as logger:
-            sweeper = PatternSweeper(
-                turntable = turntable,
-                sa        = sa,
-                logger    = logger,
-                start_deg = args.start,
-                stop_deg  = args.stop,
-                step_deg  = args.step,
-                hold_sec  = args.hold,
+        with turntable, sa:
+            run_sweep(
+                turntable   = turntable,
+                sa          = sa,
+                log_dir     = args.log_dir,
+                file_suffix = args.suffix,
+                start_deg   = args.start,
+                stop_deg    = args.stop,
+                step_deg    = args.step,
+                hold_sec    = args.hold,
             )
-            results = sweeper.run()
-
     except KeyboardInterrupt:
-        log.warning("Sweep interrupted by user. Generating plot from data collected so far …")
+        log.warning("Sweep interrupted by user.")
+        sys.exit(1)
     except Exception as e:
         log.exception("Fatal error during sweep: %s", e)
-        # Still attempt to plot whatever was collected
-    finally:
-        if results:
-            print(f"\n{'='*60}")
-            print(f"  {len(results)} points collected.")
-            print(f"  CSV log : {csv_path}")
-            print(f"  Plot    : {plot_path}")
-            print(f"{'='*60}\n")
-            generate_polar_plot(
-                results   = results,
-                out_path  = plot_path,
-                start_deg = args.start,
-                stop_deg  = args.stop,
-                step_deg  = args.step,
-            )
-        else:
-            log.warning("No data collected — no plot generated.")
-            sys.exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
