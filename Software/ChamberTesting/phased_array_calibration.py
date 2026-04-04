@@ -74,7 +74,7 @@ MAX_COARSE_ROUNDS  = 10        # Safety cap on Phase 1 iterations
 MAX_FINE_ROUNDS    = 10        # Safety cap on Phase 2 iterations
 
 # ── Output ────────────────────────────────────────────────────────────────────
-LOG_DIR = Path(".")            # Directory for CSV log files
+LOG_DIR = Path("./cals/")            # Directory for CSV log files
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -186,7 +186,7 @@ class SpectrumAnalyzer:
         Wait for the SA to settle, run a peak search, and return
         (peak_frequency_hz, peak_amplitude_dbm).
         """
-        self._inst.write("TRACe1:STORage:MODE MAXHold")
+        self._inst.write("TRACe1:STORage:MODE MAXHold") # re-initialize the max hold to avoid old peaks lingering across measurements
         time.sleep(self._settle_sec)
         self._inst.write("CALC:MARK:MAX")
         freq_hz  = float(self._inst.query("CALC:MARK:X?"))
