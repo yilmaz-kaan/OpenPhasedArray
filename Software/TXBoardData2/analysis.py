@@ -8,8 +8,8 @@ AMP_STEP = 0.254  # dB per step
 # USER INPUT: Set the calibration steps for each port here.
 # Format: [Port 1, Port 2, Port 3, Port 4]
 # Example: [0, -2, 1, 0] means Port 2 is shifted -2 steps, Port 3 is +1 step.
-port_phase_offsets = [1, 0, 0, -2] # best known so far is [1, 0, 0, -2]
-port_amp_offsets = [0, 0, 2, 1] # best known so far is [0, 0, 2, 1]
+port_phase_offsets = [2, 0, 0, 2] # best known so far is [1, 0, 0, -2]
+port_amp_offsets = [0, 0, 0, 0] # best known so far is [0, 0, 2, 1] 8
 
 # Define which pairs to analyze (Port A vs Port B)
 pairs_to_check = [(1,2), (1,3), (1,4), (2,3), (2,4), (3,4)]
@@ -21,7 +21,7 @@ valid_cols = range(9) # Columns to read
 
 print("Loading files...")
 for i in range(1, 5):
-    filename = f'out{i}.csv'
+    filename = f'{i}.csv'
     try:
         # Load columns: Freq (0), Re(S21) (5), Im(S21) (6)
         raw = np.loadtxt(filename, delimiter=',', skiprows=3, usecols=valid_cols)
@@ -34,8 +34,41 @@ for i in range(1, 5):
     except OSError:
         print(f"  {filename}: Not found. Skipping.")
 
-# --- Analysis & Plotting ---
-print(f"\n--- Calibration Analysis ---")
+# --- Raw S21 Plotting ---
+print("\n--- Plotting Raw S21 ---")
+fig_raw, (ax_mag, ax_phase) = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
+
+for i in range(1, 5):
+    k = portkey.format(i)
+    if k in data:
+        freqs_ghz = data[k]['freqs'] / 1e9
+        s_complex = data[k]['complex']
+        
+        # Calculate Magnitude (dB)
+        mag_db = 20 * np.log10(np.abs(s_complex))
+        
+        # Calculate Phase (Degrees) and unwrap to avoid 360-degree jumps
+        phase_deg = np.degrees(np.unwrap(np.angle(s_complex)))
+        
+        ax_mag.plot(freqs_ghz, mag_db, linewidth=1.5, label=f'Port {i}')
+        ax_phase.plot(freqs_ghz, phase_deg, linewidth=1.5, label=f'Port {i}')
+
+ax_mag.set_ylabel('Magnitude (dB)')
+ax_mag.set_title('Raw S21 Magnitude')
+ax_mag.grid(True, alpha=0.3, which='both')
+ax_mag.legend(loc='best')
+
+ax_phase.set_xlabel('Frequency (GHz)')
+ax_phase.set_ylabel('Phase (Degrees)')
+ax_phase.set_title('Raw S21 Phase (Unwrapped)')
+ax_phase.grid(True, alpha=0.3, which='both')
+ax_phase.legend(loc='best')
+
+plt.tight_layout()
+plt.show(block=False)
+
+# --- Calibration Analysis ---
+print(f"\n--- Phase Calibration Analysis ---")
 print(f"Step Size: {PHASE_STEP}°")
 print(f"Port Offsets (steps): {port_phase_offsets}")
 
@@ -81,7 +114,7 @@ plt.legend(loc='best')
 plt.tight_layout()
 plt.show(block=False)
 
-# --- Analysis & Plotting ---
+# --- Amplitude Analysis & Plotting ---
 print(f"\n--- Amplitude Calibration Analysis ---")
 print(f"Step Size: {AMP_STEP} dB")
 print(f"Port Offsets (steps): {port_amp_offsets}")
