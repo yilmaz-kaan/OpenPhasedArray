@@ -69,7 +69,7 @@ from typing import List, Optional, Tuple
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # ── Turntable (FCU3/0-S, LAN) ─────────────────────────────────────────────────
-TURNTABLE_IP          = "172.16.21.50"   # IP address of the FCU3 controller
+TURNTABLE_IP          = "172.16.1.168"   # IP address of the FCU3 controller
 TURNTABLE_PORT        = 200              # TCP port (default 200)
 TURNTABLE_TCP_BUFFER  = 128             # Receive buffer size (bytes)
 TURNTABLE_CMD_DELAY   = 0.15            # Seconds to wait after each write
@@ -80,9 +80,9 @@ TURNTABLE_ACCEL_DEG_S2 = 4.0   # Acceleration    (°/s²) — verify command bel
                                  # against your FCU3 firmware if this doesn't work
 
 # ── Sweep Parameters ──────────────────────────────────────────────────────────
-SWEEP_START_DEG    = -180.0   # Start angle (°); typical values: -180, -90, 0
-SWEEP_STOP_DEG     =  180.0   # Stop angle  (°); typical values:  180,  90, 360
-SWEEP_STEP_DEG     =    5.0   # Angular step between measurement points (°)
+SWEEP_START_DEG    = -50.0   # Start angle (°); typical values: -180, -90, 0
+SWEEP_STOP_DEG     =  50.0   # Stop angle  (°); typical values:  180,  90, 360
+SWEEP_STEP_DEG     =    10.0   # Angular step between measurement points (°)
                                # Smaller = finer resolution, more measurement time
 
 HOLD_TIME_SEC      =   3.0    # Max Hold dwell time at each angle (seconds)
