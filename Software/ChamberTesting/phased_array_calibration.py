@@ -2,25 +2,39 @@
 phased_array_calibration.py
 ─────────────────────────────────────────────────────────────────────────────
 Calibrates a 4-element phased array by finding the phase-offset vector that
-maximizes received signal power, as measured by an MS2690A spectrum analyzer.
+maximises (beam steering) or minimises (null steering) received signal power,
+as measured by an MS2690A spectrum analyzer.
 
-Algorithm: Two-Phase Coordinate Descent
-────────────────────────────────────────
+Algorithm: Multi-Start Two-Phase Coordinate Descent
+────────────────────────────────────────────────────
 Exhaustive search over 64^4 = 16,777,216 states is infeasible at ~200 ms per
-measurement (~39 days).  Coordinate descent exploits the fact that received
-power is a smooth, roughly separable function of each phase shifter:
+measurement (~39 days).  Coordinate descent is used instead, but a single
+start from all-zeros can converge to a local optimum rather than the global
+one — mutual coupling between array elements means the phase-power landscape
+is not perfectly separable and can contain correlated ridges.
 
-  Phase 1 – Coarse (step = 8)
-    Sweep each of the 4 shifters through {0, 8, 16, …, 56} while holding the
-    others fixed.  8 × 4 = 32 measurements per round.  Repeat until no
-    improvement is observed (typically 3–5 rounds).
+Multi-start descent addresses this by running the coarse phase from several
+diverse starting vectors and only entering the fine phase from the globally
+best result found across all of them:
+
+  Starting vectors
+  ────────────────
+  1. All-zeros  [0, 0, 0, 0]     – always included; reproducible baseline
+  2. NUM_RANDOM_STARTS additional – random coarse-grid vectors drawn uniformly
+     random coarse-grid vectors     to probe other basins of the landscape
+
+  Phase 1 – Coarse (step = COARSE_STEP, default 8)
+    For each starting vector: sweep each of the 4 shifters through
+    {0, 8, 16, …, 56} while holding the others fixed, re-anchoring to the
+    global best at the start of each round.  Converges when a full round
+    produces no improvement.
 
   Phase 2 – Fine (step = 1)
-    Re-initialize from the Phase 1 result and sweep all 64 states per
-    shifter.  64 × 4 = 256 measurements per round.  Repeat until convergence.
+    A single descent from the coarse global best, sweeping all 64 states per
+    shifter.  Converges when a full round produces no improvement.
 
-Total: ~1 000–1 500 measurements vs. 16 777 216 for exhaustive search.
-Every measurement and the final calibration result are written to a CSV log.
+Total: ~1 500–3 000 measurements (default 3 random starts) vs. 16 777 216
+for exhaustive search.  Every measurement is written to a CSV log.
 
 Hardware dependencies
 ─────────────────────
@@ -29,12 +43,14 @@ Hardware dependencies
 
 Usage
 ─────
-  Adjust CONFIGURATION constants below, then:
-      python phased_array_calibration.py
+  Beam steering (maximise power):
+      python phased_array_calibration.py --mode max
 
-  Use --dry-run to simulate hardware with random noise (unit-testing without
-  physical instruments):
-      python phased_array_calibration.py --dry-run
+  Null steering (minimise power):
+      python phased_array_calibration.py --mode min
+
+  Dry-run (simulated hardware, no instruments needed):
+      python phased_array_calibration.py --mode max --dry-run
 """
 
 from __future__ import annotations
@@ -59,8 +75,8 @@ from typing import List, Optional, Tuple
 # ── Spectrum Analyzer ──────────────────────────────────────────────────────────
 SA_RESOURCE_STRING = 'USB0::2907::6::6261932852::0::INSTR'  # VISA resource
 SA_CENTER_FREQ_HZ  = 2.345e9   # Center frequency (Hz)
-SA_SPAN_HZ         = 100e3     # Span around center (Hz)
-SA_SETTLE_SEC      = 1         # Wait time after re-configuring before querying
+SA_SPAN_HZ         = 20e3     # Span around center (Hz)
+SA_SETTLE_SEC      = 1.5      # Wait time after re-configuring before querying
                                # the marker.  Increase if readings are noisy.
 
 # ── Phased Array (FT232H / SPI) ───────────────────────────────────────────────
@@ -69,12 +85,18 @@ PHASE_STATES       = 64        # States per shifter (0–63, 6-bit RFSA device)
 CMD_THRESHOLD_SEC  = 45e-9     # Minimum time between SPI commands (45 ns)
 
 # ── Calibration Algorithm ─────────────────────────────────────────────────────
-COARSE_STEP        = 4         # Step size for Phase 1 sweep  (must divide 64)
+COARSE_STEP        = 8         # Step size for Phase 1 sweep  (must divide 64)
 MAX_COARSE_ROUNDS  = 10        # Safety cap on Phase 1 iterations
 MAX_FINE_ROUNDS    = 10        # Safety cap on Phase 2 iterations
 
+# Number of random coarse-grid starting vectors explored in addition to the
+# fixed all-zeros start.  Higher values improve robustness against local
+# optima at the cost of proportionally more measurements.
+# 0 → single-start (original behaviour); 3 is a reasonable default.
+NUM_RANDOM_STARTS  = 3
+
 # ── Output ────────────────────────────────────────────────────────────────────
-LOG_DIR = Path("./cals/")            # Directory for CSV log files
+LOG_DIR = Path(".")            # Directory for CSV log files
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -168,7 +190,7 @@ class SpectrumAnalyzer:
         inst.write(f"FREQuency:SPAN {self._span_hz}")
 
         # Max Hold accumulates the highest power seen across sweeps.
-        inst.write("TRACe1:STORage:MODE MAXHold")
+        inst.write("TRACe1:STORage:MODE LAV")
         inst.write("INITiate:CONTinuous ON")
 
         inst.write("CALC:MARK:STAT ON")
@@ -186,9 +208,9 @@ class SpectrumAnalyzer:
         Wait for the SA to settle, run a peak search, and return
         (peak_frequency_hz, peak_amplitude_dbm).
         """
-        self._inst.write("TRACe1:STORage:MODE MAXHold") # re-initialize the max hold to avoid old peaks lingering across measurements
+        time.sleep(0.2) #just in case
+        self._inst.write("TRACe1:STORage:MODE LAV")
         time.sleep(self._settle_sec)
-        self._inst.write("CALC:MARK:MAX")
         freq_hz  = float(self._inst.query("CALC:MARK:X?"))
         power_dbm = float(self._inst.query("CALC:MARK:Y?"))
         return freq_hz, power_dbm
@@ -448,56 +470,98 @@ class MeasurementLogger:
 
 class PhaseCalibrator:
     """
-    Implements Two-Phase Coordinate Descent to maximize received power.
+    Finds the phase vector that maximises or minimises received power using a
+    three-stage algorithm designed around the physics of uniform linear arrays.
 
-    Coordinate descent sweeps each phase shifter independently while the
-    others are held fixed, updating each to the best-found state before
-    moving to the next.  A full pass over all shifters is one "round".
-    Rounds repeat until the global best power stops improving or the round
-    limit is hit.
+    Why coordinate descent alone is insufficient for null steering
+    ──────────────────────────────────────────────────────────────
+    For a ULA the optimal null/beam phase vector is a linear progression across
+    elements: [φ₀, φ₀+d, φ₀+2d, φ₀+3d] mod 64, where d is the inter-element
+    phase step.  This means the optimum lies on a *diagonal ridge* in the 4-D
+    phase space.  Coordinate descent can only move along axis-aligned directions
+    (one shifter at a time), so it cannot climb or descend a diagonal ridge
+    unless it happens to start very close to it.  Sweeping shifter 2 while
+    holding the others at 0 does not reveal that d=16 is optimal — the best
+    single-element state depends entirely on what the other elements are doing,
+    and that coupling is invisible to per-axis search.
 
-    Phase 1 uses a coarse step size to quickly reach a good neighbourhood.
-    Phase 2 then sweeps all 64 states from that starting point.
+    Three-stage algorithm
+    ─────────────────────
+    Stage 1  –  Linear Phase Sweep  (64 measurements)
+        Exploit the ULA structure directly.  Pin element 0 at state 0 and sweep
+        the inter-element step d over all 64 values.  For step d, apply:
+            phases[n] = (n * d) % PHASE_STATES
+        This exhausts the entire family of linear phase progressions in exactly
+        PHASE_STATES measurements — far fewer than any 4-D search — and will
+        directly land on [0, 16, 32, 48] for a broadside null (d=16) or the
+        beam-steering optimum for any other angle.
+
+        The top-K results (default K=4) are retained as seeds for Stage 2.
+        K > 1 hedges against the case where mutual coupling shifts the true
+        optimum slightly away from pure linear phase.
+
+    Stage 2  –  Multi-start Coarse Coordinate Descent
+        Run coordinate descent (step = COARSE_STEP) from each of the K seeds.
+        All starts share a single global_best.  Coordinate descent is now
+        appropriate because Stage 1 already placed each start *near* the true
+        optimum — the search only needs to correct for the coupling-induced
+        deviation from ideal linear phase, which is small and axis-aligned
+        corrections can handle.
+
+    Stage 3  –  Fine Coordinate Descent  (step = 1)
+        A single descent from the Stage 2 global best.  Converges when a full
+        round produces no improvement to global_best.
+
+    Measurement count
+    ─────────────────
+      Stage 1:  64
+      Stage 2:  K × (rounds × N_shifters × 64/COARSE_STEP)  ≈  K × 2 × 4 × 8  = 256 (K=4)
+      Stage 3:  rounds × N_shifters × 64                     ≈  2 × 4 × 64     = 512
+      Total:    ~832 measurements, independent of NUM_RANDOM_STARTS.
 
     Convergence tracking
     ────────────────────
-    A global best is maintained across every individual measurement taken
-    during the entire run.  At the start of each round, current_phases is
-    re-anchored to the global best rather than carried forward from the end
-    of the previous round.  This prevents two failure modes seen in the
-    naive implementation:
-
-      1. Per-round power (the last shifter's result) is not the round's
-         true best — an intermediate shifter sweep may have found a higher
-         power that gets silently discarded when the next shifter is swept.
-
-      2. Carrying the end-state of a round forward as the next round's
-         starting point means subsequent rounds explore from a potentially
-         worse position than the true best already found.
-
-    Convergence is declared when no measurement in an entire round improves
-    on the global best, rather than comparing end-of-round to start-of-round.
+    A single global_best is shared across all stages and starts.  Every round
+    re-anchors to global_best before sweeping, so later rounds always build
+    from the best-known position.  Convergence is declared when a complete
+    round fails to improve global_best.
     """
 
     def __init__(
         self,
-        array:         "PhasedArrayController | _DryRunArray",
-        sa:            "SpectrumAnalyzer | _DryRunSA",
-        logger:        MeasurementLogger,
-        coarse_step:   int = COARSE_STEP,
-        max_coarse:    int = MAX_COARSE_ROUNDS,
-        max_fine:      int = MAX_FINE_ROUNDS,
+        array:             "PhasedArrayController | _DryRunArray",
+        sa:                "SpectrumAnalyzer | _DryRunSA",
+        logger:            MeasurementLogger,
+        maximize:          bool = True,
+        coarse_step:       int  = COARSE_STEP,
+        max_coarse:        int  = MAX_COARSE_ROUNDS,
+        max_fine:          int  = MAX_FINE_ROUNDS,
+        num_random_starts: int  = NUM_RANDOM_STARTS,
+        linear_sweep_top_k: int = 4,
     ) -> None:
-        self._array       = array
-        self._sa          = sa
-        self._logger      = logger
-        self._coarse_step = coarse_step
-        self._max_coarse  = max_coarse
-        self._max_fine    = max_fine
-        self._total_meas  = 0
-        self._global_best: Optional[Measurement] = None  # best across all measurements
+        self._array          = array
+        self._sa             = sa
+        self._logger         = logger
+        self._maximize       = maximize
+        self._coarse_step    = coarse_step
+        self._max_coarse     = max_coarse
+        self._max_fine       = max_fine
+        self._n_random       = num_random_starts
+        self._top_k          = linear_sweep_top_k
+        self._total_meas     = 0
+        self._global_best: Optional[Measurement] = None
 
-    # ── Internal helpers ───────────────────────────────────────────────────────
+    # ── Mode helpers ───────────────────────────────────────────────────────────
+
+    def _is_better(self, candidate: float, reference: float) -> bool:
+        """Return True if candidate is 'better' than reference given the mode."""
+        return candidate > reference if self._maximize else candidate < reference
+
+    def _worst_sentinel(self) -> float:
+        """A sentinel value that any real measurement will beat."""
+        return float("-inf") if self._maximize else float("+inf")
+
+    # ── Measurement ───────────────────────────────────────────────────────────
 
     def _measure(self, phases: List[int]) -> Measurement:
         """Apply a phase vector, record a Measurement, and update the global best."""
@@ -508,11 +572,73 @@ class PhaseCalibrator:
         self._total_meas += 1
         log.debug("  meas #%d  %s", self._total_meas, m)
 
-        if self._global_best is None or m.power_dbm > self._global_best.power_dbm:
+        if self._global_best is None or self._is_better(m.power_dbm, self._global_best.power_dbm):
             self._global_best = m
             log.debug("  ★ new global best: %.2f dBm  %s", m.power_dbm, m.phases)
 
         return m
+
+    # ── Stage 1: Linear phase sweep ───────────────────────────────────────────
+
+    @staticmethod
+    def _linear_phase_vector(step: int) -> List[int]:
+        """
+        Build the ideal ULA phase vector for inter-element step d.
+
+        Element n receives phase (n * step) % PHASE_STATES, with element 0
+        pinned to state 0.  This is the exact closed-form solution for a
+        uniform linear array steered to the angle whose sine satisfies
+            sin(θ) = step × (λ/d_el) / PHASE_STATES
+        where d_el is the element spacing.
+        """
+        return [(n * step) % PHASE_STATES for n in range(NUM_PHASE_SHIFTERS)]
+
+    def _linear_phase_sweep(self) -> List[Measurement]:
+        """
+        Stage 1: sweep all PHASE_STATES inter-element step values and return
+        all measurements sorted best-first.  This directly enumerates the full
+        family of linear phase progressions in PHASE_STATES measurements.
+        """
+        log.info("═" * 60)
+        log.info("Stage 1 – Linear Phase Sweep  (%d measurements)", PHASE_STATES)
+        log.info("  Sweeping inter-element step d = 0 … %d", PHASE_STATES - 1)
+        log.info("  Vector: [0, d, 2d, 3d] mod %d", PHASE_STATES)
+        log.info("═" * 60)
+
+        results: List[Measurement] = []
+        for d in range(PHASE_STATES):
+            phases = self._linear_phase_vector(d)
+            m = self._measure(phases)
+            results.append(m)
+            log.debug("  d=%2d  %s  →  %.2f dBm", d, phases, m.power_dbm)
+
+        # Sort best-first for logging and seed selection
+        results.sort(key=lambda m: m.power_dbm, reverse=self._maximize)
+
+        log.info("Stage 1 complete.  Top results:")
+        for i, m in enumerate(results[: self._top_k]):
+            d_eff = m.phases[1]   # element 1 state = d directly
+            log.info("  #%d  d=%2d  %s  →  %.2f dBm", i + 1, d_eff, m.phases, m.power_dbm)
+
+        return results
+
+    # ── Stage 2 & 3: Coordinate descent ───────────────────────────────────────
+
+    @staticmethod
+    def _wrapped_states(center: int, step: int) -> List[int]:
+        """
+        Generate all PHASE_STATES // step states starting from *center* and
+        stepping in increments of *step*, wrapping modulo PHASE_STATES.
+
+        Starting from the current best state makes the phase space circular:
+        state 63 and state 0 are always one step apart, so the descent can
+        cross the wrap boundary freely.
+
+        Example (PHASE_STATES=64, step=8, center=56):
+            [56, 0, 8, 16, 24, 32, 40, 48]   ← wraps at 63→0
+        """
+        n = PHASE_STATES // step
+        return [(center + i * step) % PHASE_STATES for i in range(n)]
 
     def _sweep_one_shifter(
         self,
@@ -521,22 +647,18 @@ class PhaseCalibrator:
         step:           int,
     ) -> List[int]:
         """
-        Sweep a single shifter (0-indexed) through all states at the given
-        step size, holding the others fixed at current_phases.
-
-        Updates self._global_best via _measure() for every candidate.
-        Returns the phase vector corresponding to the best state found for
-        this shifter (which may not be the global best if a prior shifter in
-        the same round already holds that title).
+        Sweep a single shifter through all states at the given step, starting
+        from its current state so that the sweep is circular (wraps mod 64).
+        Returns the phase vector with the best state found for this shifter.
         """
-        best_power_this_sweep = float("-inf")
+        best_power_this_sweep = self._worst_sentinel()
         best_phases_this_sweep = list(current_phases)
 
-        for state in range(0, PHASE_STATES, step):
+        for state in self._wrapped_states(current_phases[shifter_idx], step):
             candidate = list(current_phases)
             candidate[shifter_idx] = state
             m = self._measure(candidate)
-            if m.power_dbm > best_power_this_sweep:
+            if self._is_better(m.power_dbm, best_power_this_sweep):
                 best_power_this_sweep  = m.power_dbm
                 best_phases_this_sweep = list(candidate)
 
@@ -549,98 +671,116 @@ class PhaseCalibrator:
         )
         return best_phases_this_sweep
 
-    def _coordinate_descent_phase(
+    def _coordinate_descent(
         self,
         init_phases: List[int],
         step:        int,
         max_rounds:  int,
-        phase_label: str,
+        label:       str,
     ) -> None:
         """
-        Run coordinate descent at a given step size, updating self._global_best
-        throughout.  Convergence is declared when a complete round produces no
-        improvement to the global best.
-        """
-        log.info("═" * 60)
-        log.info("%s  (step=%d, max_rounds=%d)", phase_label, step, max_rounds)
-        log.info("═" * 60)
+        Run coordinate descent from init_phases at the given step size.
 
-        # Measure the explicit starting point so it participates in global best.
+        Shares self._global_best with all other descents so prior stages
+        immediately benefit later ones.  Re-anchors to global_best at the
+        start of every round.  Converges when a full round produces no
+        improvement.
+        """
+        log.info("  [%s] start=%s  step=%d", label, init_phases, step)
         self._measure(init_phases)
 
         for round_num in range(1, max_rounds + 1):
-            log.info("── Round %d / %d ──────────────────────────────", round_num, max_rounds)
-
-            # Re-anchor to the global best at the start of every round.
-            # This ensures we always explore from the best-known position,
-            # not from wherever the previous round happened to finish.
-            current_phases = list(self._global_best.phases)
-            global_best_at_round_start = self._global_best.power_dbm
+            current_phases      = list(self._global_best.phases)
+            best_at_round_start = self._global_best.power_dbm
 
             for idx in range(NUM_PHASE_SHIFTERS):
                 current_phases = self._sweep_one_shifter(current_phases, idx, step)
 
-            improvement = self._global_best.power_dbm - global_best_at_round_start
-            log.info(
-                "Round %d complete.  Global best: %.2f dBm  (Δ = %+.3f dBm)",
-                round_num, self._global_best.power_dbm, improvement,
+            improvement = (
+                self._global_best.power_dbm - best_at_round_start
+                if self._maximize
+                else best_at_round_start - self._global_best.power_dbm
             )
-            log.info("Global best phases: %s", self._global_best.phases)
-
+            log.info(
+                "  [%s] round %d  global best: %.2f dBm  (Δ = %+.3f dBm)",
+                label, round_num, self._global_best.power_dbm, improvement,
+            )
             if improvement <= 0.0:
-                log.info("%s converged after %d round(s).", phase_label, round_num)
+                log.info("  [%s] converged after %d round(s).", label, round_num)
                 break
 
     # ── Public API ─────────────────────────────────────────────────────────────
 
     def run(self) -> Tuple[Measurement, Measurement]:
         """
-        Execute the full two-phase calibration.
+        Execute three-stage calibration and return (confirmed_best, global_best).
 
-        Returns (confirmed_best, global_best) where:
-          confirmed_best – a fresh measurement taken at the converged phase
-                           vector after the algorithm finishes.
-          global_best    – the single highest-power measurement seen at any
-                           point during the entire run (may differ from
-                           confirmed_best due to SA noise).
+          confirmed_best – a fresh measurement at the converged phase vector.
+          global_best    – the single best measurement seen at any point during
+                           the run (may differ from confirmed_best due to SA
+                           noise; use whichever is more appropriate).
         """
-        t_start = time.monotonic()
+        mode_str = "MAX" if self._maximize else "MIN"
+        t_start  = time.monotonic()
 
-        # ── Phase 1: Coarse coordinate descent ────────────────────────────────
-        self._coordinate_descent_phase(
-            init_phases = [0] * NUM_PHASE_SHIFTERS,
-            step        = self._coarse_step,
-            max_rounds  = self._max_coarse,
-            phase_label = "Phase 1 – Coarse Sweep",
-        )
+        # ── Stage 1: Linear phase sweep ───────────────────────────────────────
+        linear_results = self._linear_phase_sweep()
+
+        # Top-K seeds for Stage 2 (best-first already sorted)
+        seeds = [m.phases for m in linear_results[: self._top_k]]
+
+        # Optionally append random coarse-grid seeds for extra coverage.
+        # These are less useful here than they were in the old algorithm because
+        # Stage 1 already covers the most important region of the space, but
+        # they still help when coupling is severe.
+        if self._n_random > 0:
+            coarse_states = list(range(0, PHASE_STATES, self._coarse_step))
+            for _ in range(self._n_random):
+                rv = [random.choice(coarse_states) for _ in range(NUM_PHASE_SHIFTERS)]
+                if rv not in seeds:
+                    seeds.append(rv)
+
+        log.info("═" * 60)
+        log.info("Stage 2 – Coarse Coordinate Descent  "
+                 "[mode=%s  step=%d  seeds=%d  max_rounds=%d]",
+                 mode_str, self._coarse_step, len(seeds), self._max_coarse)
+        log.info("═" * 60)
+
+        # ── Stage 2: Coarse descent from each seed ────────────────────────────
+        for i, seed in enumerate(seeds):
+            log.info("── Seed %d / %d ───────────────────────────────────────",
+                     i + 1, len(seeds))
+            self._coordinate_descent(
+                seed, step=self._coarse_step, max_rounds=self._max_coarse,
+                label=f"coarse-{i+1}",
+            )
 
         log.info("\nCoarse optimum: %s  →  %.2f dBm",
                  self._global_best.phases, self._global_best.power_dbm)
 
-        # ── Phase 2: Fine coordinate descent ──────────────────────────────────
-        # Initialize from the coarse global best (already set in self._global_best).
-        self._coordinate_descent_phase(
-            init_phases = list(self._global_best.phases),
-            step        = 1,
-            max_rounds  = self._max_fine,
-            phase_label = "Phase 2 – Fine Sweep",
+        # ── Stage 3: Fine descent from the coarse global best ─────────────────
+        log.info("═" * 60)
+        log.info("Stage 3 – Fine Coordinate Descent  [mode=%s  step=1  max_rounds=%d]",
+                 mode_str, self._max_fine)
+        log.info("═" * 60)
+
+        self._coordinate_descent(
+            list(self._global_best.phases), step=1, max_rounds=self._max_fine,
+            label="fine",
         )
 
-        elapsed = time.monotonic() - t_start
-        global_best = self._global_best  # snapshot before confirmation measurement
+        elapsed     = time.monotonic() - t_start
+        global_best = self._global_best   # snapshot before confirmation
 
         # ── Confirmation measurement ───────────────────────────────────────────
-        # Re-apply the converged phase vector and take one fresh reading.
-        # SA noise means this single sample may not equal global_best.power_dbm,
-        # so both values are reported.
         log.info("\nApplying converged phase vector for confirmation measurement …")
         confirmed = self._measure(global_best.phases)
 
         log.info("═" * 60)
-        log.info("CALIBRATION COMPLETE")
+        log.info("CALIBRATION COMPLETE  [mode=%s]", mode_str)
         log.info("  Converged phase vector : %s", confirmed.phases)
         log.info("  Confirmed power        : %+.2f dBm", confirmed.power_dbm)
-        log.info("  Global best power      : %+.2f dBm  (seen at meas. taken during run)",
+        log.info("  Global best power      : %+.2f dBm  (best seen during run)",
                  global_best.power_dbm)
         log.info("  Global best phases     : %s", global_best.phases)
         log.info("  Marker frequency       : %.6f GHz", confirmed.freq_hz / 1e9)
@@ -657,7 +797,18 @@ class PhaseCalibrator:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Phased-array calibration via coordinate-descent power maximization."
+        description=(
+            "Phased-array calibration via multi-start coordinate-descent. "
+            "Finds the phase vector that maximises (beam) or minimises (null) "
+            "received power."
+        )
+    )
+    parser.add_argument(
+        "--mode", choices=["max", "min"], default="max",
+        help=(
+            "'max' to maximise received power (beam steering, default). "
+            "'min' to minimise received power (null steering)."
+        ),
     )
     parser.add_argument(
         "--dry-run",
@@ -670,16 +821,42 @@ def parse_args() -> argparse.Namespace:
         default=LOG_DIR,
         help="Directory for the CSV measurement log (default: current directory).",
     )
+    parser.add_argument(
+        "--random-starts", type=int, default=NUM_RANDOM_STARTS,
+        help=(
+            f"Number of random coarse-grid seeds added after the top-K linear "
+            f"sweep results (default: {NUM_RANDOM_STARTS}). Set to 0 to rely "
+            "entirely on the linear sweep seeds."
+        ),
+    )
+    parser.add_argument(
+        "--top-k", type=int, default=4,
+        help=(
+            "Number of top linear-sweep results to use as Stage 2 seeds "
+            "(default: 4). Higher values increase robustness when coupling "
+            "shifts the optimum away from pure linear phase."
+        ),
+    )
+    parser.add_argument(
+        "--coarse-step", type=int, default=COARSE_STEP,
+        help=f"Coarse sweep step size (default: {COARSE_STEP}, must divide {PHASE_STATES}).",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
 
+    if args.coarse_step <= 0 or PHASE_STATES % args.coarse_step != 0:
+        log.error("--coarse-step must be a positive divisor of %d.", PHASE_STATES)
+        sys.exit(1)
+
+    maximize = (args.mode == "max")
+
     # ── CSV log file ───────────────────────────────────────────────────────────
     timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
     args.log_dir.mkdir(parents=True, exist_ok=True)
-    log_path = args.log_dir / f"calibration_{timestamp_str}.csv"
+    log_path = args.log_dir / f"calibration_{args.mode}_{timestamp_str}.csv"
 
     # ── Instantiate hardware (or dry-run stubs) ────────────────────────────────
     if args.dry_run:
@@ -699,24 +876,24 @@ def main() -> None:
     try:
         with sa, array, MeasurementLogger(log_path) as logger:
             calibrator = PhaseCalibrator(
-                array       = array,
-                sa          = sa,
-                logger      = logger,
-                coarse_step = COARSE_STEP,
-                max_coarse  = MAX_COARSE_ROUNDS,
-                max_fine    = MAX_FINE_ROUNDS,
+                array                = array,
+                sa                   = sa,
+                logger               = logger,
+                maximize             = maximize,
+                coarse_step          = args.coarse_step,
+                max_coarse           = MAX_COARSE_ROUNDS,
+                max_fine             = MAX_FINE_ROUNDS,
+                num_random_starts    = args.random_starts,
+                linear_sweep_top_k   = args.top_k,
             )
             confirmed, global_best = calibrator.run()
 
+        mode_label = "MAXIMUM (beam steering)" if maximize else "MINIMUM (null steering)"
         print("\n" + "=" * 60)
-        print("CALIBRATION RESULT – CONFIRMED (fresh measurement)")
+        print(f"CALIBRATION RESULT – {mode_label}")
         print("=" * 60)
-        print(confirmed)
-        print()
-        print("=" * 60)
-        print("CALIBRATION RESULT – GLOBAL BEST (highest seen during run)")
-        print("=" * 60)
-        print(global_best)
+        print(f"Confirmed : {confirmed}")
+        print(f"Global best: {global_best}")
         print(f"\nLog saved to: {log_path}")
 
     except KeyboardInterrupt:
@@ -728,5 +905,5 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    time.sleep(10) # time to run away from measurement before it starts
+    time.sleep(5)
     main()

@@ -1,0 +1,24 @@
+# requirements.txt for phase_sweep.py
+#
+# Install with:
+#   pip install -r requirements.txt
+# 
+# 
+#
+# NI Instrument Drivers (For MS2690A Spectrum Analyzer) -- not required on MacOS but seemingly required on Windows (not confirmed)
+# https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html?srsltid=AfmBOoroddq4rUyJJyGBOyTsmOBDM8rUWcsTTfkp8p_TftwjOeIBax3f#585834
+#  ^ Requires account and takes a while
+#
+# Adafruit Blinka (CircuitPython compatibility layer for FT232H)
+# Follow OS and board-specific setup first to acquire libusb or Windows equivalent:
+#   https://learn.adafruit.com/circuitpython-on-any-computer-with-ft232h/setup
+# 
+# On MacOS, make sure libusb is installed (brew install libusb) and that the FT232H is properly configured with the D2XX drivers (https://www.ftdichip.com/Drivers/D2XX.htm) and that the appropriate udev rules are set up to allow access to the device without root permissions.
+pyftdi
+pyusb
+adafruit-blinka
+
+# VISA instrument control (spectrum analyzer)
+pyvisa
+pyvisa-py       # Supposedly a Pure-Python VISA backend that doesn't require NI-VISA, but in our experience the NI-drivers are still needed
+                # Link in header for download

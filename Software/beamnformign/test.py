@@ -90,7 +90,7 @@ def disable_decoder(pin_objects):
     
     # Set G1 LOW (False) to disable all outputs
     pin_g1.value = False
-    print("Decoder disabled (G1=LOW). All outputs are High.")
+    # print("Decoder disabled (G1=LOW). All outputs are High.")
 
 import busio
 
@@ -142,7 +142,7 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
         print("Unknown Device Type")
         return
 
-    print(f"Communicating with {device_type}{device_id} on Mux Y{target_y}...")
+    # print(f"Communicating with {device_type}{device_id} on Mux Y{target_y}...")
     
     # Select the Device (Assert CS)
     select_output(decoder_pins, target_y)
@@ -162,7 +162,7 @@ def send_spi_command(device_type, device_id, value, decoder_pins):
     elapsed_time = time.monotonic() - elapsed_time
     if elapsed_time < cmd_threshold:
         time.sleep(cmd_threshold - elapsed_time)
-    print(f"Elapsed Time: {elapsed_time:.3f} seconds")
+    # print(f"Elapsed Time: {elapsed_time:.3f} seconds")
     
 
 
