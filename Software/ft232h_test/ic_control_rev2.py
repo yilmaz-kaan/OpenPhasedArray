@@ -32,6 +32,9 @@ class SystemController:
         for p in [self.a, self.b, self.c, self.g1]:
             p.direction = digitalio.Direction.OUTPUT
 
+        # Setup SPI
+        self.spi = busio.SPI(clock=PIN_CLK, MOSI=PIN_MOSI, MISO=PIN_MISO)
+        
         # Initialize System control Pins
         self.tr_ctrl = digitalio.DigitalInOut(PIN_TR)
         self.v_en = digitalio.DigitalInOut(PIN_VEN)
@@ -42,8 +45,6 @@ class SystemController:
             p.direction = digitalio.Direction.OUTPUT
             p.value = False # Default safety: All OFF
 
-        # Setup SPI
-        self.spi = busio.SPI(clock=PIN_CLK, MOSI=PIN_MOSI, MISO=PIN_MISO)
         
         # Turn on Blue LED (Device ID)
         self.dev_id.value = True
