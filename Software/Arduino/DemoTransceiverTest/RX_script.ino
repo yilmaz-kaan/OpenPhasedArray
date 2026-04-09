@@ -2,40 +2,56 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-// CE on pin 9, CSN on pin 8 [cite: 67]
+/*
+ * Pinout Configuration for nRF24L01 Breakout:
+ * nRF24L01 Pin | Arduino Pin
+ * -------------|------------
+ * VCC          | 3.3V (or 5V if using Adapter)
+ * GND          | GND
+ * CE           | 9
+ * CSN          | 8
+ * SCK          | 13
+ * MOSI         | 11
+ * MISO         | 12
+ * IRQ          | Not Connected
+ */
+
+// CE on pin 9, CSN on pin 8
 RF24 radio(9, 8); 
 
-const byte address[6] = "00001"; // Must match transmitter [cite: 69]
+const byte address[6] = "00001"; // Must match transmitter
 const int ledPin = 2;            // LED connected to Digital Pin 2
-const char msg[32] = "FREAKBEAR";
+
 void setup() {
   Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);       // Set D2 as output
+  pinMode(ledPin, OUTPUT);
   
-  radio.begin();                 // Initialize the module [cite: 104]
-  radio.setPALevel(RF24_PA_LOW); // Low power for desk testing [cite: 105]
-  radio.setChannel(108);         // Set frequency [cite: 106]
-  radio.setDataRate(RF24_250KBPS); // Set data rate [cite: 110]
-  radio.openReadingPipe(0, address); // Set receive address [cite: 112]
-  radio.startListening();        // Put into receiver mode [cite: 114]
+  if (!radio.begin()) {
+    Serial.println("Radio hardware not responding!");
+    while (1); // Halt if hardware is not connected
+  }
+  
+  radio.setPALevel(RF24_PA_LOW);    // Match transmitter power level
+  radio.setChannel(108);           // Match transmitter channel
+  radio.setDataRate(RF24_250KBPS); // Match transmitter data rate
+  radio.openReadingPipe(1, address); // Set receive address (using pipe 1)
+  radio.startListening();        // Put into receiver mode
   
   Serial.println("Receiver Ready. Waiting for data...");
 }
 
 void loop() {
-  // Check if data is available in the buffer 
   if (radio.available()) {
-    const char text[32] = {0};
-    radio.read(&text, sizeof(text)); // Read the incoming message [cite: 119]
-    Serial.println(text);  
-    if (strcmp(text, "FREAKBEAR") == 0){
-    digitalWrite(ledPin, HIGH);      // Turn LED ON when data arrives
-          // Print message to monitor [cite: 120]
+    char text[32] = {0};
+    radio.read(&text, sizeof(text)); // Read the incoming message
     
-    // Optional: add a tiny delay so the LED blink is visible to the eye
-    delay(500);
+    Serial.print("Received: ");
+    Serial.println(text);  
+    
+    if (strcmp(text, "FREAKBEAR") == 0) {
+      digitalWrite(ledPin, HIGH);    // Turn LED ON
+      delay(500);                    // Brief visual feedback
+      digitalWrite(ledPin, LOW);     // Turn LED OFF
     }
-  } else {
-    digitalWrite(ledPin, LOW);       // Turn LED OFF if no data
   }
 }
