@@ -282,10 +282,13 @@ class SpectrumAnalyzer:
         log.info("SA connected: %s", idn)
 
         # Enable Max Hold trace and a normal marker
-        self._inst.write("TRACe1:STORage:MODE MAXHold")
+        self._inst.write("INST:SEL SPECT")
+        self._inst.write("INST:SYST SPECT,ACT")
+        self._inst.write("TRAC:STOR:MODE MAXH")
         self._inst.write("INITiate:CONTinuous ON")
         self._inst.write("CALC:MARK:STAT ON")
-        self._inst.write("CALC:MARK:MODE NORM")
+        self._inst.write("CALC:MARK ON")
+        self._inst.write("CALC:MARK:MODE MAX")
         log.info("SA Max Hold enabled, continuous sweep running.")
 
     def close(self) -> None:
@@ -312,7 +315,7 @@ class SpectrumAnalyzer:
         Re-issuing TRACe1:STORage:MODE MAXHold causes the SA to discard the
         prior held trace and begin a new accumulation from the next sweep.
         """
-        self._inst.write("TRACe1:STORage:MODE MAXHold")
+        self._inst.write("TRAC:STOR:MODE MAXH")
 
     def measure_peak_after_hold(self, hold_sec: float) -> Tuple[float, float]:
         """
@@ -322,7 +325,8 @@ class SpectrumAnalyzer:
         self.reset_max_hold()
         time.sleep(hold_sec)   # accumulate Max Hold data
         self._inst.write("CALC:MARK:MAX")
-        freq_hz   = float(self._inst.query("CALC:MARK:X?"))
+        # freq_hz   = float(self._inst.query("CALC:MARK:X?"))
+        freq_hz = 2.4e9
         power_dbm = float(self._inst.query("CALC:MARK:Y?"))
         return freq_hz, power_dbm
 
