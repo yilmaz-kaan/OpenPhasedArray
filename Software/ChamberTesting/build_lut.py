@@ -26,7 +26,7 @@ def build_beamformer_lut(sweep_dir="./sweep_results", offset=30):
     for dir_path in dir_paths:
         dir_name = os.path.basename(dir_path)
         
-        # Verbose parsing to catch errors
+        # Parse the angle
         raw_angle_str = dir_name.replace("ang_", "")
         try:
             raw_angle = int(raw_angle_str)
@@ -36,12 +36,21 @@ def build_beamformer_lut(sweep_dir="./sweep_results", offset=30):
             
         actual_angle = raw_angle + offset
         
+        # Find all CSV files in this specific angle directory
         csv_files = glob.glob(os.path.join(dir_path, "phase_sweep_*.csv"))
         if not csv_files:
             print(f"Warning: No CSV found in {dir_name}")
             continue
             
-        df = pd.read_csv(csv_files[0])
+        # SORT the files. Because the timestamp is YYYYMMDD_HHMMSS, 
+        # an alphabetical sort is inherently a chronological sort.
+        csv_files.sort()
+        
+        # Grab the last file in the sorted list (the most recent one)
+        latest_csv = csv_files[-1]
+        
+        # Read the most recent CSV
+        df = pd.read_csv(latest_csv)
         max_row = df.loc[df['power_dbm'].idxmax()]
         min_row = df.loc[df['power_dbm'].idxmin()]
         
@@ -58,12 +67,13 @@ def build_beamformer_lut(sweep_dir="./sweep_results", offset=30):
             "min_power": extract_state(min_row)
         }
         
-        print(f"Processed raw angle {raw_angle:4d}° -> actual {actual_angle:4d}°")
+        print(f"Processed raw angle {raw_angle:4d}° -> actual {actual_angle:4d}°  | Used: {os.path.basename(latest_csv)}")
 
     if not lut_data:
         print("\nFailed to build LUT. No valid data extracted.")
         return
 
+    # Sort the dictionary by the actual physical angle
     sorted_lut = {k: lut_data[k] for k in sorted(lut_data.keys())}
     
     with open("beamformer_lut.json", "w") as f:
@@ -73,6 +83,4 @@ def build_beamformer_lut(sweep_dir="./sweep_results", offset=30):
     print("Saved to beamformer_lut.json")
 
 if __name__ == "__main__":
-    # You can hardcode your path here if it's consistently failing
-    # build_beamformer_lut(sweep_dir="/absolute/path/to/your/sweep_results")
     build_beamformer_lut()
