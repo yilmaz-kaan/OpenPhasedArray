@@ -7342,7 +7342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1777787b-d1b5-4e1d-b857-982cc4958667")
-		(property "Reference" "J1"
+		(property "Reference" "J0"
 			(at 673.2905 262.89 0)
 			(effects
 				(font
@@ -7494,7 +7494,7 @@
 		(instances
 			(project ""
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "J1")
+					(reference "J0")
 					(unit 1)
 				)
 			)
@@ -8319,7 +8319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29279a18-7a38-48f1-98fe-c791f04f80fd")
-		(property "Reference" "IC23"
+		(property "Reference" "SW01"
 			(at 558.2219 266.7 90)
 			(effects
 				(font
@@ -8470,7 +8470,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "IC23")
+					(reference "SW01")
 					(unit 1)
 				)
 			)
@@ -8757,7 +8757,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2efdcf34-6743-4403-9563-b86da5b68d65")
-		(property "Reference" "IC15"
+		(property "Reference" "LNA0"
 			(at 502.412 303.276 0)
 			(effects
 				(font
@@ -8894,7 +8894,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "IC15")
+					(reference "LNA0")
 					(unit 1)
 				)
 			)
@@ -9109,7 +9109,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "319423ed-6eac-43b2-a119-af80c4982090")
-		(property "Reference" "IC4"
+		(property "Reference" "PS0"
 			(at 250.19 248.8498 0)
 			(effects
 				(font
@@ -9282,7 +9282,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "IC4")
+					(reference "PS0")
 					(unit 1)
 				)
 			)
@@ -10770,7 +10770,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e211de9-3e1a-4fd0-888a-da395da43dfc")
-		(property "Reference" "J3"
+		(property "Reference" "J8"
 			(at 381.762 286.766 90)
 			(effects
 				(font
@@ -10880,7 +10880,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "J3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -11163,7 +11163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53e8c1bd-4680-4013-94f7-8fc61022d136")
-		(property "Reference" "IC5"
+		(property "Reference" "PA0"
 			(at 521.97 209.4798 0)
 			(effects
 				(font
@@ -11312,7 +11312,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "IC5")
+					(reference "PA0")
 					(unit 1)
 				)
 			)
@@ -13602,7 +13602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f7a18bc-499f-4f56-956b-4bc0246e4433")
-		(property "Reference" "HY2"
+		(property "Reference" "CPL0"
 			(at 641.35 243.84 0)
 			(effects
 				(font
@@ -13730,7 +13730,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "HY2")
+					(reference "CPL0")
 					(unit 1)
 				)
 			)
@@ -15490,7 +15490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa8ca87e-b9c6-4d45-9b2d-b2730cd43d19")
-		(property "Reference" "IC19"
+		(property "Reference" "SW00"
 			(at 427.2981 250.19 90)
 			(effects
 				(font
@@ -15641,7 +15641,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "IC19")
+					(reference "SW00")
 					(unit 1)
 				)
 			)
@@ -16392,7 +16392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c09d00ab-9dab-4c91-bd9d-7bb3942e1418")
-		(property "Reference" "J5"
+		(property "Reference" "CPL_PORT0"
 			(at 690.88 241.5931 0)
 			(effects
 				(font
@@ -16446,7 +16446,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "J5")
+					(reference "CPL_PORT0")
 					(unit 1)
 				)
 			)
@@ -18335,7 +18335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f46559dd-629d-4531-bede-5e05621783c0")
-		(property "Reference" "AT2"
+		(property "Reference" "AT0"
 			(at 334.01 251.3898 0)
 			(effects
 				(font
@@ -18484,7 +18484,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/7bb8dd1e-0839-4907-9be8-cd94b974a535"
-					(reference "AT2")
+					(reference "AT0")
 					(unit 1)
 				)
 			)

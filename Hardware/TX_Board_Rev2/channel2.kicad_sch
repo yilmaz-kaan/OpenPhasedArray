@@ -6808,7 +6808,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "077a186b-825d-4e5f-a7fd-63be5146c50a")
-		(property "Reference" "IC14"
+		(property "Reference" "LNA2"
 			(at 550.672 326.136 0)
 			(effects
 				(font
@@ -6945,7 +6945,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "IC14")
+					(reference "LNA2")
 					(unit 1)
 				)
 			)
@@ -7839,7 +7839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1787cb63-b0c2-4357-b566-01813afc23f9")
-		(property "Reference" "HY3"
+		(property "Reference" "CPL2"
 			(at 689.61 266.7 0)
 			(effects
 				(font
@@ -7967,7 +7967,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "HY3")
+					(reference "CPL2")
 					(unit 1)
 				)
 			)
@@ -8050,7 +8050,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cc61084-dc60-4615-be0f-b238ad860fa0")
-		(property "Reference" "J14"
+		(property "Reference" "CPL_PORT2"
 			(at 739.14 264.4531 0)
 			(effects
 				(font
@@ -8104,7 +8104,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "J14")
+					(reference "CPL_PORT2")
 					(unit 1)
 				)
 			)
@@ -9586,7 +9586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b0719fc-0140-4e66-816d-a42a47282ec3")
-		(property "Reference" "IC16"
+		(property "Reference" "SW21"
 			(at 606.4819 289.56 90)
 			(effects
 				(font
@@ -9737,7 +9737,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "IC16")
+					(reference "SW21")
 					(unit 1)
 				)
 			)
@@ -10553,7 +10553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53d7ea93-5c4c-479f-94aa-dd079b9cd5b5")
-		(property "Reference" "AT3"
+		(property "Reference" "AT2"
 			(at 382.27 274.2498 0)
 			(effects
 				(font
@@ -10702,7 +10702,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "AT3")
+					(reference "AT2")
 					(unit 1)
 				)
 			)
@@ -10984,7 +10984,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "592a2207-6d8d-4e7b-ab4a-2a51e0df4c6c")
-		(property "Reference" "IC11"
+		(property "Reference" "PS2"
 			(at 298.45 271.7098 0)
 			(effects
 				(font
@@ -11157,7 +11157,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "IC11")
+					(reference "PS2")
 					(unit 1)
 				)
 			)
@@ -11978,7 +11978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "697767e1-c6de-4f02-92c0-cb77fe2c58dc")
-		(property "Reference" "IC13"
+		(property "Reference" "PA2"
 			(at 570.23 232.3398 0)
 			(effects
 				(font
@@ -12127,7 +12127,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "IC13")
+					(reference "PA2")
 					(unit 1)
 				)
 			)
@@ -13282,7 +13282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86fe0d21-3aec-4ff9-ad71-5a52cd9421b6")
-		(property "Reference" "J6"
+		(property "Reference" "J2"
 			(at 721.5505 285.75 0)
 			(effects
 				(font
@@ -13434,7 +13434,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "J6")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -14993,7 +14993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b274b93f-2c7f-492e-bddd-30181113f86e")
-		(property "Reference" "J8"
+		(property "Reference" "J10"
 			(at 430.022 309.626 90)
 			(effects
 				(font
@@ -15103,7 +15103,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "J8")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -18265,7 +18265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa840663-470b-4e87-a3d0-387f8d665f0e")
-		(property "Reference" "IC12"
+		(property "Reference" "SW20"
 			(at 475.5581 273.05 90)
 			(effects
 				(font
@@ -18416,7 +18416,7 @@
 		(instances
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c/f15f633c-4a68-465c-891b-a0907b206a37"
-					(reference "IC12")
+					(reference "SW20")
 					(unit 1)
 				)
 			)
