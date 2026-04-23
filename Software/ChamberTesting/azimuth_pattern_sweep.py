@@ -92,7 +92,7 @@ HOLD_TIME_SEC      =   2.0    # Max Hold dwell time at each angle (seconds)
 SA_RESOURCE_STRING = 'USB0::2907::6::6261932852::0::INSTR'  # pyvisa resource
 
 # ── Output ────────────────────────────────────────────────────────────────────
-LOG_DIR = Path("./sweeps/")           # CSV + plot saved here
+LOG_DIR = Path("./pattern_measurements/")           # CSV + plot saved here
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
