@@ -1,10 +1,12 @@
 import os
+
+os.environ['BLINKA_FT232H'] = '1'
+
 import time
 import board
 import digitalio
 import busio
 
-os.environ['BLINKA_FT232H'] = '1'
 
 # --- Pin Configuration ---
 PIN_A = board.C0 # Decoder pin A

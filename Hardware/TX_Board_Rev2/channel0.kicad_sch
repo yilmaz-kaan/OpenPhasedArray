@@ -4825,6 +4825,16 @@
 		)
 		(uuid "f1ab6053-34b3-4795-942b-453b485b08ac")
 	)
+	(text "very high cutoff LPFs \nto filter RF noise \nfrom power lines."
+		(exclude_from_sim no)
+		(at 206.756 210.058 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f693c053-9da5-41e6-9cc0-adc79b3d95ad")
+	)
 	(junction
 		(at 191.77 255.27)
 		(diameter 0)
