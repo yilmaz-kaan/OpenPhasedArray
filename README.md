@@ -8,7 +8,7 @@ and communications prototyping. It is a modular design that is easily stackable 
 vertically and horizontally using the provided 3D-printable board mount. It is (optionally) interfaced with by the FT232H USB-to-serial
 converter for easy, Python-based control. 
 
-''Specification and Info''
+**Specification and Info**
 - 2.4 – 3.7 GHz operating frequency
 - Small form factor, 4.128” x 3.534”
 - 21 dB peak gain per channel in TX
