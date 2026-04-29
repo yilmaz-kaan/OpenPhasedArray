@@ -25,6 +25,10 @@ PIN_MISO = board.MISO # D2
 
 class SystemController:
     def __init__(self):
+        # Setup SPI
+        self.spi = busio.SPI(clock=PIN_CLK, MOSI=PIN_MOSI, MISO=PIN_MISO)
+
+
         # Initialize Decoder Pins
         self.a = digitalio.DigitalInOut(PIN_A)
         self.b = digitalio.DigitalInOut(PIN_B)
@@ -34,8 +38,6 @@ class SystemController:
         for p in [self.a, self.b, self.c, self.g1]:
             p.direction = digitalio.Direction.OUTPUT
 
-        # Setup SPI
-        self.spi = busio.SPI(clock=PIN_CLK, MOSI=PIN_MOSI, MISO=PIN_MISO)
         
         # Initialize System control Pins
         self.tr_ctrl = digitalio.DigitalInOut(PIN_TR)

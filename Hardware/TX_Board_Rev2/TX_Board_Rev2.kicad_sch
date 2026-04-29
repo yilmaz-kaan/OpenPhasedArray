@@ -803,6 +803,330 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "BZT52C2V4S:BZT52C2V4S-7-F"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CR"
+				(at 5.08 4.445 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "BZT52C2V4S-7-F"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "SOD323_DIO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "BZT52C2V4S-7-F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BZT52C2V4S-7-F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOD323_DIO SOD323_DIO-M SOD323_DIO-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BZT52C2V4S-7-F_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 3.4798 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.905) (xy 3.81 -1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.905) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 3.81 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -1.905) (xy 6.35 1.905)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "BZT52C2V4S-7-F_1_2"
+				(polyline
+					(pts
+						(xy -1.905 3.81) (xy 1.905 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 6.35) (xy -1.905 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 6.35) (xy 0 7.62)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 3.81)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 3.4798)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 6.35) (xy -1.905 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.81) (xy 0 6.35)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "CONSMA022-G:CONSMA022-G"
 			(pin_names
 				(offset 1.016)
@@ -4447,17 +4771,6 @@
 		)
 		(uuid "b5fe985c-fd15-49ba-aaa5-97d9270a7248")
 	)
-	(text "TODO: \n\n- Implement FT232H with SPI capibility (CLK, SER_IN, SER_OUT)\n	FT232H has its own chip select (CS) line as well. Probably driven internally by onboard SPI controller. (Not sure, verify)\n	This could be used for pin G1A of the decoder to save a GPIO\n	Need to determine which parts of the example schematic need to be kept\n	\n\n- Implement and label the following GPIO's on the FT232H:\n	GPIO 0-3 (CS decoder input)\n	AMP_ON (Enable pin of V_PD/+1.8V LDO)\n	\n	Maybe: If +/- 5V LDOs or another power component has an enable pin, maybe a PWR_ON GPIO to power down the whole board?\n\n\n- Implement new power system:\n	Barrel jack input (+9 or +12V)\n	To high efficiency switching regulator (down to +6 or so volts)\n\n	For +5V:\n		+6V into LDO. \n		Maybe: RC filter before LDO input for some switching noise attenuation. \n			(If we do this, components MUST be high current)\n\n	For -5V:\n		+6V into charge pump inverter (need to be careful with this. They can be noisy)\n		Output of that into negative LDO.\n		\n		\n	"
-		(exclude_from_sim no)
-		(at 281.432 278.638 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ba50e2d2-591d-49bf-925e-211d3427eb22")
-	)
 	(text "FREQ to GND\nfor 1 MHz"
 		(exclude_from_sim no)
 		(at 60.706 450.088 0)
@@ -4565,6 +4878,12 @@
 		(uuid "2ba9a6da-1f70-4d80-b29f-8dcc2e9acc54")
 	)
 	(junction
+		(at 285.75 367.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e33c295-36e2-48fa-848f-a0a6dae4cef6")
+	)
+	(junction
 		(at 100.33 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4629,6 +4948,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6aed83c2-8a43-4048-9c57-436e1c4a2520")
+	)
+	(junction
+		(at 281.94 349.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "761ee2d1-7edf-4831-b7d4-2df50802d22c")
 	)
 	(junction
 		(at 142.24 208.28)
@@ -4938,7 +5263,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 349.25) (xy 293.37 349.25)
+			(xy 280.67 349.25) (xy 281.94 349.25)
 		)
 		(stroke
 			(width 0)
@@ -5308,6 +5633,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 349.25) (xy 293.37 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0ec21d-e239-43f4-8a65-5752a819f27a")
+	)
+	(wire
+		(pts
 			(xy 266.7 361.95) (xy 270.51 361.95)
 		)
 		(stroke
@@ -5365,6 +5700,16 @@
 			(type default)
 		)
 		(uuid "686b2b6f-fec2-4fc7-90d2-f2d262a02113")
+	)
+	(wire
+		(pts
+			(xy 137.16 421.64) (xy 137.16 424.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6929231b-97c7-484b-93e9-835299e0fe79")
 	)
 	(wire
 		(pts
@@ -5458,7 +5803,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 367.03) (xy 293.37 367.03)
+			(xy 283.21 367.03) (xy 285.75 367.03)
 		)
 		(stroke
 			(width 0)
@@ -5845,6 +6190,16 @@
 			(type default)
 		)
 		(uuid "c6625a08-b633-43b6-8864-cdac48302e8b")
+	)
+	(wire
+		(pts
+			(xy 285.75 367.03) (xy 293.37 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7b18ab1-798a-47ba-a997-fd63ab61696f")
 	)
 	(wire
 		(pts
@@ -8886,7 +9241,7 @@
 	)
 	(global_label "TR_CTRL"
 		(shape input)
-		(at 287.02 367.03 180)
+		(at 283.21 367.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8896,7 +9251,7 @@
 		)
 		(uuid "4506ae78-1262-4f6f-acbb-eb973c3d01e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 276.2939 367.03 0)
+			(at 272.4839 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9018,7 +9373,7 @@
 	)
 	(global_label "GPIO-G1"
 		(shape input)
-		(at 287.02 349.25 180)
+		(at 280.67 349.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9028,7 +9383,7 @@
 		)
 		(uuid "5e8b3d76-fca4-4254-8f21-3e00c453971c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 278.35 349.25 0)
+			(at 272 349.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9557,6 +9912,28 @@
 		(uuid "b7c98ddf-4503-4d88-81e5-e8e235449ac2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 278.35 351.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 137.16 421.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b90ea154-9c5f-44c4-ad15-93a6fa1367dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.5462 421.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12221,6 +12598,72 @@
 		)
 	)
 	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 281.94 341.63 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45e092fd-d262-4fa6-8ca0-10615cac8852")
+		(property "Reference" "#PWR0474"
+			(at 281.94 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 276.352 339.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 281.94 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 281.94 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 281.94 341.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8abacd2e-0ade-431d-84ef-947d3c246ea5")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "#PWR0474")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:R_US")
 		(at 66.04 260.35 90)
 		(unit 1)
@@ -13133,6 +13576,143 @@
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 281.94 345.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "68fb7ed2-d7e5-498d-833b-aa6b1eb09019")
+		(property "Reference" "R66"
+			(at 277.876 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 277.876 343.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 282.956 345.694 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 281.94 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "451c0ad8-274d-4e27-ba78-dc73d1a9bcd6")
+		)
+		(pin "2"
+			(uuid "a57890b3-d696-46d9-b003-151afec5b410")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 137.16 445.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a3df95f-9d84-46c0-b29a-1b416a2a02fa")
+		(property "Reference" "R64"
+			(at 139.7 444.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 139.7 447.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 138.176 446.024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 445.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 137.16 445.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7d4e2b4-b0cc-4ed5-94f6-de62fa0bdce7")
+		)
+		(pin "2"
+			(uuid "abd99755-812f-4a81-886d-c06409657096")
+		)
+		(instances
+			(project ""
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -14206,6 +14786,72 @@
 		)
 	)
 	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 137.16 449.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83de7bb0-a647-4d4f-9d8a-d92d445f7edd")
+		(property "Reference" "#PWR0472"
+			(at 137.16 455.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 454.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 449.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ed2e23a-1b4e-45df-8d10-7b6b3c513704")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "#PWR0472")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:R_US")
 		(at 143.51 267.97 90)
 		(unit 1)
@@ -14358,7 +15004,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 268.732 350.012 0)
+			(at 261.112 350.012 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14673,6 +15319,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 285.75 370.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a05ae41e-58b5-4ce9-a84a-2f02e95b9c57")
+		(property "Reference" "R65"
+			(at 282.194 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 282.194 372.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 284.734 370.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 285.75 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 285.75 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d71f49b8-ff1d-4f92-a5e2-fed95f6f28f0")
+		)
+		(pin "2"
+			(uuid "5cee916e-e3ea-41bc-bc0b-3ea215cda09a")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tx_board_symbol_library:GP2Y1+")
 		(at 125.73 93.98 0)
 		(unit 1)
@@ -14820,6 +15533,72 @@
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
 					(reference "IC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tx_board_symbol_library:GND")
+		(at 285.75 374.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acd42dc5-939f-416d-af39-4bd41b0c90c8")
+		(property "Reference" "#PWR0473"
+			(at 285.75 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 291.592 376.682 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 285.75 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 285.75 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a38e2e0-02cf-483c-b734-4bc01322d7cf")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "#PWR0473")
 					(unit 1)
 				)
 			)
@@ -14976,6 +15755,78 @@
 			(project ""
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
 					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BZT52C2V4S:BZT52C2V4S-7-F")
+		(at 137.16 434.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1b87a42-bb15-44f7-830c-00edd83d841d")
+		(property "Reference" "CR1"
+			(at 140.97 427.9899 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BZT52C2V4S-7-F"
+			(at 140.97 430.5299 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "BZT52C2V4S_7_F:SOD323_DIO"
+			(at 137.16 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "BZT52C2V4S-7-F"
+			(at 137.16 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 434.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a167957-5323-4d25-84e2-29e27db36cc2")
+		)
+		(pin "1"
+			(uuid "72977e99-1814-44da-a15d-e4bc1aeafdc5")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "CR1")
 					(unit 1)
 				)
 			)
@@ -17039,6 +17890,85 @@
 			(project "TX_Board_Rev2"
 				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 137.16 438.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e845d191-85ab-4277-9f61-9377aded4f84")
+		(property "Reference" "APT2012LSECK/J3-PRV1"
+			(at 140.97 438.4674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 140.97 441.0074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 137.16 438.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 438.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 137.16 438.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 137.16 438.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "378d36be-0a20-4a6c-b3fe-63195d90bab1")
+		)
+		(pin "1"
+			(uuid "5a204f34-52d4-4590-9860-fc96ac56c39f")
+		)
+		(instances
+			(project "TX_Board_Rev2"
+				(path "/5327d041-dca0-47c6-802d-ce81714adf6c"
+					(reference "APT2012LSECK/J3-PRV1")
 					(unit 1)
 				)
 			)
