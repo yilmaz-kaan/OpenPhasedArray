@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PRT-09750-KiCad")(type "KiCad")(uri "/Users/kaan/Documents/BEAMFORM/MCU_EVAL/Components/LIB_PRT-09750/PRT-09750/PRT-09750-KiCad")(options "")(descr ""))
+  (lib (name "SP3485CN_L")(type "KiCad")(uri "/Users/kaan/Documents/BEAMFORM/MCU_EVAL/Components/SP3485CN_L/KiCADv6/SP3485CN_L")(options "")(descr ""))
+)
