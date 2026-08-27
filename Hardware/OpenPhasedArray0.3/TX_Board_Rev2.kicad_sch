@@ -5172,7 +5172,7 @@
 		)
 		(uuid "9472cce0-2e71-4ffd-8f72-7bf9ff29b98c")
 	)
-	(text "This chip is essentially also a level shifter. \nThe 'T' in SN74HCT stands for TTL - compatible.\nIts V_HIGH threshold is ~2V and V_LOW 0.8V, making \nit compatible for 3.3V input. The outputs are referenced\nto VCC, so 5V ish"
+	(text "This chip is essentially also a level shifter. \nThe 'T' in SN74HCT stands for TTL - compatible.\nIts V_HIGH threshold is ~2V and V_LOW 0.8V, making \nit compatible for 3.3V input. The outputs are referenced\nto +5VDC, so 5V ish"
 		(exclude_from_sim no)
 		(at 83.566 286.512 0)
 		(effects
@@ -6194,7 +6194,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 361.95) (xy 262.89 361.95)
+			(xy 261.62 361.95) (xy 262.89 361.95)
 		)
 		(stroke
 			(width 0)
@@ -9326,7 +9326,7 @@
 		)
 		(uuid "de362ff6-4545-4625-9866-ea45ab5318d2")
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 139.7 373.38 180)
 		(fields_autoplaced yes)
@@ -9436,7 +9436,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 167.64 477.52 0)
 		(fields_autoplaced yes)
@@ -9458,7 +9458,7 @@
 			)
 		)
 	)
-	(global_label "VDC"
+	(global_label "+6VDC"
 		(shape input)
 		(at 191.77 416.56 90)
 		(fields_autoplaced yes)
@@ -9524,7 +9524,7 @@
 			)
 		)
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 77.47 469.9 180)
 		(fields_autoplaced yes)
@@ -9612,7 +9612,7 @@
 			)
 		)
 	)
-	(global_label "VDC"
+	(global_label "+6VDC"
 		(shape input)
 		(at 38.1 436.88 180)
 		(fields_autoplaced yes)
@@ -9832,7 +9832,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 96.52 375.92 180)
 		(fields_autoplaced yes)
@@ -9920,7 +9920,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 166.37 457.2 180)
 		(fields_autoplaced yes)
@@ -9942,7 +9942,7 @@
 			)
 		)
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 210.82 273.05 0)
 		(fields_autoplaced yes)
@@ -10008,7 +10008,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 139.7 370.84 180)
 		(fields_autoplaced yes)
@@ -10030,7 +10030,7 @@
 			)
 		)
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 96.52 373.38 180)
 		(fields_autoplaced yes)
@@ -10074,7 +10074,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 53.34 370.84 180)
 		(fields_autoplaced yes)
@@ -10250,7 +10250,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 182.88 375.92 180)
 		(fields_autoplaced yes)
@@ -10272,7 +10272,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 96.52 370.84 180)
 		(fields_autoplaced yes)
@@ -10316,7 +10316,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 417.83 344.17 0)
 		(fields_autoplaced yes)
@@ -10426,7 +10426,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 332.74 341.63 0)
 		(fields_autoplaced yes)
@@ -10580,7 +10580,7 @@
 			)
 		)
 	)
-	(global_label "VDC"
+	(global_label "+6VDC"
 		(shape input)
 		(at 77.47 402.59 0)
 		(fields_autoplaced yes)
@@ -10624,7 +10624,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 53.34 375.92 180)
 		(fields_autoplaced yes)
@@ -10712,7 +10712,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 137.16 421.64 180)
 		(fields_autoplaced yes)
@@ -10734,7 +10734,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 114.3 474.98 180)
 		(fields_autoplaced yes)
@@ -10844,7 +10844,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 210.82 283.21 0)
 		(fields_autoplaced yes)
@@ -10866,7 +10866,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 334.01 364.49 270)
 		(fields_autoplaced yes)
@@ -10976,9 +10976,9 @@
 			)
 		)
 	)
-	(global_label "VPD_EN"
+	(global_label "1V8_ENABLE"
 		(shape input)
-		(at 259.08 361.95 180)
+		(at 261.62 361.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10988,7 +10988,7 @@
 		)
 		(uuid "df2a4051-1ad5-41de-8d35-9d78e6ee3cec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.0191 361.95 0)
+			(at 251.5591 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11042,7 +11042,7 @@
 			)
 		)
 	)
-	(global_label "VPD_EN"
+	(global_label "1V8_ENABLE"
 		(shape input)
 		(at 124.46 480.06 180)
 		(fields_autoplaced yes)
@@ -11152,7 +11152,7 @@
 			)
 		)
 	)
-	(global_label "V_PD"
+	(global_label "1V8DC"
 		(shape input)
 		(at 139.7 375.92 180)
 		(fields_autoplaced yes)
@@ -11174,7 +11174,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 210.82 267.97 0)
 		(fields_autoplaced yes)
@@ -11196,7 +11196,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 158.75 252.73 0)
 		(fields_autoplaced yes)
@@ -11218,7 +11218,7 @@
 			)
 		)
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 53.34 373.38 180)
 		(fields_autoplaced yes)
@@ -11240,7 +11240,7 @@
 			)
 		)
 	)
-	(global_label "VEE"
+	(global_label "-5VDC"
 		(shape input)
 		(at 182.88 373.38 180)
 		(fields_autoplaced yes)
@@ -11328,7 +11328,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5VDC"
 		(shape input)
 		(at 182.88 370.84 180)
 		(fields_autoplaced yes)
@@ -20833,7 +20833,7 @@
 				(justify left)
 			)
 		)
-		(pin "VCC" input
+		(pin "+5VDC" input
 			(at 96.52 370.84 180)
 			(uuid "17f8abea-dbb9-48b5-8d02-064ddd2f5fce")
 			(effects
@@ -20843,7 +20843,7 @@
 				(justify left)
 			)
 		)
-		(pin "VEE" input
+		(pin "-5VDC" input
 			(at 96.52 373.38 180)
 			(uuid "52d53c0a-d14f-4a08-9412-0c2682e7a672")
 			(effects
@@ -20853,7 +20853,7 @@
 				(justify left)
 			)
 		)
-		(pin "V_PD" input
+		(pin "1V8DC" input
 			(at 96.52 375.92 180)
 			(uuid "5f8d1ade-75b1-4830-8012-a850d4f02f7a")
 			(effects
@@ -20945,7 +20945,7 @@
 				(justify left)
 			)
 		)
-		(pin "VCC" input
+		(pin "+5VDC" input
 			(at 53.34 370.84 180)
 			(uuid "39136711-79cc-4fb4-9cc2-e5afa9e03d54")
 			(effects
@@ -20955,7 +20955,7 @@
 				(justify left)
 			)
 		)
-		(pin "VEE" input
+		(pin "-5VDC" input
 			(at 53.34 373.38 180)
 			(uuid "9480899e-207f-42db-bb99-adb0185137d0")
 			(effects
@@ -20965,7 +20965,7 @@
 				(justify left)
 			)
 		)
-		(pin "V_PD" input
+		(pin "1V8DC" input
 			(at 53.34 375.92 180)
 			(uuid "7bcdc588-5cc9-484b-9a68-e4eb6b3fae2a")
 			(effects
@@ -21087,7 +21087,7 @@
 				(justify left)
 			)
 		)
-		(pin "VCC" input
+		(pin "+5VDC" input
 			(at 139.7 370.84 180)
 			(uuid "0e044f14-cd56-4ef0-aa93-d16d9180b4fe")
 			(effects
@@ -21097,7 +21097,7 @@
 				(justify left)
 			)
 		)
-		(pin "VEE" input
+		(pin "-5VDC" input
 			(at 139.7 373.38 180)
 			(uuid "3eb38605-84dd-415f-af65-9f5a64e82b3a")
 			(effects
@@ -21107,7 +21107,7 @@
 				(justify left)
 			)
 		)
-		(pin "V_PD" input
+		(pin "1V8DC" input
 			(at 139.7 375.92 180)
 			(uuid "91ca02db-0638-4213-ab06-245956f2d9d5")
 			(effects
@@ -21229,7 +21229,7 @@
 				(justify left)
 			)
 		)
-		(pin "VCC" input
+		(pin "+5VDC" input
 			(at 182.88 370.84 180)
 			(uuid "c948b210-b009-4419-b463-b1836b7a75fb")
 			(effects
@@ -21239,7 +21239,7 @@
 				(justify left)
 			)
 		)
-		(pin "VEE" input
+		(pin "-5VDC" input
 			(at 182.88 373.38 180)
 			(uuid "4dfeeb9e-6717-4297-81ca-a7c0bb5a3dc4")
 			(effects
@@ -21249,7 +21249,7 @@
 				(justify left)
 			)
 		)
-		(pin "V_PD" input
+		(pin "1V8DC" input
 			(at 182.88 375.92 180)
 			(uuid "1bcd8e88-6407-4c09-8c6d-4e086267b1c4")
 			(effects

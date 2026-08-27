@@ -6249,7 +6249,7 @@
 		)
 		(uuid "085b403c-f995-43cd-95ca-ecd606cc673b")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 528.32 354.33 0)
 		(effects
@@ -6260,7 +6260,7 @@
 		)
 		(uuid "15578610-cfa1-4a73-bf91-59e6a147ad82")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 581.66 276.86 180)
 		(effects
@@ -6282,7 +6282,7 @@
 		)
 		(uuid "2f65db2d-afc7-464f-90f9-1d61c94e67a8")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 577.85 274.32 180)
 		(effects
@@ -6293,7 +6293,7 @@
 		)
 		(uuid "3e5bc01d-402b-4922-8300-a5aee013b392")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 294.64 250.19 90)
 		(effects
@@ -6326,7 +6326,7 @@
 		)
 		(uuid "4671bd0d-386f-4a42-a844-9afe552b8e4e")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 220.98 280.67 180)
 		(effects
@@ -6337,7 +6337,7 @@
 		)
 		(uuid "51514579-0c4e-4c2a-9c00-b6bac909834e")
 	)
-	(hierarchical_label "VEE"
+	(hierarchical_label "-5VDC"
 		(shape input)
 		(at 236.22 278.13 180)
 		(effects
@@ -6348,7 +6348,7 @@
 		)
 		(uuid "58734542-a7d9-4586-b68c-b25ec14ddd19")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 579.12 200.66 90)
 		(effects
@@ -6359,7 +6359,7 @@
 		)
 		(uuid "7a271af9-a485-4987-bb8e-7ad47bb7ba76")
 	)
-	(hierarchical_label "V_PD"
+	(hierarchical_label "1V8DC"
 		(shape input)
 		(at 523.24 208.28 90)
 		(effects
@@ -6381,7 +6381,7 @@
 		)
 		(uuid "b60b694e-acdc-4504-bcda-accf89958897")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 515.62 280.67 270)
 		(effects
@@ -6392,7 +6392,7 @@
 		)
 		(uuid "c69258db-5f45-452f-9ce0-fb608ed95a83")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 339.09 243.84 90)
 		(effects
@@ -6403,7 +6403,7 @@
 		)
 		(uuid "c8a3792b-5b22-4662-a2c6-1ddb815af6ef")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 500.38 285.75 0)
 		(effects
@@ -6447,7 +6447,7 @@
 		)
 		(uuid "ee00279d-3e10-443b-b496-ff01ff00fe03")
 	)
-	(hierarchical_label "VCC"
+	(hierarchical_label "+5VDC"
 		(shape input)
 		(at 549.91 195.58 90)
 		(effects
