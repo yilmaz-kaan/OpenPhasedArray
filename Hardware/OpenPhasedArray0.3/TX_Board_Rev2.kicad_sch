@@ -5215,9 +5215,9 @@
 		)
 		(uuid "cf23bacb-2f85-4e00-84e9-a1fe41879205")
 	)
-	(text "According to data sheet, \nunused inputs must be pulled \nhigh or low. It is CRITICAL that\nthe SPI clock behavior be set in stone\nbefore assembly. Resistors to pull up and \ndown are specced on both lines, but one\nMUST be D.N.P'ed before fab/assembly\n\nSPI Mode 0 or 1 -- keep the pull-down\nSPI Mode 2 or 3 -- keep the pull-up"
+	(text "According to data sheet, \nunused inputs must be pulled \nhigh or low. It is CRITICAL that\nthe SPI clock behavior be set in stone\nbefore assembly. Resistors to pull up and \ndown are specced on both lines, but one\nMUST be D.N.P'ed before fab/assembly\n\nSPI Mode 0 or 1 -- keep the CLK pull-down\nSPI Mode 2 or 3 -- keep the CLK pull-up"
 		(exclude_from_sim no)
-		(at 333.756 326.898 0)
+		(at 325.374 326.644 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5249,6 +5249,16 @@
 			)
 		)
 		(uuid "e2f25162-2f5e-4345-b4e0-4d78a46bc9ba")
+	)
+	(text "It is technically possible to swap \nthese resistors after fab but their \nlayout will make you not want to"
+		(exclude_from_sim no)
+		(at 327.66 375.412 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e3b856c9-c85d-4480-a4ea-f1458dd548de")
 	)
 	(text "Debug headers"
 		(exclude_from_sim no)
